@@ -1,0 +1,91 @@
+@charset "utf-8";
+.mface {
+	background-color: #FFF;
+	text-align: center;
+	margin: 0;
+	font-size: 0.8em;
+	color: #333;
+}
+.mface .mface-container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: left;
+	background-color: #FFF;
+}
+.mface .mface-container2 {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: left;
+	background-color: #FFF;
+	font-size: 1.3em;
+}
+.mface .mface-bar {
+	width: 600px;
+	padding: 10px 0;
+	margin: auto;
+	color: #FFF;
+	background-color: #F90;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mface .mface-bar2 {
+	width: 600px;
+	padding: 10px 0;
+	margin: auto;
+	color: #FFF;
+	background-color: #999;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mface .mface-text {
+	width: 560px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.mface .mface-form_wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+.mface .mface-left {
+	padding: 10px;
+	vertical-align: middle;
+	width: 35%;
+	background-color: #FC9;
+	color: #666;
+	border: 1px solid #FFF;
+	word-break:nowrap;
+}
+.mface .mface-left2 {
+	padding: 10px;
+	vertical-align: middle;
+	width: 35%;
+	background-color: #CCC;
+	color: #666;
+	border: 1px solid #FFF;
+	word-break:nowrap;
+}
+.mface .mface-right {
+	padding: 10px;
+	vertical-align: middle;
+	width: 65%;
+	background-color: #FCE8D3;
+	border: 1px solid #FFF;
+}
+.mface .mface-right2 {
+	padding: 10px;
+	vertical-align: middle;
+	width: 65%;
+	background-color: #F0F0F0;
+	border: 1px solid #FFF;
+}
+.mface .mface-red {
+	color: #F00;
+}
+#content .mface-right p{
+	margin: 0px;
+	font-size: 1em;
+}

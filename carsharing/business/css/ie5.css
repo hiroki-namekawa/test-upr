@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+/*==========================
+
+  IE5対応の場合ここで設定します
+
+==========================*/
+
+#wrapper{
+
+	text-align:center;
+
+	min-height: 100%;
+
+	margin:0 auto;
+
+}
+
+
+
+#main{
+
+	width:902px;/*ボーダー値＋ボディ値*/
+
+	border-left:1px solid #CCCCCC;
+
+	border-right:1px solid #CCCCCC;
+
+	}
+
+
+
+
+
+#content{
+
+	width:664px;
+
+	margin:20px auto 40px auto;
+
+}
+
+
+
+/*ヘッダー*/
+
+#headerInner{
+
+	width:900px;
+
+}
+
+
+
+/*ナビゲーション*/
+
+#globalNav a{
+
+	width: 200px;
+
+}
+
+
+
+#globalNav a:hover{
+
+	width: 200px;
+
+}
+
+
+
+
+
+/*フッターメニュー（グローバル）*/
+
+#footerBg{
+
+	background:url(../common_images/footerBg01.gif) no-repeat center bottom;
+
+	margin: 0 auto;
+
+	height: 148px;
+
+}
+
+
+
+.footerNav01 ul{
+
+	width: 130px;
+
+}
+
+.footerNav01 li{
+
+	margin:0px 0 5px 0;
+
+	line-height:1.2em;
+
+}
+
+
+
+
+
+/*パンくずリスト*/
+
+#topicpath{
+
+	height:54px;
+
+	padding:25px 0 0 0;
+
+}
+
+
+
+/*ご挨拶*/
+
+
+
+div#forBusiness ul{
+
+	width: 387px;
+
+	padding: 12px 0 10px 11px;
+
+	margin: 0 0 0 8px;
+
+	list-style-type:circle;
+
+	font-size: 0.76em;
+
+}
+
+
+
+
+
+/*事業者向け情報*/
+
+div#b-info ul,div#b-info02 ul{
+
+	list-style:url(../images/news_list.gif) disc center bottom;
+
+	list-style-position:inside;
+
+	height:18px;
+
+}
+
+
+
+div#b-info li,div#b-info02 li{
+
+	font-size: 0.8em;
+
+	line-height:2em;
+
+	margin:5px 10px;
+
+	background: url(../images/news_line.gif) no-repeat left bottom;
+
+}
+
+
+
+
+
+/*導入事例　case/index.html*/
+
+#content div.caseBox{
+
+	margin: 0 auto 45px auto;
+
+	width:640px;
+
+	height: 286px;
+
+}
+
+
+
+/* シーン別検索*/
+
+#scene{
+
+	width:640px;/*IE5.5*/
+
+	padding:15px 15px 5px 15px;
+
+}
+
+#scene ul {margin:0;height:48px;}
+
+
+
+
+
+/*車載機紹介equipment/index.html*/
+
+.pointTxt{
+
+	width: 310px;
+
+}
+

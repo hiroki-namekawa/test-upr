@@ -1,0 +1,127 @@
+@charset "shift_jis";
+/* CSS Document */
+            
+
+
+ul#other_menu {
+	margin:0;
+	padding:0;
+}
+
+ul#other_menu li {
+	float:left;
+	padding:0;
+	margin:0;
+	height:35px;
+}
+.other_menu01 a {
+	display:block;
+	background:url(../images/other_menu/other_menu01.gif) no-repeat left top;
+	width:141px;
+	height:35px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+}
+.other_menu01 a:hover {
+	display:block;
+	background:url(../images/other_menu/other_menu01.gif) no-repeat left -35px;
+	width:141px;
+	height:35px;
+	text-indent:-9999px;
+}
+a.other_menu02 {
+	display:block;
+	background:url(../images/other_menu/other_menu02.gif) no-repeat left top;
+	width:183px;
+	height:35px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+}
+a:hover.other_menu02 {
+	display:block;
+	background:url(../images/other_menu/other_menu02.gif) no-repeat left -35px;
+	width:183px;
+	height:35px;
+	text-indent:-9999px;
+}
+a.other_menu03 {
+	display:block;
+	background:url(../images/other_menu/other_menu03.gif) no-repeat left top;
+	width:206px;
+	height:35px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+}
+a:hover.other_menu03 {
+	display:block;
+	background:url(../images/other_menu/other_menu03.gif) no-repeat left -35px;
+	width:206px;
+	height:35px;
+	text-indent:-9999px;
+}
+a.other_menu04 {
+	display:block;
+	background:url(../images/other_menu/other_menu04.gif) no-repeat left top;
+	width:205px;
+	height:35px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+}
+a:hover.other_menu04 {
+	display:block;
+	background:url(../images/other_menu/other_menu04.gif) no-repeat left -35px;
+	width:205px;
+	height:35px;
+	text-indent:-9999px;
+}
+.other_menu05 a {
+	display:block;
+	background:url(../images/other_menu/other_menu05.gif) no-repeat left top;
+	width:165px;
+	height:35px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+}
+.other_menu05 a:hover {
+	display:block;
+	background:url(../images/other_menu/other_menu05.gif) no-repeat left -35px;
+	width:165px;
+	height:35px;
+	text-indent:-9999px;
+}
+
+
+
+
+.submenu {
+	background:#eaebd8;
+	border:1px solid #646363;
+	visibility:hidden;
+	position:absolute;
+	z-index:3;
+	width:160px;
+	display:block;
+	text-indent:5px;
+}
+
+.submenu a {
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	color:#333;
+	width:160px;
+	text-indent:5px;
+}
+
+.submenu a:hover {
+	display:block;
+	background:#646363;
+	color:#fff;
+	text-indent:5px;
+	width:160px;
+}

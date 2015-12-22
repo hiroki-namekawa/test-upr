@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main .box { margin-bottom: 30px; }
+#main .left { float: left; }
+#main .right { float: right; }
+#main .clear { clear:both; overflow: hidden; }
+#main h2 {
+  width: 670px;
+  margin: 0px -5px 20px 0;
+}
+#main h2 {
+	background-image:url(../images/bg_h_active.png);
+	background-repeat:no-repeat;
+	display:block;
+	clear:both;
+	padding:12px 0 0 35px;
+	font-size:18px;
+}
+#main h3 {
+  width: 660px;
+  margin: 0px 0px 20px 0px;
+}
+
+.feature #main .box p { margin: 15px 0; }
+.feature #main .box p a { text-decoration: underline; }
+.feature #main .box img.right {
+  float: right;
+  margin-left: 30px;
+}
+.feature #main .box img.left {
+  float: left;
+  margin-right: 30px;
+}
+
+.home #main .feature .item {
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+.wk_t table{
+	width:600px;
+	height:600px;
+	margin:20px 0 10px 30px;
+	border:1px solid #CCC;
+	}
+	
+.wk_t th{
+	font-weight:bold;
+	padding:10px;
+	border:1px solid #CCC;
+	background-color:#CCC;
+	text-align:center;
+	}
+	
+	
+.wk_t td{
+	padding:10px;
+	border:1px solid #CCC;
+	}
+	
+.wk_t02 table{
+	width:600px;
+	height:380px;
+	margin:20px 0 10px 30px;
+	border:1px solid #CCC;
+	}
+	
+.wk_t02 th{
+	font-weight:bold;
+	padding:10px;
+	border:1px solid #CCC;
+	background-color:#CCC;
+	text-align:center;
+	}
+	
+.wk_t02 td{
+	padding:10px;
+	border:1px solid #CCC;
+	text-align:center;
+	}
+	
+.t_bg_999{
+	background:#999;
+	color:#FFF;
+	font-weight:bold;
+	}
+	
+.wk_t02 p{
+	margin:20px 0 10px 80px;
+	}
+	
+.logis #container {
+	background-color:#e1eee4;
+}
+
+.logis #container {
+	margin:0 auto;
+	text-align:center;
+}	
+.logis #container div.box1 {
+	background:url(../images/logis/bg_box1.jpg) repeat-x 0 0;
+	margin:0 auto;
+	text-align:center;
+}
+.logis #container div.box1 p {
+	width:1260px;
+	margin:0 auto;
+	text-align:center;
+}
+.logis #container div.box2 {
+	background:url(../images/logis/bg_box2.jpg) repeat-x 0 0;
+	margin:0 auto;
+	text-align:center;
+}
+
+.logis #container div.box2-2 {
+	background:url(../images/logis/bg_box2_2.jpg) repeat-x 0 0;
+	margin:0 auto;
+	text-align:center;
+	height:358px;
+}
+
+.logis #container div.box2 p,
+.logis #container div.box2-2 p {
+	width:1260px;
+	margin:0 auto;
+	text-align:center;
+}
+.logis #container div.box3 p {
+	width:1260px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.logis #container div.box4 {
+	background:url(../images/logis/bg_box4.jpg) repeat-y 0 0;
+	margin:0 auto;
+	text-align:center;
+		width:1260px;
+}
+.logis #container div.box4 p {
+	width:1260px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.logis #container div.box4 div.form  {
+	margin-left:300px;
+}
+#main ul.button {
+  width: 660px;
+  margin: 30px 0px 20px 50px;
+}
+#main ul.button li {
+	float:left;
+	margin-left:20px;
+}
+
+
+.table01{
+width: 100%;
+border-collapse: collapse;
+}
+.table01 th{
+width: 90px;
+padding: 6px;
+text-align: left;
+vertical-align: middle;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+}
+.table01 th.short{
+width: 35px;
+}
+.table01 td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+}
+
+.glay {
+	color:#333333;
+	font-weight:bold;
+	font-size:140%;
+}
+
+div.movie {
+	text-align:center;
+	margin:30px auto;
+}
+
+p.large {
+	font-size:32px;
+	text-align:center;
+	margin:10px auto;
+	
+}
+p.mediaum {
+	font-size:20px;
+	text-align:center;
+	margin:10px auto;
+}
+
+.center {
+	margin:0 auto;
+	text-align:center;
+}
+
+p.shohyo {
+	text-align: right; font-size:12px; }
+p.shohyo span { font-size:8px; vertical-align:text-top;}
+
+#sidebar ul.assistsuit span.muscle { font-size:7px; vertical-align:text-top; }
+#main h2 span { font-size:10px; vertical-align:text-top;}
+
+.pankuzu span { font-size:9px; vertical-align:text-top;}
+span.muscle { font-size:7px; vertical-align:text-top; }
+
+div.hojyo { margin-left:10px; margin-right:0px;}
+div.hojyo p { font-size:14px; line-height:1.6; }
+div.hojyo p.title { font-size:16px; }
+div.hojyo ul.photo { width:100%; overflow:hidden; margin-bottom:30px;}
+div.hojyo ul.photo li { display:inline; margin-right:10px;}
+div.hojyo h3{ font-size:18px; color:#CF0000; border-bottom:2px solid #CF0000; background-image:none; padding-left:0; }
+
+div.hojyo .orange { color:#FF7726; font-weight:bold;}
+div.hojyo .red { color:#CF0000; font-weight:bold; }
+
+
+div.hojyo ul.notice li { list-style:disc; margin-left:2em;}
+div.hojyo ul.notice li.end {  margin-left:0em;}
+
+#main p.suit-top-large {
+	font-size:18px;
+	line-height:2;
+	margin-left:10px;
+}
+#main div.tanto {
+	background-color:#F9FAF5;
+	border:1px solid #BFBEBD;
+	width:611px;
+	margin-left:25px;
+}
+#main div.tanto h3 {
+background-image:none;
+	padding:0;
+}
+#main div.tanto p {
+	line-height:2;
+	padding:0 15px 0 15px;
+}
+#main div.howto {
+	margin-top:30px;
+	margin-left:30px;
+}
+#main div.howto h3 {
+background-image:none;
+	padding:0;
+	font-size:24px;
+	font-weight:normal;
+	margin-bottom:0;
+}
+#main div.howto p {
+	margin-bottom:20px;
+}
+	
+
+#main p.tc {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#main div.muscle {
+	overflow:hidden;
+	margin-bottom:30px;
+}
+#main div.muscle .left {
+	float:left;
+	width:320px;
+}
+#main div.muscle .right {
+	float:right;
+	width:320px;
+}
+#main div.muscle_case {
+	margin:10px;
+	overflow:hidden;
+}
+#main div.muscle_case h3 {
+	background-image:none;
+	background-color:#CF0000;
+	color:#FFF;
+	padding:5px;
+	width:630px;
+}
+#main div.muscle_case img.left {	
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+#main div.muscle_schedule dl {	
+	margin:10px;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+#main div.muscle_schedule dl dt {	
+	float: left;
+    clear: left;
+    width: 200px; 
+}
+#main div.muscle_schedule dl dd {	
+     padding-left: 220px;  /* dtの幅以上のpaddingをとる*/
+}
+#main div.muscle_schedule dl dd p.small {	
+	font-size:11px;
+}
+
+#main div.muscle_qa dl {	
+	margin:10px;
+	overflow:hidden;
+	margin-bottom:20px;
+	border-bottom:1px dotted #CCC;
+}
+#main div.muscle_qa dl dt {	
+	background:url(../images/img_q.png) no-repeat top left;
+	padding-left:80px;
+	padding-top:10px;
+	padding-bottom:20px;
+	font-size:16px;
+}
+#main div.muscle_qa dl dd {	
+	background:url(../images/img_a.png) no-repeat top left;
+	padding-left:80px;
+	padding-top:0px;
+	padding-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

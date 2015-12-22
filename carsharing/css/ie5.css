@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========================
+  IE5対応の場合ここで設定します
+==========================*/
+/*カシェリの利用をお考えの方へ*/
+.usersInner{
+	width:535px;
+	background: url(../images/btn_users.jpg) no-repeat;
+	margin: 0 auto 0 0;
+	padding-top:55px;
+	/*min-height:245px;
+	height: auto !important;*/
+	height: 245px;
+}
+
+.users p{
+	margin: 0;
+	padding:0 0 0 25px;
+	width: 255px;
+	color: #FFFFFF;
+}
+/*↓以下、ボックス全体をリンクにする設定*/
+.usersbox_hover{
+	background: url(../images/btn_users_o.jpg) no-repeat;
+	cursor:pointer;
+	}
+.none{
+	text-indent:-9999px;
+	height:0px;
+	overflow:hidden;
+	}		
+
+.businessInner{
+	width:535px;
+	background: url(../images/btn_business.jpg) no-repeat;
+	margin: 0 auto 0 0;
+	padding-top:50px;
+	/*min-height:245px;
+	height: auto !important;*/
+	height: 245px;
+}
+
+.business p{
+	margin: 0;
+	padding:0 0 0 25px;
+	width: 250px;
+	color: #FFFFFF;
+}
+
+/*↓以下、ボックス全体をリンクにする設定*/
+.businessbox_hover{
+	background: url(../images/btn_business_o.jpg) no-repeat;
+	cursor:pointer;
+	}
+.none{
+	text-indent:-9999px;
+	height:0px;
+	overflow:hidden;
+	font-weight:bold;
+	}		
+
+
+.yoyakuBtn{
+	margin: 15px 10px 15px auto;
+}
+
+/*パンくずリスト*/
+#topicpath{
+	border-bottom:1px solid #d4d4d4;
+	height:53px;
+	margin: 0;
+	padding:25px 0 0 0;
+	text-align:left;
+}
+
+

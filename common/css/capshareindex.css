@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/*------------------------------------------------
+	RESET
+--------------------------------------------------*/
+/* よく登場する要素のリセット */
+body, h1, h2, h3, h4, h5, h6, p, address, ul, ol, li, dl, dt, dd, table, caption, th, td, img, form, div {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	color:#515151;
+	font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+/* テキストエリア内文字サイズのブラウザ間での差異をなくす */
+textarea {
+	font-size: 100%;
+}
+/* 画像の下にできる隙間をなくす */
+img {
+	vertical-align: bottom;
+}
+/* hr 要素は不可視で使う */
+hr {
+	display:none;
+}
+.clearfix:after {
+	content: ".";  /* 新しい要素を作る */
+	display: block;  /* ブロックレベル要素に */
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;/*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+a:link {
+	color:#0480b7;
+}
+a:hover {
+	color: #666699;
+}
+a:visited {
+	color:#333333;
+}
+a:active {
+	color:#E35B00;
+}
+.clear {
+	clear:both;
+}
+/* 
+=========================================================
+■body
+========================================================= */
+ */
+/* 
+=========================================================
+■container
+========================================================= */
+ */
+/* 
+=========================================================
+■header
+========================================================= */
+/* 
+=========================================================
+■gnavi
+========================================================= */
+/* =========================================================
+■wrapper
+========================================================= */
+/* =========================================================
+■content
+========================================================= */
+/* =========================================================
+■footer
+========================================================= */
+/* =========================================================
+■gNavi PullDown
+========================================================= */
+/* =========================================================
+■gNavi PullDown
+========================================================= */
+
+/*
+=========================================================
+h1 elements
+=========================================================
+ */
+
+h1.carsharetop {
+	width:900px;
+	height:70px;
+	background-image:url(../../images/h_elements/h_elements.png);
+	background-repeat:no-repeat;
+	display:block;
+	text-indent:-9999em;
+	margin:0 0 23px 0;
+	background-position:0 -70px;
+}
+
+/*
+=========================================================
+ h2 elements
+=========================================================
+*/
+
+#sidebar ul li {
+	float: left;
+}
+
+#sidebar ul li.li_left {
+	width: 580px;
+}
+
+#sidebar .contents {
+	padding-left: 5px;
+}
+
+#sidebar .subttl > img {
+	padding: 30px 0;
+}
+
+#sidebar .explain {
+	padding: 0 0 0 5px;
+}
+
+#sidebar .explain .summary {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+#sidebar .explain .summary .skyblue {
+	color: #007FFF;
+}
+
+#sidebar .explain li {
+	padding: 10px 0;
+}
+
+#sidebar .explain li dl dt {
+	font-size: 13px;
+	padding: 20px 0;
+	line-height: 18px;
+}
+
+#sidebar ul li dd {
+	float: left;
+	padding-right: 20px;
+}
+
+#sidebar ul li.li_right {
+	position: bottom;
+}
+
+#sidebar .img_center {
+	position: relative;
+}
+
+#sidebar .img_center > span {
+	position: absolute;
+	top: 100px;
+	right: 40px;
+}
+
+#sidebar ul.links {
+	padding: 20px 0;
+}
+
+#sidebar ul.links li {
+	padding-right: 10px;
+}
+
+
+/*
+=========================================================
+ h3 elements
+=========================================================
+ */
+/*
+/*
+=========================================================
+ h4 elements
+=========================================================
+ */
+
+/*
+=========================================================
+ list elements
+=========================================================
+ */
+ 
+/* 
+=========================================================
+contents dlements
+=========================================================
+ */
+ 
+/*
+=========================================================
+ float elements
+=========================================================
+ */
+ 
+/* 
+=========================================================
+table area
+=========================================================
+ */

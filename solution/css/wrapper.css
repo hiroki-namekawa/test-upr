@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*****************************************/
+/*** 削除すること ***/
+/*** デザイン構成時に判りやすくするため ***/
+/*** 記述されています ***/
+/*****************************************/
+
+
+
+
+/*****************************************/
+/*** Body Wrap ***/
+/*****************************************/
+
+div#body {
+}
+
+div#wrapper {
+}
+
+div#header {
+}
+
+div#mainvisual {
+	clear: both;
+}
+
+div#pathway {
+	clear: both;
+}
+
+div#container {
+	clear: both;
+	height: 100%;
+}
+
+div#footer {
+	clear: both;
+	height: 100%;
+}
+
+
+/*****************************************/
+/*** Container ***/
+/*****************************************/
+
+div#sidebar,
+div#contents {
+	display: block;
+	display: inline-block;
+	vertical-align: top;
+	/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+}
+
+
+
+

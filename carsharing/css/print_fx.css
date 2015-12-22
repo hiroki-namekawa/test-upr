@@ -1,0 +1,9 @@
+﻿body{background:none;}
+div#container/*親ボックス02*/{
+	display:table;
+}
+	div#leftBox,/*左*/
+	div#rightBox/*右*/{
+	display:table-cell;
+	float:none;
+	}

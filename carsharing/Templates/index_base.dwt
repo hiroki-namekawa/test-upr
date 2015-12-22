@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content="カーシェアリング,カーシェア,西新宿,新橋,浜松町,つくば" lang="ja" />
+<meta name="description" content="レンタカーより安くて便利、ユーピーアールは、車両を利用したい方やカーシェアリング事業をお考えの方を募集しております。会員になってしまえば、携帯電話やパソコンで自動車の空き状況を把握し、30分からの車両利用の予約が出来ます。" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ユーピーアール株式会社 カーシェアリング「カシェリ」 | トップページ</title>
+<!-- TemplateEndEditable -->
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/contents.css" rel="stylesheet" type="text/css" />
+<link href="../css/form.css" rel="stylesheet" type="text/css" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<!-- TemplateBeginEditable name="ie5" -->
+<!--[if IE 5]>
+<link rel="stylesheet" type="text/css" href="../css/ie5.css">
+<![endif]-->
+<!-- TemplateEndEditable -->
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrapper {display:table;height:100%}
+	</style>
+<![endif]-->
+<!-- TemplateBeginEditable name="print_fx" -->
+<script type="text/javascript">
+var firefox = (navigator.userAgent.indexOf("Firefox") != -1)? true : false;
+if(firefox) document.write('<link rel="stylesheet" type="text/css" media="print" href="../css/print_fx.css" />');
+</script>
+<!-- TemplateEndEditable -->
+
+<script src="../js/prototype.js" type="text/javascript"></script>
+<script src="../js/effects.js" type="text/javascript"></script>
+<script src="../js/auto-scroll.js" type="text/javascript"></script>
+<script src="../js/jquery-latest.pack.js" type="text/javascript"></script> 
+<script type="text/javascript">
+jQuery.noConflict();
+var j$ = jQuery;
+</script>
+<!-- TemplateBeginEditable name="userbox_script" -->
+<!-- TemplateEndEditable -->
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-25422367-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'te
+xt/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'http
+s://ssl' : 'http://www <http://www/>') + '.google-analytics.com/ga.js
+<http://google-analytics.com/ga.js>';
+   var s = document.getElementsByTagName('script')[0]; s.pa <http://s.pa/>
+rentNode.insertBefore(ga, s);
+ })();
+
+</script>
+</head>
+<body>
+<!-- header start-->
+<!-- wrapper start-->
+<div id="wrapper">
+<!-- mainContents start-->
+<div id="container">
+<div id="header">
+  <div id="headerInner">
+    <h1 id="logo"><a href="../index.html" title="ユーピーアール株式会社 カーシェアリング「カシェリ」">ユーピーアール株式会社 カーシェアリング「カシェリ」</a></h1>
+    <div id="headerContact">
+      <ul>
+        <li id="btnForm"><a href="../contact/index.html" title="お問合せフォーム">お問合せフォーム</a></li>
+        <li><img src="../images/headerTel.gif" alt="お気軽にお電話下さい。TEL:03-5405-7455" width="178" height="50" /></li>
+      </ul>
+    </div>
+    <div class="headerNav">
+      <ul class="headerNasvIn">
+        <li><a href="../news/index.html">新着情報</a></li>
+        <li><a href="../contact/index.html">お問合せ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- header end-->
+
+   <!-- TemplateBeginEditable name="Contents" -->
+  <div id="main">ここにコンテンツが入ります</div>
+   <!-- TemplateEndEditable -->
+    <!-- mainContents end-->
+  <!-- パンくず以下のコンテンツ end-->
+  </div>
+</div>
+<!-- mainContents end-->
+
+<!-- wrapper end-->
+<!-- footer start-->
+<div id="footer">
+  <div id="footerBg">
+      <div id="uprTop"><a href="http://www.upr-net.co.jp/" title="uprトップページへ">uprトップページへ</a></div>
+  </div>
+      <address id="copy">Copyright &copy; upr Corporation. 2010 All Rights Reserved.</address>
+</div>
+<!-- footer end-->
+</body>
+</html>

@@ -1,0 +1,865 @@
+@charset "utf-8";
+/*********************************************下層コンテンツ共通**********************************************/
+
+/*コンテンツ全体*/
+#main{
+	width:900px;
+	margin:0 auto;
+	clear:both;
+	text-align: center;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	}
+
+/*コンテンツ左部ブロック*/
+#leftBox{
+	width: 200px;
+	float: left;
+	text-align: left;
+}
+
+/*コンテンツ右部ブロック*/
+#rightBox{
+	width: 699px;
+	float: right;
+	text-align: left;
+}
+
+
+/*パンくずリスト*/
+#topicpath{
+	text-indent: 15px;
+	border-bottom:1px solid #d4d4d4;
+	height:28px;
+	margin: 0;
+	padding:25px 0 0 0;
+}
+
+
+/*コンテンツ全体*/
+#content{
+	width:664px;
+	margin:20px auto 40px auto;
+	text-align: left;
+}
+/*IE6以下*/
+*html #content{
+	margin-bottom:40px;
+}
+
+
+/*大見出し*/
+#content h2{
+	width:660px;
+	height:90px;
+	margin: 0 auto 20px auto;
+}
+
+/*中見出し*/
+#content h3{
+	background:#ffffff url(../common_images/h3_bg.gif) no-repeat left top;
+	width:660px;
+	height:25px;
+	margin: 0 auto 15px auto;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height: 1.8em;
+	text-indent: 15px;
+	text-align: left;
+}
+
+#content h3.bgnone{
+	background:none;
+	margin:0;
+	padding: 0;
+}
+
+
+/*小見出し*/
+#content h4{
+	width:auto;
+	margin: 0 auto 10px 10px;
+	font-weight:bold;
+	font-size:0.8em;
+	text-align: left;
+}
+#content h5{
+	margin: 0 10px 10px 10px;
+	font-size:0.8em;
+	font-weight: bold;
+}
+#content h6{
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size:0.8em;
+}
+
+/*テキスト設定*/
+.txt10{
+	font-size: 0.6em;
+	margin:0;
+}
+.txt_center{
+	text-align:center;
+}
+.txt_right{
+	text-align:right;
+}
+
+
+/*マージン*/
+.mar10{
+	margin:10px;
+}
+.mar_b20{
+	margin:0 0 20px 0;
+}
+.mar_b30{
+	margin:0 0 30px 0;
+}
+.mar_b40{
+	margin:0 0 40px 0;
+}
+.mar_b50{
+	margin:0 0 50px 0;
+}
+.mar_b5{
+	margin:0 0 5px 0;
+}
+.mar_lr10{
+	margin:0 10px;
+}
+.mar_lr20{
+	margin:0 20px;
+}
+.mar_lrb10{
+	margin:0 10px 10px 10px;
+}
+
+/**/
+.border{
+	background:url(../common_images/line.gif) repeat-x;
+	display:block;
+	height:15px;
+	margin-bottom:20px;
+}
+
+/*==========================
+  トップ　index.html
+==========================*/
+/*メインビジュアル*/
+div#visual{
+	width:660px;
+	height:auto;
+	background: url(../images/businessTop.jpg) no-repeat;
+	margin: 0 auto 20px auto;
+}
+div#visual h2{
+	text-indent:-9999px;
+}
+div#visual p{
+	width: 325px;
+	padding: 25px 0 20px 23px;
+	margin: 0;
+}
+
+/*ご挨拶*/
+div#forBusiness{
+	width:660px;
+	_width: 660px;
+	margin: 0 auto 20px auto;
+	background: url(../images/aisatsuBgcenter.gif) repeat-y right top;
+}
+div#forBusinessInner{
+	background: url(../images/aisatsuBg.jpg) no-repeat right top;
+	border-bottom:1px solid #A9BBDA;
+	min-height:241px;
+	height: auto !important;
+	height: 241px;
+}
+div#forBusiness h3{
+	background: none;
+	text-indent:-9999px;
+	margin-bottom:10px;
+}
+div#forBusiness ul{
+	width: 350px;
+	padding: 12px 0 10px 23px;
+	margin: 0 0 0 8px;
+	list-style-type:circle;
+	font-size: 0.76em;
+}
+
+
+/*事業者向け情報（TOP）*/
+#b-info{
+	width: 664px;
+	height: auto;
+	margin: 15px auto 0 auto;
+	background: url(../images/newsBgcenter.gif) repeat-y;
+	clear: both;
+	position:relative;
+}
+#b-info h3{
+	text-indent:-9999px;
+	background: url(../images/title_news.gif) no-repeat;
+	height:34px;
+	margin:0;
+}
+
+#b-info p#info_txt{
+	background: url(../images/ico_ichiran.gif) no-repeat 96% center;
+	font-size: 0.6em;
+	position: absolute;
+	top: 12px;
+	left:0px;
+	float: right;
+	margin: 0;
+	width: 650px;
+	text-align: right;
+	text-indent: 10px;
+	padding: 2px 0;
+}
+
+#b-info p#info_txt a{
+	color:#464646;
+}
+#b-info p#info_txt a:hover{
+	color:#355DA8;
+}
+
+/*事業者向け情報（一覧）*/
+#b-info02{
+	width: 664px;
+	height: auto;
+	margin: 15px auto 30px auto;
+	clear: both;
+	position:relative;
+	min-height:200px;
+	height: auto !important;
+	height: 200px;
+}
+
+#b-info02 h3{
+	height:34px;
+	margin:0 0 5px 0;
+}
+#b-info dl,#b-info02 dl{
+	margin:0;
+	color:#656668;
+	font-size: 0.76em;
+	line-height:2em;
+	text-align:left;
+}
+
+#b-info dl dt,#b-info02 dl dt{
+	float: left;
+	width: auto;
+	text-indent:10px;
+	background: url(../images/news_list.gif) no-repeat left center;
+	padding:5px 5px 0 5px;
+	margin:0 0 0 15px;
+	clear:both;
+}
+*html #b-info dl dt,#b-info02 dl dt{/*IE6以下のみ適用*/
+	margin:0 0 0 7px;
+}
+
+
+#b-info dl dd,#b-info02 dl dd{
+	margin:0px 10px;
+	line-height:140%;
+	padding:5px;
+	line-height:1.5em;
+	background: url(../images/news_line.gif) repeat-x left bottom;
+}
+#b-info dl dd a,#b-info02 dl dd a{
+	line-height:140%;
+}
+
+#b-info dl dd,#b-info02 dl dd a{
+	line-height:1.5em;
+}
+
+
+#b-info dl dd.kiji_end,#b-info02 dl dd.kiji_end{
+	background: none;
+}
+
+/* ニュース一覧アーカイブ*/
+#page01{
+	width:664px;
+	height:25px;
+	clear:both;
+	margin:0px 0px 20px auto;
+	float: right;
+}
+.next{
+	width:200px;
+	float:right;
+	margin: 0px 0px 0px 10px;
+	text-align: right;
+}
+
+
+/*==========================
+  サービス紹介　service/index.html
+==========================*/
+.serviceBg01{
+	background:url(../service/images/img_asp.jpg) no-repeat right top;
+	margin: 10px 10px 20px 0;
+	min-height:188px;
+	height: auto !important;
+	height: 188px;
+}
+
+.serviceBg01 h4.h4_01{
+	background: url(../service/images/h4_ti01.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:307px;
+	height:45px;
+	text-indent:-9999px;
+}
+.serviceBg02{
+	background: url(../service/images/img_soudan.jpg) no-repeat 100% 80%;
+	margin: 10px 10px 20px 0;
+	min-height:250px;
+	height: auto !important;
+	height: 250px;
+}
+.serviceBg02 h4.h4_02{
+	background: url(../service/images/h4_ti02.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:379px;
+	height:20px;
+	text-indent:-9999px;
+}
+
+.serviceBg01 p,.serviceBg02 p{	padding: 0 330px 0 0;
+}
+/*==========================
+  導入事例　case/index.html
+==========================*/
+#content h4.bg02{
+	background:#ffffff url(../case/images/h4_bg02.gif) no-repeat left top;
+	height: 30px;
+	text-indent: 25px;
+	line-height: 2.3em;
+	margin:0 auto 10px auto;
+	width: 640px;
+}
+
+#content #menuBtn{
+	width:660px;
+	margin:0 auto;
+	text-align:center;
+}
+
+#content #menuBtn img{
+	width: 320px;
+	float:left;
+	height:100px;
+	margin:0 5px 15px 5px;
+	text-align:center;
+	border:0;
+}
+
+#content #menuBtn a:hover img{
+	opacity:0.5; /* opera firefox safari */
+	filter: alpha(opacity=50); /* ie */
+}
+
+#content #menuBtn:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	/*font-size: 0;footer隙間回避のため*/
+}
+
+table.case_table {
+	margin:0 auto 15px auto;
+	width: 640px;
+	border-collapse: collapse;
+	border: solid 1px #cccccc;
+	font-size: 0.76em;
+}
+table.case_table02 {
+	margin:0 auto;
+	width: 640px;
+	border-collapse: collapse;
+	border: solid 1px #cccccc;
+	font-size: 0.76em;
+}
+table.case_table caption,table.case_table02 caption {
+  margin-top: 1em;
+  text-align: left;
+}
+table.case_table th,
+table.case_table td,
+table.case_table02 th,
+table.case_table02 td{
+  border: solid 1px #999;
+  padding: 5px;
+}
+table.case_table th,table.case_table02 th {
+  background: #2881B5;
+  text-align: center;
+  white-space: nowrap;
+  color: #ffffff;
+}
+table.case_table th.col,table.case_table02 th.col {
+	border-right: solid 1px #fff;
+}
+table.case_table td.logo,table.case_table02 td.logo {
+	text-align: center;
+	width:120px;
+}
+table.case_table td.company,table.case_table02 td.company {
+	text-align: left;
+	width:auto;
+}
+
+table.case_table td.company a,table.case_table02 td.company a {
+	color:#464646;
+}
+
+table.case_table td.erea,table.case_table02 td.erea {
+	text-align: left;
+	width:180px;
+}
+table.case_table td.free,table.case_table02 td.free {
+	text-align: left;
+	width:70px;
+}
+table.case_table td.logo a:hover img,table.case_table02 td.logo a:hover img{
+opacity:0.5; /* opera firefox safari */
+filter: alpha(opacity=50); /* ie */
+}
+
+.syousai_bnr{
+	margin:10px auto 0 auto;
+	width: 640px;
+}
+.syousai_bnr a:hover img{
+opacity:0.5; /* opera firefox safari */
+filter: alpha(opacity=50); /* ie */
+}
+
+
+/* シーン別検索*/
+#scene{
+	margin: 10px auto 30px auto;
+	padding:15px;
+	border: 5px solid #c0E3F0;
+	width:600px;
+	height: auto;
+}
+#scene ul {margin:0;height:58px;}
+#scene li {margin:0 10px 10px 0;list-style:none;display:inline;float: left;	height:24px;}
+#scene li a{
+	text-align: center;
+	display:block;
+	width: 100%;
+	height:24px;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+
+#scene li a{
+	text-align: center;
+	display:block;
+	width: 100%;
+	height:24px;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+
+#scene li.shigaichi {
+	background:url(../case/images/btn_shigaichi.gif) repeat-y left top;
+	width:78px;
+	height:24px;
+	text-indent:-9999px;
+	display:inline;
+}
+#scene li.jyutakugai {
+	background:url(../case/images/btn_jyutakugai.gif) repeat-y left top;
+	width:78px;
+	height:24px;
+	text-indent:-9999px;
+	display:block;
+}
+#scene li.danchi {
+	background:url(../case/images/btn_danchi.gif) repeat-y left top;
+	width:126px;
+	height:24px;
+	text-indent:-9999px;
+	display:block;
+}
+#scene li.manshion {
+	background:url(../case/images/btn_manshion.gif) repeat-y left top;
+	width:98px;
+	height:24px;
+	text-indent:-9999px;
+	display:block;
+}
+#scene li.universitas {
+	background:url(../case/images/btn_universitas.gif) repeat-y left top;
+	width:64px;
+	height:24px;
+	text-indent:-9999px;
+	display:block;
+}
+#scene li.rentacar {
+	background:url(../case/images/btn_rentacar.gif) repeat-y left top;
+	width:98px;
+	height:24px;
+	text-indent:-9999px;
+	display:block;
+}
+
+/* 事例詳細*/
+#content div.caseBox{
+	/*background:url(../case/images/case_flCenter.gif) repeat-y left top;*/
+	margin: 0 auto 45px auto;
+	position: relative;
+	padding: 15px;
+	border: 3px solid #6CB7E0;
+	clear: both;
+	width:604px;/*IE5.5以外*/
+	min-height:250px;
+	height: auto !important;
+	height: 250px;/*IE5.5以外*/
+}
+
+#content div.case{
+	height: 40px;
+	line-height: 2em;
+	font-size:1.1em;
+	margin:0 auto;
+	width: 640px;
+	clear: both;
+}
+#content div.case h5{
+	height: 30px;
+	line-height: 2em;
+	font-size:1.1em;
+	margin:0;
+	width: 520px;
+	float: left;
+}
+
+#content div.case h5 .keisyou{
+	font-size:0.8em;
+}
+
+#content div.case div{
+	float:right;
+	margin: 0 0 5px 0;
+	border:1px solid #cccccc;
+	width: 118px;
+	height: 38px;
+}
+#content div.case div a:hover img{
+opacity:0.5; /* opera firefox safari */
+filter: alpha(opacity=50); /* ie */
+}
+
+#content div.caseBox p.caseTxt01{
+	margin: 0 0 10px 0;
+	width:350px;
+}
+/*#content div.caseBox p.caseTxt02{
+	margin: 0 0 10px 245px;
+	width:350px;
+}*/
+
+#content div.caseBox p.caseLine{
+	background:#ffffff url(../case/images/case_line.gif) repeat-x left top;
+	padding:15px 0 0 0;
+	margin: 0;
+	width: 350px;
+}
+#content div.caseBox p.caseLine span{
+	font-weight:bold;
+	line-height: 1.5em;
+}
+/*#content div.caseBox p.caseLine02{
+	background:#ffffff url(../case/images/case_line.gif) repeat-x left top;
+	padding:10px 0 0 0;
+	margin: 0 0 0 245px;
+	width: 350px;
+}*/
+
+.caseImg01{
+	position:absolute;
+	top:10px;
+	left:375px;
+	z-index: 1;
+	margin: 0;
+}
+
+/*.caseImg02{
+	position:absolute;
+	top:10px;
+	left:15px;
+	z-index: 1;
+	height:310px;
+}*/
+
+
+/*ページトップ*/
+.pageTop02{
+	width: 640px;
+	height:12px;
+	text-indent: -9999px;
+	margin: 0 auto 30px auto;
+	clear: both;
+}
+.pageTop02 a{
+	display: block;
+	background: url(../case/images/pagetop.gif) no-repeat right top;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+	height:12px;
+	width: 84px;
+	float: right;
+}
+.pageTop02 a:hover{
+	background: url(../case/images/pagetop.gif) no-repeat right top;
+	height:12px;
+}
+
+/*閉じるボタン*/
+#close{
+	width: 664px;
+	height:30px;
+	text-indent: -9999px;
+	clear: both;
+}
+#close a{
+	display: block;
+	background: url(../case/images/close.gif) no-repeat center center;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+	height:30px;
+	width: 664px;
+	text-align: center;
+}
+#close a:hover{
+	background: url(../case/images/close.gif) no-repeat center center;
+	height:30px;
+}
+
+/*==========================
+  車載機紹介　equipment/index.html
+==========================*/
+#content div.siyouBox{
+	background:url(../equipment/images/siyouFl_ce.gif) repeat-y;
+	margin: 0 12px 20px 12px;
+}
+#content div.siyouBoxInnerL{
+	width: 310px;
+	margin: 0 10px 0 0;
+	float: left;
+}
+
+#content div.siyouBoxInnerR{
+	width:310px;
+	margin: 0 0px 0 10px;
+	float: left;
+}
+
+p.siyouBoxBtm{
+	clear: both;
+	height: 2px;
+	background: url(../equipment/images/siyouFl_bo.gif) no-repeat bottom;
+	font-size: 2px;
+	line-height: 2px;
+	margin: 0;
+	padding: 0;
+	width: 640px;
+}
+
+#content div.siyouBoxInnerL h4,#content div.siyouBoxInnerR h4{
+	margin: 0;
+	padding: 0;
+}
+#content div.siyouBoxInnerL h4.point01{
+	background:#ffffff url(../equipment/images/siyou01.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+#content div.siyouBoxInnerR h4.point02{
+	background:#ffffff url(../equipment/images/siyou02.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+#content div.siyouBoxInnerL h4.point03{
+	background:#ffffff url(../equipment/images/siyou03.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+#content div.siyouBoxInnerR h4.point04{
+	background:#ffffff url(../equipment/images/siyou04.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+#content div.siyouBoxInnerL h4.point05{
+	background:#ffffff url(../equipment/images/siyou05.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+#content div.siyouBoxInnerR h4.point06{
+	background:#ffffff url(../equipment/images/siyou06.gif) repeat-x left top;
+	width:310px;
+	height:50px;
+	text-indent:-9999px;
+}
+.pointTxt{
+	margin:0;
+	padding: 10px;
+}
+
+/*==========================
+  導入までの流れ　flow/index.html
+==========================*/
+/* 手続き*/
+#content h4.h4_pro01{
+	background:#ffffff url(../flow/images/h4_protocol01.gif) no-repeat left bottom;
+	margin: 0 auto 10px 10px;
+	width:640px;
+	height:30px;
+	text-indent:-9999px;
+}
+
+#content h4.h4_pro02{
+	background:#ffffff url(../flow/images/h4_protocol02.gif) no-repeat left bottom;
+	margin: 0 auto 10px 10px;
+	width:640px;
+	height:30px;
+	text-indent:-9999px;
+}
+#content h4.h4_pro03{
+	background:#ffffff url(../flow/images/h4_protocol03.gif) no-repeat left bottom;
+	margin: 0 auto 10px 10px;
+	width:640px;
+	height:30px;
+	text-indent:-9999px;
+}
+#content h4.h4_pro04{
+	background:#ffffff url(../flow/images/h4_protocol04.gif) no-repeat left bottom;
+	margin: 0 auto 10px 10px;
+	width:640px;
+	height:30px;
+	text-indent:-9999px;
+}
+#content h5.h5_pro01{
+	margin: 0 auto 10px 10px;
+	width:640px;
+
+}
+dl.protocol_List{
+	margin:0 20px 30px;
+	color:#656668;
+	font-size: 0.8em;
+	text-align:left;
+}
+dl.protocol_List dd{
+line-height:2em;
+}
+dl.protocol_List ul{
+margin:0 0 10px 30px;}
+
+/* 導入手順*/
+.flowBg{
+	background:#ffffff url(../flow/images/img_flow02.gif) no-repeat 95% bottom;
+	min-height:238px;
+	height: auto !important;
+	height: 238px;
+	width: auto;
+	margin: 0 0 30px 0;
+	clear: both;
+}
+/*.flowBg h4.h4_01{
+	background: url(../flow/images/h4_flow01.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:127px;
+	height:28px;
+	text-indent:-9999px;
+}
+.flowBg h4.h4_02{
+	background: url(../flow/images/h4_flow02.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:162px;
+	height:28px;
+	text-indent:-9999px;
+}
+.flowBg h4.h4_03{
+	background: url(../flow/images/h4_flow03.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:144px;
+	height:28px;
+	text-indent:-9999px;
+}
+.flowBg h4.h4_04{
+	background: url(../flow/images/h4_flow04.gif) no-repeat left top;
+	margin: 0 0 10px 0;
+	width:136px;
+	height:28px;
+	text-indent:-9999px;
+}*/
+.flowBg p{
+	padding: 0 300px 0 0;
+}
+
+
+/*==========================
+  サイトマップ　sitemap/index.html
+==========================*/
+.dl_sitemap{
+	width: 400px;
+	margin:35px auto 50px 10px;
+}
+.dl_sitemap dt{
+	margin:20px 0 5px 0;
+	padding:0 0 5px 0;
+	font-size:0.8em;
+	border-bottom:1px dotted #73C2D7;
+}
+.dl_sitemap dd{
+	text-indent:1em;
+	font-size:0.8em;
+	margin:0 0 5px 2px;
+	background: url(../common_images/ico_ichiran.gif) no-repeat left center;
+}
+.dl_sitemap dd a{
+	color:#464646;
+}
+
+/*==========================
+  個人情報保護方針　privacy/index.html
+==========================*/
+ul.privacy{
+	list-style-type:decimal;
+	margin:0px 0 30px 0;
+}
+ul.privacy02{
+	list-style-type:circle;
+	margin:0px 0 30px 0;
+}
+ul.privacy li,ul.privacy02 li{
+	font-size: 0.75em;
+	line-height:1.5em;
+	margin:5px 20px 5px 40px;
+	padding:0;
+}
+
+#borderFrame{
+	border:1px solid #355da8;
+	padding: 10px;
+	margin: 0 10px 0 10px;
+}

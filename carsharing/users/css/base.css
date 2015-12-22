@@ -1,0 +1,779 @@
+@charset "utf-8";
+
+/*初期化*/
+
+* {
+
+	margin : 0 ; padding : 0 ;
+
+	color:#464646;
+
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+
+	/*font-family: "ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3",Osaka, sans-serif;*/
+
+	font-size: 1.005em;
+
+	font-weight: normal;
+
+	line-height:1.3;
+
+	}
+
+
+
+html, body {height: 100%;}
+
+html{overflow-x: hidden;}
+
+
+
+/*文書全体*/
+
+body {
+
+	background:#ffffff url(../common_images/bodyBg.gif) repeat-x center top;
+
+	text-align: center;/*IE5.5対策*/
+
+}
+
+
+
+/*リスト*/
+
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+
+	margin:0; padding:0;
+
+}
+
+
+
+ul,li,dt,dd{
+
+	line-height:1.5em;
+
+}
+
+table{  font-size: 0.76em;}
+
+
+
+/*文章*/
+
+p{
+
+	margin: 0 10px 30px 10px;
+
+	font-size: 0.76em;
+
+	line-height:1.5;
+
+}
+
+
+
+/*文字の均等割付*/
+
+.justify{
+
+	text-align: justify; /* for modern browser */
+
+	text-justify: inter-ideograph; /* IE6～8 */
+
+}
+
+
+
+/*リンクテキスト*/
+
+a {
+
+	color:#fa991a;
+
+	text-decoration:none;
+
+}
+
+a:hover{
+
+	color:#EC6800;
+
+	text-decoration:underline;
+
+}
+
+
+a img{
+	border:none;
+	}
+
+
+
+
+
+/*********************************************ここからコンテンツ枠組み**********************************************/
+
+/*全体*/
+
+#wrapper{
+
+	width:908px;
+
+	text-align:center;
+
+	min-height: 100%;
+
+	margin:0 auto;
+
+	background:url(../common_images/wrapperFl_ce.gif) repeat-y center center;/*背景表示のために必要*/
+
+}
+
+
+
+/*全体のコンテナ*/
+
+#container{
+
+	padding: 0;
+
+	margin: 0 auto;
+
+	overflow:auto;
+
+	padding-bottom: 203px;/* must be same height as the footer */
+
+	width: auto;
+
+}
+
+
+
+/*\*/
+
+* html #container {
+
+	height: 1em;
+
+	overflow:visible;
+
+	}
+
+/**/
+
+
+
+/*Opera Fix*/
+
+body:before {/* thanks to Maleika (Kohoutec)*/
+
+content:"";
+
+height:100%;
+
+float:left;
+
+width:0;
+
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+
+}
+
+
+
+
+
+/*ヘッダー*/
+
+#header{
+
+	background:url(../common_images/bodyBg.gif) repeat-x left top;
+
+	height:150px;/*実寸130px＋下マージン20px*/
+
+	margin: 0 auto;
+
+}
+
+
+
+#headerInner{
+
+	width:908px;
+
+	height:80px;
+
+	text-align:center;
+
+	position:relative;
+
+	padding:0;
+
+	clear: both;
+
+	margin: 0 auto;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+}
+
+
+
+h1#logo{
+
+	width:360px;
+
+	height:70px;
+
+	background:#ffffff url(../common_images/logo.gif) repeat-x;
+
+	text-indent: -9999px;
+
+	position: absolute;
+
+	top: 13px;
+
+	left:0px;
+
+}
+
+
+
+h1#logo a{
+
+	display: block;
+
+	width: 100%;
+
+	height:70px;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+}
+
+
+
+/*ヘッダー部・お問い合わせ欄*/
+
+#headerContact{
+
+	width: 390px;
+
+	height:60px;
+
+	position: absolute;
+
+	top: 16px;
+
+	left: 536px;
+
+}
+
+
+
+#headerContact ul{
+
+	list-style-type: none;margin: 0;padding: 0;
+
+}
+
+
+
+#headerContact li{
+
+	float:left;width: auto;margin: 0;padding: 0;
+
+}
+
+
+
+#headerContact #btnForm {
+
+	text-indent: -9999px;background-position: 0 0;
+
+}
+
+
+
+#headerContact #btnForm a{
+
+	display: block;width:123px;height:49px;
+
+	background: url(../common_images/btn_contactform.gif) no-repeat;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+}
+
+
+
+#headerContact #btnForm a:hover{
+
+	background-position: -125px 0;height:49px;
+
+}
+
+
+
+h2#header_title{
+
+	width: 908px;
+
+	height: 37px;
+
+	margin: 13px 0 0 0;
+
+	text-indent: -9999px;
+
+	background:url(../common_images/menbers_title.png) no-repeat center bottom;
+
+}
+
+
+
+
+
+/*フッター*/
+
+#footer{
+
+	width:100%;
+
+	padding: 0;
+
+	margin:0 auto;
+
+	position: relative;
+
+	margin-top: -203px; /* negative value of footer height */
+
+	height:203px;
+
+	clear: both;
+
+}
+
+
+
+#footerBg{
+
+	background:url(../common_images/footerBg.gif) no-repeat center bottom;
+
+	width: 908px;
+
+	margin: 0 auto;
+
+	height: 203px;
+
+}
+
+
+
+#footerInner{
+
+	width:900px;
+
+	height:20px;
+
+	text-align:center;
+
+	margin:0 auto;
+
+	clear: both;
+
+}
+
+
+
+/*フッター部・ページトップ部分*/
+
+#carcherryTop{
+
+	width: 108px;
+
+	height:20px;
+
+	text-indent: -9999px;
+
+	float: left;
+
+}
+
+
+
+#carcherryTop a{
+
+	display: block;
+
+	background: url(../common_images/btn_carcherry_top.gif) no-repeat;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+	height:20px;
+
+}
+
+
+
+#carcherryTop a:hover{
+
+	background-position: 0 -20px;width: 108px;height:20px;
+
+}
+
+
+
+/*ページトップ*/
+
+#pageTop{
+
+	width: 108px;
+
+	height:20px;
+
+	text-indent: -9999px;
+
+	float:right;
+
+}
+
+
+
+#pageTop a{
+
+	display: block;
+
+	background: url(../common_images/btn_pagetop.gif) no-repeat;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+	height:20px;
+
+}
+
+
+
+#pageTop a:hover{
+
+	background-position: 0 -20px;width: 108px;height:20px;
+
+}
+
+		   
+
+/*フッターメニュー（グローバル）*/
+
+.footerNav01{
+
+	width: 860px;
+
+	margin:12px 24px;
+
+	text-align:left;
+
+	min-height:90px;
+
+	height: auto !important;
+
+	height: 90px;
+
+}
+
+	  
+
+.footerNav01 ul{
+
+	background:#F2A238 url(../common_images/footerLine.gif) repeat-y;
+
+	list-style-type: none;
+
+	display: block;
+
+	float:left;
+
+}
+
+	  
+
+.footerNav01 li{
+
+	/*width: 140px;*/
+
+	width: auto;
+
+	margin:5px 20px 10px 15px;
+
+	background: url(../common_images/footerMark01.gif) no-repeat left top;
+
+	font-size: 0.68em;
+
+	line-height:1.2em;
+
+	color:#FFFFFF;
+
+	text-indent:20px;
+
+}
+
+.footerNavIn01,.footerNavIn02 {
+
+	float: left;
+
+}
+
+.footerNav01 ul.footerNavIn02{
+
+	/*width: 160px;*/
+
+	width: auto;
+
+}
+
+ul.footerNavIn02 li{
+
+	margin-bottom: 0;
+
+	min-width:150px;
+
+	width: auto !important;
+
+	width: 150px;
+
+}
+
+
+
+.footerNav01 dl{
+
+	line-height:1.2em;
+
+	margin:5px 10px 5px 0;
+
+	color:#FFFFFF;
+
+	text-indent:20px;
+
+}
+
+.footerNavIn01 dt,.footerNavIn02 dt{
+
+	line-height:1.2em;
+
+	margin:5px 10px 0 0;
+
+}
+
+
+
+/*IE6以下用ハック*/
+
+
+
+
+
+.footerNav01 li a,.footerNav02 li a{
+
+	text-decoration:none;color:#FFFFFF;
+
+}
+
+.footerNav01 li a:hover,.footerNav02 li a:hover{
+
+	text-decoration:underline;color:#FFFFFF;
+
+}
+
+
+
+/*フッターメニュー（サイトマップ他）*/
+
+.footerNav02{
+
+	width: 860px;
+
+	margin:0 auto;
+
+	text-align:left;
+
+	clear: both;
+
+	height: 20px;
+
+}
+
+
+
+.footerNav02 ul{
+
+	width: 860px;
+
+	list-style-type: none;
+
+}
+
+
+
+.footerNav02 li{
+
+	margin:0 20px 0 0;
+
+	background: url(../common_images/footerMark02.gif) no-repeat left center;
+
+	font-size: 0.65em;
+
+	color:#FFFFFF;
+
+	text-indent: 10px;
+
+	float: left;
+
+}
+
+
+
+/*コピーライト*/
+
+address#copy{
+
+	clear:both;
+
+	width:860px;
+
+	margin: 10px auto 0 auto;
+
+	text-align: left;
+
+	text-indent:-9999px;
+
+	background: url(../common_images/copyright.gif) no-repeat;
+
+}
+
+
+
+	 
+
+/*ナビゲーション*/
+
+#globalNav{
+
+	width: 908px;
+
+	height:46px;
+
+	margin:0;
+
+	background: url(../common_images/glnv_bg.gif) no-repeat;
+
+	text-align:center;
+
+}
+
+
+
+#globalNav ul{
+
+	text-align:center;
+
+	padding-top: 15px;
+
+}
+
+
+
+#globalNav li{
+
+	display:inline;
+
+	font-size: 0.8em;
+
+	font-weight: bold;
+
+	}
+
+#globalNav li.li_txtM{
+
+	font-size: 0.7em;
+
+	font-weight: bold;
+
+	}
+
+
+
+#globalNav a{
+
+	padding:0.5em;
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+	color: #4C4C4C;
+
+	font-weight: bold;
+
+}
+
+#globalNav a:hover{
+
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+
+	color: #F2A238;
+
+}
+
+
+
+#globalNav a.li_active{
+
+	font-weight: bold;
+
+	color: #F2A238;
+
+}
+
+
+
+
+
+/*==========================
+
+  clearfix
+
+==========================*/
+
+/*↓float使用時のclearfix設定*/
+
+/* clearfix */
+
+
+
+.clearfix {
+
+  zoom: 1; /* for IE5.5 - IE7 */
+
+  }
+
+.clearfix:after { /* for modern browser */
+
+  content: ".";
+
+  display: block;
+
+  height: 0px;
+
+  clear: both;
+
+  visibility: hidden;
+
+  /*font-size: 0px;*/
+
+  }
+
+/*  */
+
+.clearBoth{
+
+clear:both;}
+

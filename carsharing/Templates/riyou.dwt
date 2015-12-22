@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ご利用方法・入会方法　｜　uprカーシェアリング システム</title>
+<!-- TemplateEndEditable -->
+<meta name="keywords" content="東京,福井,青森,カーシェアリング,レンタカー,会員制,コスト削減,車,共同利用,使った分だけ,駐車場不足の緩和,地球環境保全,インターネット,携帯電話,PHS" />
+<meta name="description" content="株式会社uprのカーシェアリングのHPです。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="all" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<!-- TemplateBeginEditable name="head" -->
+<link rel="stylesheet" href="../css/contents-style.css" type="text/css" media="all" />
+<link href="../css/other_dropdownmenu.css" rel="stylesheet" type="text/css" />   
+<script type="text/javascript" src="../js/dropdownmenu.js"></script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a>
+<div class="main-body">
+
+<!--ヘッダー　START-->
+	<h1><a href="../index.html"><img src="../images/logo01.gif" alt="uprカーシェアリング システム" width="500" height="82" /></a></h1>
+	<div class="header">
+      <div align="center"><a href="https://210.226.226.169/upr/"><br />
+            <img src="../images/car-yoyaku.gif" alt="車両予約" width="87" height="38" align="bottom" /></a> </div>
+  </div>
+	<!--ヘッダー　END-->
+
+<!--メインメニュー　START-->
+	<ul id="other_menu">   
+		<li class="other_menu01" title="トップ"><a href="../index.html">トップ</a></li>   
+		<li><a href="https://210.226.226.169/upr/" id="mmenu1" onmouseover="mopen(1);" onmouseout="mclosetime();" title="車両を予約する" class="other_menu02">車両を予約する</a></li>     
+<li><a href="../tokutyou.html" id="mmenu2" onmouseover="mopen(2);" onmouseout="mclosetime();" title="事業を始めたい方" class="other_menu03">事業を始めたい方</a>   
+			<div class="submenu" id="menu2" onmouseover="mcancelclosetime()" onmouseout="mclosetime();">   
+				<a href="../tokutyou.html">uprCSSの特徴</a>   
+				<a href="../kinou.html">主な機能紹介</a>
+				<a href="../system.html">課金システム</a>
+            </div>   
+		</li>     
+		<li><a href="../riyou.html" id="mmenu3" onmouseover="mopen(3);" onmouseout="mclosetime();" title="車を利用したい方" class="other_menu04">車を利用したい方</a>   
+			<div class="submenu" id="menu3" onmouseover="mcancelclosetime()" onmouseout="mclosetime();">   
+				<a href="../riyou.html">ご利用方法</a>   
+				<a href="../ryoukin.html">料金プラン</a>
+				<a href="../station.html">駐車ステーション</a>
+            </div>   
+		</li>     
+    	<li class="other_menu05" title="お問い合わせ"><a href="../inq.html">お問い合わせ</a></li>
+	</ul>  
+<!--メインメニュー　END-->
+
+<div class="main-contents-riyou">
+
+<!--左コンテンツ　START-->
+	<div class="contents_left-riyou">
+    	<ul class="left_menu-riyou">
+        	<li class="left_menu-riyou01"><a href="../riyou.html">ご利用方法</a></li>
+        	<li class="left_menu-riyou02"><a href="../ryoukin.html">料金プラン</a></li>
+        	<li class="left_menu-riyou03"><a href="../station.html">駐車ステーション</a></li>
+        </ul>
+    	<ul class="left_bunner">
+        	<li><a href="http://www.upr-net.co.jp/index.htm" target="_blank"><img src="../images/upr_bunner.gif" alt="ユーピーアール株式会社" width="200" height="54" /></a></li>
+			<li></li>
+		  <li><img src="../images/keitai.jpg" alt="携帯サイトQRコード" width="200" height="131" /></li>
+		</ul>
+    </div>
+<!--左コンテンツ　END-->
+
+<!--右コンテンツ　START-->
+	<div class="contents_right">
+
+<!-- TemplateBeginEditable name="contents_right" -->
+<!--ご利用方法　START-->
+		<h2 class="riyou_title01">ご利用方法</h2>
+		<h3 class="riyou_title02">予約</h3>
+        	<dl class="riyou_dl01">
+            	<dt><img src="../images/riyou/riyou_img01.gif" alt="パソコン・携帯のイラスト" width="246" height="127" /></dt>
+                <dd>パソコン・携帯電話から予約をする。</dd>            
+                <dd class="end">パソコンからは上部メニュー及び右上のMember Loginから<br />携帯は、こちらのQRコードからどうぞ<br /><img src="../images/riyou/qr_code.jpg" alt="qrコード" /></dd>            
+      </dl>
+            
+		<h3 class="riyou_title03">利用開始</h3>
+			<dl class="riyou_dl02">
+				<dt><img src="../images/riyou/riyou_img02.gif" alt="パソコン・携帯のイラスト" width="388" height="498" /></dt>
+                <dd>携帯電話からＩＤ・パスワードを入力する。</dd>            
+                <dd class="second">車のハザードが２回点滅し<br />ドアロックが解除される。</dd>            
+                <dd class="end">グローボックスの中のキーを取り出し<br />エンジンを始動させる。</dd>            
+			</dl>
+            
+		<h3 class="riyou_title04">利用終了</h3>
+        	<dl class="riyou_dl03">
+            	<dt><img src="../images/riyou/riyou_img03.gif" alt="パソコン・携帯のイラスト" width="388" height="498" /></dt>
+                <dd>エンジンを停止し<br />グローボックスにキーを戻す。</dd>            
+                <dd class="second">車から降りて<br />携帯電話からＩＤ・パスワードを入力する。</dd>            
+                <dd class="end">車のハザードが１回点滅しドアロック！</dd>            
+            </dl>
+<!--ご利用方法　END-->
+
+<p class="totop"><a href="#top">▲このページのトップへ</a></p>
+
+<!--入会方法　START-->
+		<h2 class="riyou_title01">入会方法</h2>
+		<h3 class="riyou_title05">入会申込</h3>
+        	<p class="riyou_p01">入会申込書に必要事項を記入し、提出してください。</p>
+            <dl class="riyou_dl04">
+            	<dt>＜申込みに必要なもの＞</dt>
+                <dd><img src="../images/riyou/riyou_img04.gif" alt="運転免許証" width="350" height="99" /><img src="../images/riyou/riyou_img05.gif" alt="クレジットカード（カード決済希望者のみ）" width="300" height="99" /></dd>
+            </dl>
+
+		<h3 class="riyou_title06">会員登録</h3>
+   	  <p class="riyou_p01">車両利用の際必要となるログインＩＤとパスワードを発行し、システムに会員登録します。</p>
+			<dl class="riyou_dl04">
+   			  <dt>＜登録時にお渡しするもの＞</dt>
+				<dd><img src="../images/riyou/riyou_img06.gif" alt="運転免許証" width="350" height="99" /><img src="../images/riyou/riyou_img07.gif" alt="クレジットカード（カード決済希望者のみ）" width="300" height="99" /></dd>
+            </dl>
+
+		<h3 class="riyou_title07">操作説明</h3>
+        	<img src="../images/riyou/riyou_title08.gif" alt="このシステムを利用するには、あらかじめ会員登録が必要です。" width="562" height="33" class="riyou_img01" />
+            
+      <dl class="riyou_dl04">
+       	<dt>＜車両の予約＞</dt>
+				<dd>利用者が、パソコンや携帯電話で、空いている車両を選択し、予約を入れられます。</dd>
+            </dl>
+            <img src="../images/riyou/riyou_img08.gif" alt="パソコンの場合　乗りたい車両を選んで、利用した時間を予約します。" width="618" height="280" class="riyou_img02" />
+            <img src="../images/riyou/riyou_img09.gif" alt="パソコンの場合　乗りたい車両を選んで、利用した時間を予約します。" width="618" height="293" class="riyou_img02" />
+
+            <dl class="riyou_dl04">
+            	<dt>＜車両のドアロックと鍵の管理＞</dt>
+            	<dd>携帯電話で利用開始処理を行うと、車両のドアロックが解除されます。<br />（同様に、携帯電話で利用終了処理を行うと、ドアロックされます。）</dd>
+            </dl>
+            <img src="../images/riyou/riyou_img10.gif" alt="携帯電話でＩＤ・パスワードを入力で利用開始→ハザード2回点滅し、ドアロックが解除" width="633" height="100" class="riyou_img02" />
+            <dl class="riyou_dl04">
+            	<dt></dt>
+            	<dd>エンジンキーは、車両内のグローボックス内等にあります。</dd>
+            </dl>
+            <img src="../images/riyou/riyou_img11.gif" alt="エンジンキーは、グローボックス内等にあります。" width="633" height="185" class="riyou_img02" />
+<!--入会方法　END-->
+
+<p class="totop02"><a href="#top">▲このページのトップへ</a></p>
+<!-- TemplateEndEditable -->
+
+    </div>
+<!--右コンテンツ　END-->
+
+</div><!--main-contents-->           
+
+<!--フッターメニュー　START-->
+  <p class="footer_menu"><a href="../index.html">TOP</a>｜<a href="../sharing.html">カーシェアリングとは</a>｜<span class="footer_menu01"><a href="../riyou.html">車を利用したい方</a></span>｜<span class="footer_menu01"><a href="../tokutyou.html">事業を始めたい方</a></span>｜<a href="../news.html">ニュース・トピックス</a>｜<a href="http://uprcs.grouptube.jp/" target="_blank">uprCSログイン</a>｜<a href="../inq.html">お問い合わせ</a></p>
+<!--フッターメニュー　END-->
+
+	<address>Copyright (C) upr Corporation. 2007 All Rights Reserved.</address>
+
+</div><!--main-body-->
+</body>
+</html>

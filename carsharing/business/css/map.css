@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- hidden ONLY if CSS is enabled.  If disabled, image is rendered ---------- */
+#map{
+	margin:0 auto 50px auto;
+	width: 516px;
+}
+
+img.image{ display: none; }
+
+dl#kenMap{
+	margin: 0 auto;
+	padding: 0;
+	background: transparent url(../case/images/map.gif) 0px -357px no-repeat;
+	height: 357px;
+	width: 516px;
+	position: relative;
+}
+
+dt{ margin: 0; padding: 0; position: absolute; font-size: 85%; display: none; }
+dd{ margin: 0; padding: 0; position: absolute;  font-size: 85%; }
+
+/* ---------- Hotspot Declarations ---------- */
+dd#hokkaidoDef{ top: 2px; left: 82px;}
+dd#hokkaidoDef a{ position: absolute; width: 150px; height: 115px; text-decoration: none;}
+dd#hokkaidoDef a span{ display: none; }
+/*↓各数値はddのleft値、地図の画像のheight値（357px）×2＋ddのtop値*/
+dd#hokkaidoDef a:hover{ position: absolute; background: transparent url(../case/images/map.gif) -82px -716px no-repeat;}
+dd#hokkaidoDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#ibarakiDef{ top: 162px; left: 465px;}
+dd#ibarakiDef a{ position: absolute; width: 40px; height: 60px; text-decoration: none;}
+dd#ibarakiDef a span{ display: none; }
+/*↓各数値はddのleft値、地図の画像のheight値（357px）×2＋ddのtop値*/
+dd#ibarakiDef a:hover{ position: absolute; background: transparent url(../case/images/map.gif) -465px -876px no-repeat;}
+dd#ibarakiDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#saitamaDef{	top: 208px;	left: 385px;}
+dd#saitamaDef a{position: absolute;width: 79px;height: 39px;text-decoration: none;}
+dd#saitamaDef a span{ display: none; }
+dd#saitamaDef a:hover{ background: transparent url(../case/images/map.gif) -385px -922px no-repeat; }
+dd#saitamaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#chibaDef{ top: 222px; left: 465px;}
+dd#chibaDef a{ position: absolute; width: 40px;	height: 105px; text-decoration: none;}
+dd#chibaDef a span{ display: none; }
+dd#chibaDef a:hover{ position: absolute; background: transparent url(../case/images/map.gif) -465px -936px no-repeat;}
+dd#chibaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#tokyoDef{ top: 247px; left: 410px; }
+dd#tokyoDef a{position: absolute;width: 56px;height: 35px;	text-decoration: none;}
+dd#tokyoDef a span{ display: none; }
+dd#tokyoDef a:hover{ background: transparent url(../case/images/map.gif) -410px -961px no-repeat; }
+dd#tokyoDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#kanagawaDef{ top: 282px; left: 410px; }
+dd#kanagawaDef a{position: absolute;width: 56px;height: 35px;	text-decoration: none;}
+dd#kanagawaDef a span{ display: none; }
+dd#kanagawaDef a:hover{ background: transparent url(../case/images/map.gif) -410px -996px no-repeat; }
+dd#kanagawaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#yamanashiDef{ top: 247px; left: 370px; }
+dd#yamanashiDef a{position: absolute;width: 40px;height: 35px;	text-decoration: none;}
+dd#yamanashiDef a span{ display: none; }
+dd#yamanashiDef a:hover{ background: transparent url(../case/images/map.gif) -370px -961px no-repeat; }
+dd#yamanashiDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#shizuokaDef{ top: 282px; left: 360px;}
+dd#shizuokaDef a{position: absolute;width: 51px;height: 44px;text-decoration: none;}
+dd#shizuokaDef a span{ display: none; }
+dd#shizuokaDef a:hover{ background: transparent url(../case/images/map.gif) -360px -996px no-repeat; }
+dd#shizuokaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#aichikDef{ top: 282px; left: 320px; }
+dd#aichikDef a{ position: absolute; width: 40px; height: 44px; text-decoration: none; }
+dd#aichikDef a span{ display: none; }
+dd#aichikDef a:hover{ background: transparent url(../case/images/map.gif) -320px -996px no-repeat; }
+dd#aichikDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#osakaDef{ top: 247px; left: 245px; }
+dd#osakaDef a{ position: absolute; width: 24px; height: 55px; text-decoration: none; }
+dd#osakaDef a span{ display: none; }
+dd#osakaDef a:hover{ background: transparent url(../case/images/map.gif) -245px -961px no-repeat; }
+dd#osakaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#kyotoDef{ top: 180px; left: 245px; }
+dd#kyotoDef a{ position: absolute; width: 50px; height: 67px; text-decoration: none; }
+dd#kyotoDef a span{ display: none; }
+dd#kyotoDef a:hover{ background: transparent url(../case/images/map.gif) -245px -894px no-repeat; }
+dd#kyotoDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#hiroshimaDef{ top: 223px; left: 154px; }
+dd#hiroshimaDef a{ position: absolute; width: 30px; height: 42px; text-decoration: none; }
+dd#hiroshimaDef a span{ display: none; }
+dd#hiroshimaDef a:hover{ background: transparent url(../case/images/map.gif) -154px -937px no-repeat; }
+dd#hiroshimaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#yamaguchiDef{ top: 180px; left: 126px; }
+dd#yamaguchiDef a{ position: absolute; width: 29px; height: 89px; text-decoration: none; }
+dd#yamaguchiDef a span{ display: none; }
+dd#yamaguchiDef a:hover{ background: transparent url(../case/images/map.gif) -126px -894px no-repeat; }
+dd#yamaguchiDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#kagawaDef{ top: 280px; left: 178px; }
+dd#kagawaDef a{ position: absolute; width: 54px; height: 33px; text-decoration: none; }
+dd#kagawaDef a span{ display: none; }
+dd#kagawaDef a:hover{ background: transparent url(../case/images/map.gif) -178px -994px no-repeat; }
+dd#kagawaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#ehimeDef{ top: 280px; left: 126px; }
+dd#ehimeDef a{ position: absolute; width: 52px; height: 33px; text-decoration: none; }
+dd#ehimeDef a span{ display: none; }
+dd#ehimeDef a:hover{ background: transparent url(../case/images/map.gif) -126px -994px no-repeat; }
+dd#ehimeDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+/*
+dd#hukuokaDef{ top: 180px; left: 51px; }
+dd#hukuokaDef a{ position: absolute; width: 60px; height: 43px; text-decoration: none; }
+dd#hukuokaDef a span{ display: none; }
+dd#hukuokaDef a:hover{ background: transparent url(../case/images/map.gif) -51px -894px no-repeat; }
+dd#hukuokaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+*/
+
+
+dd#kumamotoDef{ top: 225px; left: 51px; }
+dd#kumamotoDef a{ position: absolute; width: 29px; height: 80px; text-decoration: none; }
+dd#kumamotoDef a span{ display: none; }
+dd#kumamotoDef a:hover{ background: transparent url(../case/images/map.gif) -51px -939px no-repeat; }
+dd#kumamotoDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#nagasakiDef{ top: 180px; left: 6px; }
+dd#nagasakiDef a{ position: absolute; width: 21px; height: 51px; text-decoration: none; }
+dd#nagasakiDef a span{ display: none; }
+dd#nagasakiDef a:hover{ background: transparent url(../case/images/map.gif) -6px -894px no-repeat; }
+dd#nagasakiDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+/* ---------- Hotspot Declarations ---------- */
+dd#aomoriDef{ top: 2px; left: 381px;}
+dd#aomoriDef a{ position: absolute; width: 121px; height: 35px; text-decoration: none;}
+dd#aomoriDef a span{ display: none; }
+/*↓各数値はddのleft値、地図の画像のheight値（357px）×2＋ddのtop値*/
+dd#aomoriDef a:hover{ position: absolute; background: transparent url(../case/images/map.gif) -381px -716px no-repeat;}
+dd#aomoriDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	bottom: 100%;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+dd#sagaDef{ top: 180px; left: 25px; }
+dd#sagaDef a{ position: absolute; width: 21px; height: 51px; text-decoration: none; }
+dd#sagaDef a span{ display: none; }
+/*↓各数値はddのleft値、地図の画像のheight値（357px）×2＋ddのtop値*/
+dd#sagaDef a:hover{ background: transparent url(../case/images/map.gif) -25px -894px no-repeat; }
+dd#sagaDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+
+dd#totoriDef{ top: 180px; left: 182px; }
+dd#totoriDef a{ position: absolute; width: 29px; height: 42px; text-decoration: none; }
+dd#totoriDef a span{ display: none; }
+dd#totoriDef a:hover{ background: transparent url(../case/images/map.gif) -182px -894px no-repeat; }
+dd#totoriDef a:hover span{
+	display: block;
+	text-indent: 0;
+	vertical-align: top;
+	color: #000;
+	background-color: #F4F4F4;
+	position: absolute;
+	border: 1px solid #BCBCBC;
+	top: 100%;
+	left: 1px;
+	margin: 0;
+	padding: 5px;
+	width: 100px;
+	font-size: 0.8em;
+}
+

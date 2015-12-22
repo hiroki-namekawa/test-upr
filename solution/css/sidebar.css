@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*****************************************/
+/*** Side Bar ***/
+/*****************************************/
+
+#sidebar ul {
+	margin-bottom: 20px;
+}
+
+#sidebar ul li {
+	background:url(../img_com/arrow_gray.png) 0 6px no-repeat;
+	padding:0 0 0 15px;
+	list-style:none;
+	margin-bottom:10px;
+	line-height:1.4;
+	font-size:90%;
+}
+
+#sidebar p {
+	margin-bottom: 20px;
+}
+

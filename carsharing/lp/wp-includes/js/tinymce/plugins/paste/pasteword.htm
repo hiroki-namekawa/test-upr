@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#paste.paste_word_desc}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js?ver=3392"></script>
+	<script type="text/javascript" src="js/pasteword.js?ver=3392"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31234214-1']);
+  _gaq.push(['_setDomainName', 'upr-net.co.jp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();
+
+</script>
+
+</head>
+<body onresize="PasteWordDialog.resize();" style="display:none; overflow:hidden;">
+	<form name="source" onsubmit="return PasteWordDialog.insert();" action="#">
+		<div class="title">{#paste.paste_word_desc}</div>
+
+		<div>{#paste_dlg.word_title}</div>
+
+		<div id="iframecontainer"></div>
+
+		<div class="mceActionPanel">
+			<div style="float: left">
+				<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			</div>
+
+			<div style="float: right">
+				<input type="submit" id="insert" name="insert" value="{#insert}" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>

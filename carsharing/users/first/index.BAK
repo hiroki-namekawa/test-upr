@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/users_base.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content="カーシェアリング,カーシェア,西新宿,新橋,浜松町,つくば" lang="ja" />
+<meta name="description" content="レンタカーより安くて便利、ユーピーアールは、車両を利用したい方やカーシェアリング事業をお考えの方を募集しております。会員になってしまえば、携帯電話やパソコンで自動車の空き状況を把握し、30分からの車両利用の予約が出来ます。" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>ユーピーアール株式会社 カーシェアリング「カシェリ」 会員様用サイト | 入会方法</title>
+<!-- InstanceEndEditable -->
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/contents.css" rel="stylesheet" type="text/css" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="../css/form.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="ie5" -->
+<!--[if IE 5]>
+<link rel="stylesheet" type="text/css" href="../css/ie5.css">
+<![endif]-->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="print_fx" -->
+<script type="text/javascript">
+var firefox = (navigator.userAgent.indexOf("Firefox") != -1)? true : false;
+if(firefox) document.write('<link rel="stylesheet" type="text/css" media="print" href="../css/print_fx.css" />');
+</script>
+<!-- InstanceEndEditable -->
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrapper {display:table;height:100%}
+	</style>
+<![endif]-->
+
+<script src="../js/prototype.js" type="text/javascript"></script>
+<script src="../js/effects.js" type="text/javascript"></script>
+<script src="../js/accordion.js" type="text/javascript"></script>
+<script src="../js/auto-scroll.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery-latest.pack.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+var j$ = jQuery;
+</script>
+<script type="text/javascript" src="../js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript">
+j$(document).ready(function(){
+j$(document).pngFix();
+});
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- wrapper start-->
+<div id="wrapper">
+ <div id="container">
+   <!-- header start-->
+    <div id="header">
+     <div id="headerInner">
+       <h1 id="logo"><a href="../index.html" title="ユーピーアール株式会社 会員様サイト">ユーピーアール株式会社 会員様サイト</a></h1>
+       <div id="headerContact">
+        <ul>
+         <li id="btnForm"><a href="../contact/index.html" title="お問い合わせフォーム">お問い合わせフォーム</a></li>
+         <li><img src="../common_images/headerTel.gif" alt="お気軽にお電話下さい。TEL:03-5405-7455" width="245" height="60" /></li>
+        </ul>
+       </div>
+     </div>
+       <h2 id="header_title" style="width:900px;height:37px;background: url(../common_images/menbers_title.png);">会員様用TOPページ&nbsp;for&nbsp;users</h2>
+
+    </div>
+   <!-- header end-->
+      <!-- globalnavi start-->
+     <!-- InstanceBeginEditable name="GlobalNav" -->
+      <div id="globalNav">
+       <ul>
+         <li><a href="../index.html">TOP</a></li>
+         <li><a href="index.html" class="li_active">入会方法</a></li>
+         <li><a href="../guide/index.html">利用方法</a></li>
+         <li class="li_txtM"><a href="../station/hamamatsu_tyo.html">浜松町ステーション</a></li>
+         <li class="li_txtM"><a href="../station/shinbashi.html">新橋ステーション</a></li>
+         <li class="li_txtM"><a href="../station/tsukuba.html">つくばステーション</a></li>
+         <li class="li_txtM"><a href="../station/ube.html">宇部ステーション</a></li>
+       </ul>
+      </div>
+     <!-- InstanceEndEditable -->
+     <!-- globalnavi end-->
+    <!-- mainContents start-->
+   <div id="main" class="clearfix">
+   <!-- Contents start-->
+     <p class="mainBoxTop">&nbsp;</p>
+     <!-- InstanceBeginEditable name="Contents" -->
+     <div class="mainBoxInner">
+       <p id="topicpath"><a href="../index.html">トップページ</a>&nbsp;&gt;&nbsp;入会方法</p>
+        <!-- パンくず以下のコンテンツ start-->
+         <div id="content" class="clearfix">
+          <h2><img src="images/title_first.gif" alt="入会方法" width="870" height="80" /></h2>
+           <h3>入会について</h3>
+            <p class="justify">カシェリを初めてご利用いただく場合、まずはじめにカシェリ会員への入会をお願いいたします。<br />ご入会いただきますと、Web（携帯Web を含む）にて車両の利用予約が可能となり、お気軽にカシェリをご利用いただけます。<br />入会方法はオンライン・郵送・対面式の3タイプございますので、ご利用しやすい形式を選択ください。<br />なお、ご入会の際には必ず<a href="#kiyaku">規約・約款</a>のご確認をお願いいたします。</p>
+           <h3>必要書類・入会条件</h3>
+            <h4 style="font-weight:normal;">◎必要書類</h4>
+             <ul class="first01">
+              <li>運転免許書のコピー</li>
+              <li>ご本人様名義のクレジットカード（VISA, Master）</li>
+             </ul>
+            <h4 style="font-weight:normal;">◎入会条件</h4>
+             <ul class="first02">
+              <li>満18歳以上である方</li>
+              <li>過去2年以内に重大事故、重大違反がない方</li>
+              <li>ご本人名義のクレジットカード（VISA、Master）で決済が可能な方
+                <ul class="first03">
+                          
+                </ul>
+              </li>
+              <li>弊社利用規約に同意頂ける方</li>
+              <li>携帯電話（スマートフォンを含む）、及びその携帯メールアドレスをお持ちの方</li>
+             </ul>
+           <div id="kiyaku"></div>
+           <h3>規約・約款</h3>
+             <div id="kiyakuBox" class="clearfix">
+               <iframe scrolling="auto" frameborder="0" marginheight="0" marginwidth="0" src="kiyaku.html" width="810" height="176"></iframe>
+             </div>
+
+        <!--入会方法のボタン-->
+           <div id="linkBnrBox">
+             <ul>
+               <li id="online"><a href="#online_o" title="オンラインでのお申込">オンラインでのお申込</a></li>
+               <li id="yusou"><a href="#yusou_o" title="郵送でのお申込">郵送でのお申込</a></li>
+               <li id="taimen"><a href="#taimen_o" title="対面でのお申込">対面でのお申込</a></li>
+             </ul>
+           </div>
+
+
+           <h3>入会の流れ</h3>
+             <h4 class="flow" id="online_o">オンライン申込</h4>
+               <h5 class="flow01">規約・約款のご確認</h5>
+                 <p class="flowArrow">上記規約・約款をご確認のうえ、登録手続きへ進んでください。</p>
+         <h5 class="flow02">入会申込フォームに必要事項をご入力</h5>
+                 <p class="flowArrow">運転免許書のコピーは500KB以下のサイズのPDFもしくはJPGで添付してください。</p>
+               <h5 class="flow03">ユーピーアール株式会社にて確認</h5>
+                 <p class="flowArrow">お申し込み情報の確認後、弊社スタッフから（電子）メールにて連絡させていただきます。</p>
+               <h5 class="flow04">利用開始</h5>
+                 <p class="flowEnd">登録完了後、パソコンまたは携帯電話を使い、弊社より発行されるユーザIDで専用Webサイトにログインして頂ければ、車両の予約が出来ます。</p>
+              <div id="btn_online"><a href="ol.html">オンライン入会申込はこちら</a></div>
+
+           <h4 class="flow" id="yusou_o">郵送申込</h4>
+               <h5 class="flow01">規約・約款のご確認</h5>
+             <p class="flowArrow">上記規約・約款をご確認のうえ、登録手続きへ進んでください。</p>
+         <h5 class="flow02">入会申込用紙のご記入・送付</h5>
+                 <div class="flowArrow">
+                  <p>登録申込書に必要事項をご記入いただき、下記の資料を送付先までお送りください。</p>
+                   <ul class="list">
+                    <li>登録申込書</li>
+                    <li>運転免許書のコピー</li>
+                   </ul>
+                  <p>【送付先】<br />〒105-0004　東京都港区新橋6-9-4　新橋六丁目ビル4F<br /> ユーピーアール(株)  カーシェアリング事業本部  カシェリ入会受付窓口 宛<br />※大変申し訳有りませんが、送付送料は、お客様でご負担下さい。</p>
+                 </div>
+               <h5 class="flow03">ユーピーアール株式会社にて確認</h5>
+                 <p class="flowArrow">申込書到着次第、弊社スタッフよりご連絡させていただきます。</p>
+               <h5 class="flow04">利用開始</h5>
+                 <p class="flowEnd">登録完了後、パソコンまたは携帯電話を使い、弊社より発行されるユーザIDで専用Webサイトにログインして頂ければ、車両の予約が出来ます。</p>
+              <div id="btn_touroku"><a href="pdf/carcharing_nyukai.pdf" target="_blank">登録申込書はこちら</a></div>
+              
+           <h4 class="flow" id="taimen_o">対面での申込</h4>
+                 <p style="margin-left:40px;">弊社へお越しいただき、直接お申し込み頂く方法です。<br />最初に03-5405-7455（ユーピーアール株式会社カーシェアリング事業本部）へご連絡ください。<br />※受付・時間 9 ：00?17：00（ただし、土日・祝日・年末年始を除く）<br />面談日程をセッティングさせていただきます。</p>
+        </div>     
+        
+       
+        
+        <!-- パンくず以下のコンテンツ end-->
+     </div>
+     <!-- InstanceEndEditable -->
+   <!-- Contents end-->
+
+   </div>
+    <!-- mainContents end-->
+ </div>
+</div>
+<!-- wrapper end-->
+<!-- footer start-->
+<div id="footer">
+  <div id="footerBg">
+    <div id="footerInner">
+      <div id="carcherryTop"><a href="../../index.html" title="「カシェリ」トップ">「カシェリ」トップ</a></div>
+      <div id="pageTop"><a href="#header" title="ページ先頭へ">ページ先頭へ</a></div>
+    </div>
+    <div class="footerNav01">
+      <ul class="footerNavIn01">
+        <li><a href="index.html">入会方法</a></li>
+        <li><a href="../android.html">Androindアプリダウンロード</a></li>
+        <li><a href="../system/index.html">予約システム</a></li>
+        <li><a href="../guide/index.html">利用方法</a></li>
+      </ul>
+      <ul class="footerNavIn02">
+        <li>ステーション
+            <dl><dt><a href="../station/hamamatsu_tyo.html">&gt;浜松町ステーション</a></dt>
+                <dt><a href="../station/shinbashi.html">&gt;新橋ステーション</a></dt>
+                <dt><a href="../station/tsukuba.html">&gt;つくばステーション</a></dt>
+                <dt><a href="../station/ube.html">&gt;宇部ステーション</a></dt>
+            </dl>
+        </li>
+      </ul>
+      <ul class="footerNavIn01">
+        <li><a href="../qanda/index.html">Q&amp;A</a></li>
+        <li><a href="../contact/index.html">お問合せ</a></li>
+        <li><a href="../news/index.html">新着情報</a></li>
+      </ul>
+    </div>
+    <div class="footerNav02">
+      <ul>
+        <li><a href="../sitemap/index.html">サイトマップ</a></li>
+        <li><a href="../about/index.html">サイトのご利用について</a></li>
+        <li><a href="../privacy/index.html">個人情報保護方針</a></li>
+        <li><a href="http://www.upr-net.co.jp/">uprトップ</a></li>
+      </ul>
+    </div>
+    <address id="copy">
+      Copyright?&copy;?upr?Corporation.?2010 All?Rights?Reserved.
+    </address>
+  </div>
+</div>
+<!-- footer end-->
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*****************************************/
+/*** Copyright(c) 2010 CRIATiON FiLE   ***/
+/*** Dental Clinic Template System     ***/
+/*** Vertion: 1.0 / Update: 20010811   ***/
+
+/*
+
+
+
+
+
+*/
+
+/*****************************************/
+/* Reset & Basic Setting */
+@import "common.css";
+/* Wrapper */
+@import "wrapper.css";
+/* Wrapper Header */
+@import "header.css";
+/* Wrapper Footer */
+@import "footer.css";
+/* Wrapper Sidebar */
+@import "sidebar.css";
+/* Main Contents */
+@import "contents.css";
+

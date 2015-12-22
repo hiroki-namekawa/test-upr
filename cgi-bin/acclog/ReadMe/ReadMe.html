@@ -1,0 +1,1075 @@
+<html lang="ja">
+
+<head>
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>高機能アクセス解析CGI Standard版 - futomi's CGI Cafe</title>
+<style type="text/css">
+<!--
+a:hover      { color: #FF0000; font-size: 12px; font-family: ＭＳ Ｐゴシック }
+img          { border: 0; vertical-align: middle}
+table        { font-size: 12px; font-family: ＭＳ Ｐゴシック }
+form         { font-size: 12px; }
+.size1       { font-size: 8px; font-family: ＭＳ Ｐゴシック }
+.size2       { font-size: 10px; font-family: ＭＳ Ｐゴシック }
+.size3       { font-size: 12px; font-family: ＭＳ Ｐゴシック }
+.size4       { font-size: 14px; font-family: ＭＳ Ｐゴシック }
+.size5       { font-size: 18px; font-family: ＭＳ Ｐゴシック }
+.size6       { font-size: 20px; font-family: ＭＳ Ｐゴシック }
+.size7       { font-size: 24px; font-family: ＭＳ Ｐゴシック }
+-->
+</style>
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-25422367-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'te
+xt/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'http
+s://ssl' : 'http://www <http://www/>') + '.google-analytics.com/ga.js
+<http://google-analytics.com/ga.js>';
+   var s = document.getElementsByTagName('script')[0]; s.pa <http://s.pa/>
+rentNode.insertBefore(ga, s);
+ })();
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+		<table border="0" width="600"><tr><td>
+		<div align="right"><a href="http://www.futomi.com/" target="_blank">futomi's CGI Cafe</a></div>
+					<table border="0" width="100%" bgcolor="#666699" cellpadding="5">
+						<tr>
+							<td width="100%">
+								<p class="size5"><font color="#FFFFFF">高機能アクセス解析CGI Standard版 Ver 3.8.1</font></p>
+							</td>
+						</tr>
+					</table>
+					<br>
+					あなたのホームページにどれだけアクセスがあったか、どのような人が見に来たかを統計的に見ることができる CGI です。月指定、日付指定での解析も可能。またアクセスしてきた方のプラットフォーム・プラットフォームバージョン、ブラウザー・ブラウザーバージョンまで解析できる、高機能 CGI！　アクセスログのローテーション機能付きですので、プロバイダーとの契約容量を気にすることなくお使いいただけます。
+					<center>
+						</center>
+				</td></tr></table>
+		<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" cellpadding="5" bgcolor="#CCCCFF">
+  <tr>
+    <td width="100%">■ 目次</td>                                                                                                                              
+  </tr> 
+</table> 
+ 
+<blockquote> 
+ 
+<ul>
+  <li><a href="#function">主な機能</a></li>
+  <li><a href="#agreement">CGI利用規定の同意</a></li>
+							<li><a href="#files">ファイルの一覧と機能</a></li>
+							<li><a href="#perlpath">Perlパスの編集</a></li>
+							<li><a href="#configration">設定内容</a></li>
+  <li><a href="#headerfooter">ヘッダー・フッターの編集</a></li>
+  <li><a href="#pageedit">解析したいページの編集</a></li>
+  <li><a href="#howtoshow">解析結果を見るには</a></li>
+  <li><a href="#howtogradeup">バージョンアップ方法</a></li>
+  <li><a href="#restriction">制限事項</a></li>
+  <li><a href="#history">バージョンアップ履歴</a></li>
+</ul>
+</blockquote> 
+ 
+</td></tr></table>
+		<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" cellpadding="5" bgcolor="#CCCCFF">
+  <tr>
+    <td width="100%"><a name="function">■ 主な機能</a></td>                                                                                                                              
+  </tr> 
+</table> 
+ 
+<blockquote> 
+ 
+<p>● アクセス解析レポート内容</p>                                                                                                             
+<ul> 
+  <li>国別ドメイン名レポート</li> 
+  <li>アクセス元ドメイン名レポート</li> 
+  <li>アクセス元ホスト名レポート</li> 
+  <li>ブラウザー表示可能言語レポート</li> 
+  <li>ブラウザーレポート</li> 
+  <li>プラットフォームレポート</li> 
+  <li>月別アクセス数レポート</li> 
+  <li>日別アクセス数レポート（月指定解析モード時）</li> 
+  <li>時間別アクセス数レポート</li> 
+  <li>曜日別アクセス数レポート</li> 
+  <li>リクエストレポート</li> 
+  <li>リンク元サイトレポート</li> 
+  <li>リンク元URLレポート</li> 
+  <li>検索エンジンの検索キーワード レポート</li>  
+  <li>クライアント画面解像度レポート</li> 
+  <li>クライアント画面色深度レポート</li> 
+  <li>クライアントビデオメモリサイズレポート</li> 
+</ul> 
+<p>● 月指定・日指定解析モード</p>                                                                                                             
+<blockquote> 
+  <p>月や日を指定して、該当するログのみを解析し表示します。</p> 
+</blockquote> 
+<p>● ログローテーション機能</p>                                                                                                             
+<blockquote> 
+  <p>アクセスログが指定したサイズになると、アクセスログを新しく作り直す機能です。古いログは、削除するか別名で保存するかを指定することができます。</p> 
+</blockquote> 
+<p>● パスワード認証機能</p>                                                                                                            
+<blockquote> 
+  <p>他人に解析結果を見られないようにするために、パスワード認証機能を使うかを選択することができます。</p>                       
+</blockquote> 
+<p>● 解析可能なプラットフォームとブラウザー</p>                                                                                                             
+<blockquote> 
+  <p>ほとんどのプラットフォーム、ブラウザー、そして携帯電話を認識しレポートすることが可能です。</p> 
+</blockquote> 
+  <p>● 解析可能な検索エンジン</p>                                                                                          
+<blockquote> 
+  <p>以下の検索サイトよりアクセスのあったリクエストから、検索キーワードを解析します。</p>
+							<table border="0">
+    <tr>
+      <td valign="top" align="left">   
+  <ul>   
+    <li><a href="http://www.yahoo.co.jp/" target="_blank">YAHOO!</a></li>
+											<li><a href="http://www.msn.co.jp/" target="_blank">MSN</a></li>
+											<li><a href="http://www.goo.ne.jp/" target="_blank">goo</a></li>
+											<li><a href="http://www.google.com/" target="_blank">google.</a></li>   
+    <li><a href="http://www.excite.co.jp/" target="_blank">excite Japan</a></li>       
+    <li><a href="http://www.infoseek.co.jp/" target="_blank">infoseek Japan</a> </li>
+											<li><a href="http://www.fresheye.com/" target="_blank">フレッシュアイ</a> </li>
+											<li><a href="http://bach.cs.kobe-u.ac.jp/metcha/" target="_blank">Metcha 
+      Search</a></li>
+										</ul>   
+      </td>
+      <td valign="top" align="left">
+										<ul>   
+    <li><a href="http://search.biglobe.ne.jp/" target="_blank">BIGLOBEサーチ           
+      Attayo!</a> </li>
+											<li><a href="http://www.aol.co.jp/" target="_blank">AOL Search</a> </li>
+											<li><a href="http://www.overture.com/" target="_blank">overture</a> （米国） </li>
+											<li><a href="http://search.looksmart.com/" target="_blank">altavista</a>（米国）</li>   
+    <li><a href="http://www.looksmart.com/" target="_blank">looksmart</a>（米国）</li>   
+    <li><a href="http://www.alltheweb.com/" target="_blank">alltheweb</a>（米国）</li>
+											<li><a href="http://www.netscape.com/" target="_blank">Netscape Search</a>（米国）
+											<li><a href="http://www.lycos.com/" target="_blank">Lycos</a>（米国）
+											<li><a href="http://a9.com/" target="_blank">A9.com</a>（米国）
+										
+											
+											<li><a href="http://www.alexa.com/" target="_blank">Alexa</a>（米国）
+											<li><a href="http://www.blueglobus.com/" target="_blank">BlueGlobus</a>（デンマーク）
+										</ul>
+									</td>
+    </tr>
+  </table>
+						</blockquote> 
+</blockquote> 
+ 
+</td></tr></table>
+		<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" cellpadding="5" bgcolor="#CCCCFF">
+  <tr>
+    <td width="100%"><a name="agreement">■ CGI利用規定の同意</a></td>                                                                                                                               
+  </tr> 
+</table> 
+ 
+<blockquote> 
+ 
+<p><a href="kitei.html" target="_blank">CGI利用規定</a>をご覧になり、同意した上で、ダウンロードしてください。</p> 
+</blockquote> 
+ 
+</td></tr></table>
+		　
+		<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="files">■ ファイルの一覧と機能</a></td>                                                                                                                 
+  </tr> 
+</table>
+					<p>CGIをダウンロードし、解凍してください。それぞれのファイルについて解説します。</p>
+					<table border="1" cellspacing="0" cellpadding="10" bgcolor="#FFFFCC"> 
+    <tr> 
+      <td> 
+ 
+ 
+  <table border="0" cellpadding="0" width="455"> 
+    <tr> 
+      <td nowrap bgcolor="#666699"><font color="#FFFFFF">ファイル名</font></td> 
+      <td align="center" bgcolor="#666699" nowrap><font color="#FFFFFF">パーミッション</font><font color="#FFFFFF">１</font></td> 
+      <td align="center" bgcolor="#666699" nowrap><font color="#FFFFFF">パーミッション２</font></td> 
+      <td align="left" bgcolor="#666699" nowrap><font color="#FFFFFF">転送モード</font></td> 
+      <td bgcolor="#666699" nowrap><font color="#FFFFFF">ファイルの機能</font></td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/folder_o.gif" width="17" height="17"></td> 
+            <td>&nbsp;acc/</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"></td> 
+      <td nowrap>本CGI用ディレクトリ</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;acc.cgi</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center">704</td> 
+      <td align="center">705</td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>解析結果表示CGI</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;acclog.cgi</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center">704</td> 
+      <td align="center">705</td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>ロギング用CGI</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;accconfig.cgi</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">{ASCII]</font></td> 
+      <td nowrap>設定ファイル</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file_unknown.gif" width="17" height="17"></td> 
+            <td>&nbsp;acclogo.gif</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#000099">[BINARY]</font></td> 
+      <td nowrap>ロギング用イメージファイル</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file_unknown.gif" width="17" height="17"></td> 
+            <td>&nbsp;acclogo.png</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#000099">[BINARY]</font></td> 
+      <td nowrap>ロギング用イメージファイル（J-PHONE用）</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;header.temp</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>解析結果のヘッダーテンプレート</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;footer.temp</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>解析結果のフッターテンプレート</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;country_code.dat</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>国コードデータファイル</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;language.dat</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>言語コードデータファイル</td> 
+    </tr> 
+    <tr> 
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;jcode.pl</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>日本語コード変換ライブラリー</td> 
+    </tr> 
+    <tr>
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/folder_c.gif" width="17" height="17"></td> 
+            <td>&nbsp;logs/</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center">707</td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>ログ格納ディレクトリ<sup>※1</sup></td> 
+    </tr>
+    <tr>
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/file.gif" width="17" height="17"></td> 
+            <td>&nbsp;index.html</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#990000">[ASCII]</font></td> 
+      <td nowrap>ダミーファイル</td> 
+    </tr>
+    <tr>
+      <td nowrap> 
+        <table border="0" cellspacing="0" cellpadding="0"> 
+          <tr> 
+            <td><img border="0" src="images/blank.gif" width="17" height="17"></td> 
+            <td><img border="0" src="images/folder_c.gif" width="17" height="17"></td> 
+            <td>&nbsp;images/</td> 
+          </tr> 
+        </table> 
+      </td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="center"><font color="#666666">変更不要</font></td> 
+      <td align="left"><font color="#000099">[BINARY]</font></td> 
+      <td nowrap>イメージファイル用ディレクトリ<sup>※2</sup></td> 
+    </tr>
+  </table> 
+ 
+ 
+ 
+ 
+      </td> 
+    </tr> 
+  </table>
+					<table border="0"> 
+    <tr> 
+      <td valign="top" nowrap>※1</td> 
+      <td>ログ は、「logs」ディレクトリ内に作成されます。解析ページにアクセスがあると、自動的に作成されます。ファイル名は、「accss_log」もしくは「access_log.YYYYMMDD」です。YYYYMMDD は年月日です。</td>                                                 
+    </tr> 
+    <tr> 
+      <td valign="top" nowrap>※2</td> 
+      <td>CGI を設置が、「cgi-bin」などの専用のディレクトリを指定しているプロバイダーをお使いの方の場合、イメージファイル用ディレクトリ「images]は、通常のホームページファイルを設置する場所にアップロードしてください。CGI 用のディレクトリにアップロードしても、画像が表示されませんので、ご注意ください。</td> 
+    </tr> 
+  </table> 
+  <p> ■ 転送先 </p>              
+<blockquote>
+  <p>　CGI ファイルと HTML ファイルを何処に設置してもよいサーバをご利用の場合には、本 CGI を解凍したディレクトリ構成のまま、サーバへアップロードしてください。<br>
+							　CGI ファイルは、専用のディレクトリ（cgi-bin等）に設置しなければいけないサーバをご利用の場合には、ディレクトリ「images」を除いて、CGI 専用のディレクトリへアップロードしてください。「images」は、通常の HTML ファイル等ををアップロードする場所へアップロードしてください。ただし、この場合、後述する「accconfig.cgi」のイメージディレクトリの URL 設定で、アップロードした場所の URL を記述していただく必要があります。</p>
+</blockquote>
+<p>■ パーミッション </p>             
+<blockquote>
+  <p>これらパーミッションは、あくまでも例です。お使いのプロバイダー、ホスティングサービス事業者の指示に従ってください。</p>
+  <p>上表には、パーミッションの指定が 2             
+  種類指定しております。CGI             
+  がオーナー権限で実行されるサーバをお使いの場合には、パーミッション１の設定を使ってください。CGI             
+  が ohter             
+  権限で実行されるサーバをお使いの場合には、パーミッション２の設定を使ってください。</p>
+  <p>CGI がオーナー権限で実行されるか、other             
+  権限で実行されるかは、お使いのプロバイダーもしくはレンタルサーバ業者に確認してください。おおむね、CGI             
+  ファイルのパーミッションが、704             
+  でも動作する場合には、オーナー権限で実行されると考えても結構です。CGI             
+  ファイルのパーミッションが、705 もしくは 707             
+  でないと動作しない場合には、other             
+  権限で実行されているとお考えください。</p>
+  <p>「変更不要」と指定しているファイルは、サーバにアップロードするだけで             
+  OK です。あえてパーミッションを変更しないでください。</p>            
+</blockquote>
+ 
+  <p>■ その他</p>           
+  <blockquote>
+    <p>logs 内に格納されている delete_me.txt   
+    は、ダミーのファイルで不要です。サーバにアップロードする必要はありません。アクセスログファイルは、解析ページにアクセスされると自動生成されます。逆に自動生成されなかった場合には、ディレクトリ           
+    logs           
+    のパーミッションが正しく設定されていないことが考えられます。</p> 
+  </blockquote>
+
+  <p>　 </p>
+
+</td></tr></table>
+
+　
+
+<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="perlpath">■ Perlパスの編集</a></td>                                                                                                              
+  </tr> 
+</table> 
+<blockquote> 
+  <p>プロバイダーによって、Perl パスが異なります。デフォルトでは「<tt><font color="#336600">#!/usr/local/bin/perl</font></tt>」と設定しております。ご利用のサーバを運営する事業者の指示に従い、以下のファイルの Perl パスを書き換えてください。</p> 
+  <ul> 
+    <li>acc.cgi</li> 
+    <li>acclog.cgi</li> 
+  </ul> 
+</blockquote> 
+ 
+</td></tr></table> 
+ 
+ 
+　
+
+<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="configration">■ 設定内容</a></td>                                                                                                              
+  </tr> 
+</table> 
+<blockquote> 
+  <p>お使いになる環境に合わせて、またお好みに合わせて、設定を変更してください。設定の変更は、すべて「<tt>accconfig.cgi</tt>」を編集することにより実現します。</p> 
+  <blockquote> 
+  <p><tt><font color="#336600">#--------------------------------------------------------------------<br>
+  #■イメージディレクトリのURL<br>
+  #  最後に「/」を入れないでください。CGIファイルを専用のディレクトリ<br> 
+  #  （cgi-bin等）に設置しなければいけないプロバイダーの場合には、ディ<br> 
+  #  レクトリ「images」を設置した場所のURLを「http://」から記載してくだ<br> 
+  #  さい。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$IMAGE_URL = './images';<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■棒グラフの100%における長さの指定<br>
+  #  単位はピクセルです。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$GRAPHMAXLENGTH = 300;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■アクセス制限機能<br>
+  #  「acc.cgi」にアクセスしたときに、パスワード認証をさせるかどうかを<br> 
+  #  定義します。パスワード認証をする場合には、「1」、しない場合には<br> 
+  #  「0」を指定して下さい。パスワード認証をする場合には、$PASSWORD に<br> 
+  #  パスワードを設定してください。<br> 
+  #--------------------------------------------------------------------</font><br>
+  $AUTHFLAG = 1;<br>          
+  <br>
+  $PASSWORD = 'password';<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■ランキング表示順位設定<br>
+  #  各レポートの表示するランキング順位を設定してください。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$ROW = 20;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■ログのローテーション設定<br>
+  #  通常は、1 または 2 に設定にして下さい。「しない」にすると、CGIのレ<br> 
+  #  スポンスが非常に悪くなると同時に、プロバイダーでご契約の容量を圧迫<br> 
+  #  してしまいます。非常にアクセスが多いサイトの場合には、「日ごとにロ<br> 
+  #  ーテーション」を選択して下さい。<br> 
+  #    0:ローテーションしない<br> 
+  #    1:ログサイズでローテーション<br> 
+  #    2:日ごとにローテーション<br> 
+  #    3:月ごとにローテーション<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$LOTATION = 1;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■ログローテーションのログファイルサイズ<br>
+  #  単位は バイト です。アクセスログが、指定のファイルサイズをこえた時<br> 
+  #  に、現在のログをローテーションします。上の「ログのローテーション指<br> 
+  #  定」で「1:ログサイズでローテーション」を選択した場合にのみ有効です。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$LOTATION_SIZE = 307200;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■過去アクセスログの保存設定<br>
+  #  アクセスログをローテーションする際に、古いログを削除するか、それと<br> 
+  #  も別名で保存するかを設定します。<br> 
+  # 「保存する」設定にした場合、古いログは「access_log.YYYYMMDD」と別名<br> 
+  #  保存されます。（YYYY:西暦, MM:月, DD:日)<br> 
+  #    0:削除する<br> 
+  #    1:保存する<br> 
+  #<br>
+  #  【注意！】<br> 
+  #    「削除する」と設定すると、過去のログはすべて削除されてしまいます<br> 
+  #    のでご注意ください。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$LOTATION_SAVE = 1;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■リンク元解析対象外URL設定<br>
+  #  リンク元解析において、自サイトからリンクされたデータを除外します。<br> 
+  #  除外する場合には、自サイトのURLを設定してください。<br> 
+  #<br>
+  #  例：<br> 
+  #    http://www.futomi.com と http://futomi.com を除外する場合<br> 
+  #    @MY_SITE_URLs = ('http://www.futomi.com', 'http://futomi.com');<br> 
+  #    と設定します。もし、設定しない場合には、<br> 
+  #    @MY_SITE_URLs = ();<br> 
+  #    としてください。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>@MY_SITE_URLs = ();<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■解析対象から除外するホストの指定<br>
+  #  ここで指定したホストからのアクセスは、ログに出力されません。<br> 
+  #  もし、ご自分がアクセスする際のホスト名がわかっている場合には、<br> 
+  #  ここに指定しておくと、解析対象から外すことができます。<br> 
+  #  IPアドレスでの指定、ホスト名での指定どちらでも可能です。<br> 
+  #  またホスト名で指定した場合、後方一致ですのでドメインごと対象外にす<br> 
+  #  ることも可能です。IPアドレスでの指定の場合には、逆に前方一致となり<br> 
+  #  ます。<br> 
+  #<br>
+  #  例：<br> 
+  #  @REJECT_HOSTS = ('hoge.com', '10.1.1.');<br> 
+  #  この場合、ドメインhoge.comからのアクセスはすべて対象外となります。<br> 
+  #  またIPアドレスが 10.1.1.* からのアクセスもすべて対象外となります。<br> 
+  #  何も指定しない場合には、<br> 
+  #  @REJECT_HOSTS = ();<br> 
+  #  としてください。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>@REJECT_HOSTS = ();<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■サイトトップURLとHTMLファイルのマッピング<br>
+  #  アクセスページのタイトルは、多くのサーバにおいて自動的に取得できま<br> 
+  #  すが、URLに「~（チルダ）」が含まれている場合や、一部のサーバ環境で<br> 
+  #  は自動的に取得できません。その場合には、ここにURLとCGIからのパスと<br> 
+  #  のマッピングを定義して下さい。CGIからの相対パス、サーバルートから<br> 
+  #  の絶対パスどちらでも結構です。<br> 
+  #  ここでマッピングをマニュアル設定する場合には、<br> 
+  #  $URL2PATH_FLAG = 1;<br> 
+  #  としてから、%URL2PATH にマッピングを定義して下さい。<br> 
+  #<br>
+  #  例：<br> 
+  #   サイトのトップURL : http://www.hoge.com/~foo/<br> 
+  #   acc.cgiからの相対パス : ../<br> 
+  #   の場合、<br> 
+  #<br>
+  #   $URL2PATH_FLAG = 1;<br> 
+  #   %URL2PATH = ('http://www.hoge.com/~foo/' => '../');<br> 
+  #<br>
+  #   とします。もしサーバルートからの絶対パスが分かっていれば、<br> 
+  #<br>
+  #   $URL2PATH_FLAG = 1;<br> 
+  #   %URL2PATH = ('http://www.hoge.com/~foo/' => '/home/foo/');<br> 
+  #<br>
+  #   のように設定します。/home/ の部分は、サーバによって異なりますので、<br> 
+  #   サービス事業者にお問い合わせください。<br> 
+  #<br>
+  #  注意：<br> 
+  #   必ず、URLとパスの最後には、「/（スラッシュ）」を入れて下さい。<br> 
+  #--------------------------------------------------------------------<br>
+  </font>$URL2PATH_FLAG = 0;<br>          
+  <br>
+  %URL2PATH = ('http://www.hoge.com/~foo/' => '/home/foo/');<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■解析レポート選択<br>
+  #  デフォルトでは、すべてのレポートを解析し表示します。しかし、ログ<br> 
+  #  サイズが大きくなると、解析しきれずに途中で処理がとまってしまいます。<br> 
+  #  その場合、普段見ることがない解析レポートを減らし、解析処理を軽く<br> 
+  #  できます。<br> 
+  #  解析しないレポートの部分を「0」にして下さい。<br> 
+  #  解析するレポートは「1」にして下さい。<br> 
+  #--------------------------------------------------------------------<br>
+  </font><br>
+  $ANA_REMOTETLD = 1; <font color="#336600">		#国別ドメイン名レポート</font><br>         
+  $ANA_REMOTEDOMAIN = 1; <font color="#336600">		#アクセス元ドメイン名レポート</font><br>         
+  $ANA_REMOTEHOST = 1; <font color="#336600">		#アクセス元ホスト名レポート</font><br>         
+  $ANA_HTTPLANG = 1; <font color="#336600">		#ブラウザー表示可能言語レポート</font><br>         
+  $ANA_BROWSER = 1; <font color="#336600">		#ブラウザーレポート</font><br>         
+  $ANA_PLATFORM = 1; <font color="#336600">		#プラットフォーム レポート</font><br>          
+  $ANA_REQUESTMONTHLY = 1; <font color="#336600">	#月別アクセス数レポート</font><br>         
+  $ANA_REQUESTDAILY = 1; <font color="#336600">		#日別アクセス数レポート</font><br>         
+  $ANA_REQUESTHOURLY = 1; <font color="#336600">		#時間別アクセス数レポート</font><br>         
+  $ANA_REQUESTWEEKLY = 1; <font color="#336600">		#曜日別アクセス数レポート</font><br>         
+  $ANA_REQUESTFILE = 1; <font color="#336600">		#リクエストレポート</font><br>         
+  $ANA_REFERERSITE = 1; <font color="#336600">		#リンク元サイトレポート</font><br>         
+  $ANA_REFERERURL = 1; <font color="#336600">		#リンク元URLレポート</font><br>         
+  $ANA_KEYWORD = 1; <font color="#336600">		#検索エンジンの検索キーワード レポート</font><br>          
+  $ANA_RESOLUTION = 1; <font color="#336600">		#クライアント画面解像度レポート</font><br>         
+  $ANA_COLORDEPTH = 1; <font color="#336600">		#クライアント画面色深度 レポート</font><br>          
+  $ANA_VIDEOMEMORY = 1; <font color="#336600">		#クライアントビデオメモリーサイズ レポート</font><br>          
+  <br>
+  <br>
+  <br>
+  <br>
+  <font color="#336600">#####################################################################<br>
+  #これ以降の設定は、通常変更する必要はありません。もしうまく動作しない<br>
+  #場合に見直してください。<br>
+  #####################################################################<br>
+  <br>
+  #--------------------------------------------------------------------<br>
+  #■アクセス解析用のイメージファイル<br>
+  #  このCGIからの相対パスで記述してください。<br>          
+  #--------------------------------------------------------------------<br>
+  </font>$LOGO = './acclogo.gif';<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■アクセス解析用のイメージファイル（J-PHONE専用）<br>
+  #  このCGIからの相対パスで記述してください。<br>          
+  #--------------------------------------------------------------------<br>
+  </font>$JLOGO = './acclogo.png';<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■アクセスログ<br>
+  #  このCGIからの相対パスで記述してください。<br>          
+  #--------------------------------------------------------------------<br>
+  </font>$LOG = './logs/access_log';<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■時差の調整<br>
+  #  海外のサーバを利用されている場合、解析結果の時間が日本時間とはずれ<br>          
+  #  ます。日本時間に調整するために、その時差を設定します。単位は、時間<br>          
+  #  （hour）です。<br>          
+  #   国内のサーバを利用の場合には、「0」のままにして下さい。<br>          
+  #   例：9時間進める場合には、$TIMEDIFF = 9;<br>          
+  #       9時間遅らす場合には、$TIMEDIFF = -9;<br>          
+  #--------------------------------------------------------------------<br>
+  </font>$TIMEDIFF = 0;<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■ディレクトリインデックスファイル名の指定<br>
+  #  URIにファイル名要素が含まれておらず、ディレクトリに対してのアクセ<br>          
+  #  スであった場合に、代わりに表示さえるファイルの名前を指定します。<br>          
+  #  たとえば、URLが http://www.futomi.com/test/ の場合に、表示される<br>          
+  #  HTMLが、「index.html」である場合には、<br>          
+  #    @DIRECTORYINDEX = ('index.html');<br>          
+  #  と指定します。ほとんどの場合、index.htmlとindex.htmがサーバ側で指定<br>          
+  #  されていますので、<br>          
+  #    @DIRECTORYINDEX = ('index.html', 'index.htm');<br>          
+  #  としてください。<br>          
+  #--------------------------------------------------------------------<br>
+  </font>@DIRECTORYINDEX = ('index.html', 'index.htm');<br>          
+  <br>
+  <br>
+  <font color="#336600">#--------------------------------------------------------------------<br>
+  #■このCGIのURLマニュアル設定<br>
+  #  「acc.cgi」は、自分のURLを自動認識しますが、一部のサーバ環境におい<br>          
+  #  ては正しく認識しない場合があります。その場合には、マニュアルで、<br>          
+  #  「acc.cgi」のURLを設定して下さい。<br>          
+  #  自動認識で正しく動作する場合には、<br>          
+  #  MANUAL_THIS_URL = '';<br>          
+  #  として下さい。<br>          
+  #  指定する場合には、http:// から正しく設定して下さい。<br>          
+  #  例： $MANUAL_CGIURL = 'http://www.hoge.com/cgi-bin/acc.cgi';<br>          
+  #--------------------------------------------------------------------<br>
+  </font>$MANUAL_CGIURL = '';           
+  </tt>  
+  </p> 
+  </blockquote> 
+</blockquote> 
+ 
+</td></tr></table> 
+ 
+　
+
+<table border="0" width="600"><tr><td>
+    
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="headerfooter">■ ヘッダー・フッターの編集</a></td>                                                                                                       
+  </tr> 
+</table> 
+<blockquote> 
+  <p>解析結果のページに関しては、、「header.temp」と「footer.temp」ファイルを編集することによって、お好みのページにすることができます。ただし、スタイルシートが定義されておりますので、画面構成が崩れる可能性がありますのでご注意ください。また、<font color="#990000"><u><b>著作権表示部分は削除禁止</b></u></font>です。</p> 
+</blockquote> 
+ 
+</td></tr></table> 
+ 
+　 
+ 
+ 
+<table border="0" width="600">
+			<tr><td> 
+ 
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5"> 
+  <tr> 
+    <td width="100%"><a name="pageedit">■ 解析したいページの編集</a></td>                                                                                                    
+  </tr> 
+</table> 
+ 
+<blockquote> 
+  <p>解析したいページに、以下の内容を書き加えてください。</p> 
+ 
+  <p>まず、前提として本 CGI のロギング用 CGI 「acclog.cgi」の URL が</p> 
+ 
+  <blockquote> 
+    <p><tt><font color="#990000">http://www.hoge.com/foo/acc/acclog.cgi</font></tt></p> 
+ 
+  </blockquote> 
+  <p>だとします。解析したいページの何処でも結構ですので、以下の内容を書き加えてください。</p> 
+ 
+  <table border="1" bgcolor="#FFFFCC" cellspacing="0" cellpadding="5"> 
+    <tr> 
+      <td width="100%"><tt><font color="#666666">&lt;SCRIPT Language="JavaScript"><br>
+											&lt;!--<br>
+											document.write("&lt;img src='</font><font color="#990000">http://www.hoge.com/foo/acc/acclog.cgi</font><font color="#666666">?&quot;);<br>
+											document.write("referrer="+document.referrer+"&amp;");<br>
+											document.write("width="+screen.width+"&amp;");<br>
+											document.write("height="+screen.height+"&amp;");<br>
+											 document.write("color="+screen.colorDepth+"'>");<br>
+											 // --><br>
+											&lt;/SCRIPT></font></tt></td> 
+    </tr> 
+  </table> 
+  <p>「<tt><font color="#990000">http://www.hoge.com/foo/acc/acclog.cgi</font></tt 
+  >」の部分は、お使いのURLに必ず変更してください。ページの一番最後にも本 CGI が組み込まれていますので、ご参考ください。</p> 
+ 
+  <p></p>        
+ 
+  <p>● 携帯電話向けページの編集</p>                                                                                 
+ 
+  <p>携帯電話向けページでは JavaScript がつかえない関係上、記述内容が異なります。解析したいページの URL が、</p>                                                                          
+ 
+  <blockquote> 
+    <p><tt><font color="#0000FF">http://www.hoge.com/foo/thispage.html</font></tt></p> 
+ 
+  </blockquote> 
+  <p>だとします。このページの何処でも結構ですので、以下の内容を書き加えてください。</p> 
+ 
+  <table border="1" bgcolor="#FFFFCC" cellspacing="0" cellpadding="5"> 
+    <tr> 
+      <td width="100%"><tt><font color="#666666">&lt;img src=&quot;</font><font color="#990000">http://www.hoge.com/foo/acc/acclog.cgi</font><font color="#666666">?url=</font><font color="#0000FF">http://www.hoge.com/foo/thispage.html</font><font color="#666666">&quot;&gt;</font></tt></td>                                                                               
+    </tr> 
+  </table> 
+ 
+</blockquote>
+					<p>　</p>
+				</td></tr>
+		</table>
+
+
+　
+
+<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="howtoshow">■ 解析結果を見るには</a></td>                                                                                                 
+  </tr> 
+</table> 
+ 
+<blockquote> 
+  <p>「acc.cgi」をアクセスしていたければ、アクセス解析結果を見ることができます。</p> 
+ 
+</blockquote> 
+ 
+</td></tr></table> 
+ 
+ 
+　
+
+<table border="0" width="600"><tr><td>
+
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5">
+  <tr>
+    <td width="100%"><a name="howtogradeup">■ バージョンアップ方法</a></td>                                                                                                
+  </tr> 
+</table> 
+ 
+<blockquote>
+						<p>images ディレクトリを除くすべてのファイルを上書きして下さい。</p>
+						<p>acc.cgi, acclog.cgi に関しては、それぞれのファイルの 1 行目に記述されている Perl のパスは、お使いのサーバにあわせて書き直してください。また、サーバにアップロードする際には、転送モードに注意してください。イメージファイル以外は、ASCII モードです。</p>
+					</blockquote> 
+ 
+</td></tr></table> 
+ 
+ 
+　 
+ 
+<table border="0" width="600"><tr><td> 
+     
+<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5"> 
+  <tr> 
+    <td width="100%"><a name="restriction">■ 制限事項</a></td>                                                                                                
+  </tr> 
+</table> 
+<ul> 
+  <li>本 CGI は、リンク元、画面解像度、画面色深度を調査をするにあたり、JavaScript を利用しております。したがって、携帯電話のように JavaScript がつかえないクライアント、もしくは、JavaScript を OFF にしたブラウザーからアクセスがあった場合、そのリクエストについては、リンク元調査結果は反映されません。<br> 
+  </li> 
+  <li>携帯電話用のページの場合、「携帯電話用のページの編集」で記載されているとおりに、ページを編集しておかないと、リクエストレポートが正しく反映されません。つまり、どのページにアクセスしたかが分かりません。<br> 
+  </li> 
+  <li>クライアントビデオメモリサイズレポートは、解像度より計算されたものです。従いまして、実際にパソコンに実装されている実メモリサイズとは異なります。<br>
+  </li> 
+  <li>アクセスページのページタイトル取得は、本CGIを設置した同じサーバ上で公開されている必要があります。異なるサーバ上のページタイトルは取得できません。また、一部サーバ環境によっては、ページタイトルを取得できない場合があります。<br>
+  </li> 
+  <li>アクセスページのタイトルを正しく取得できるためには、該当ページの &lt;title&gt; と &lt;/title&gt; タグが 1 行で記述されている必要があります。もし複数行にわたって、タイトルが記述されている場合には、正しく取得できません。<br>
+  </li> 
+  <li>Ver1.x からアクセスログフォーマットが大幅に変更されております。したがって、Ver1.x で生成されたログを解析することはできません。ただし、解析対象の HTML ファイルに記述していただく仕様は変更されておりませんので、CGI を置き換えていただくだけで、バージョンアップ可能です。<br>
+  </li> 
+  <li>検索キーワードの解析は、各検索エンジンのトップページからキーワード検索をかけた場合のみです。また、海外の検索エンジンの場合、日本語での検索は正しく解析できない可能性があります。</li> 
+</ul> 
+ 
+<p>　 
+ 
+</td></tr></table> 
+ 
+　 
+ 
+
+		<table border="0" width="600"><tr><td>
+					<table border="0" width="100%" bgcolor="#CCCCFF" cellpadding="5"> 
+  <tr> 
+    <td width="100%"><a name="history">■ バージョンアップ履歴</a></td>                                                                                               
+  </tr> 
+</table>
+					<p>【Ver3.8 → Ver3.8.1】 2004/11/04</p>
+					<ul>
+						<li>パスワード認証後、ログ切替等の操作を行うと、パスワード認証エーラーとなるバグを改修した。
+					</ul>
+					<p>【Ver3.7 → Ver3.8】 2004/11/04</p>
+					<ul>
+						<li>Unicode の検索キーワードを文字化けしないよう改良した。（Perl5.8 以上で Encode モジュールが利用できる環境に限る）
+						
+						
+						<li>検索キーワード検索の対象に <a href="http://www.livedoor.com/" target="_blank">livedoor</a>、<a href="http://a9.com/" target="_blank">A9.com</a>、<a href="http://www.alexa.com/" target="_blank">Alexa</a>、<a href="http://www.blueglobus.com/" target="_blank">BlueGlobus</a> を追加した。また、<a href="http://www.fresheye.com/" target="_blank">フレッシュアイ</a>、<a href="http://bach.cs.kobe-u.ac.jp/metcha/" target="_blank">Metcha Search</a> 、<a href="http://www.aol.co.jp/" target="_blank">AOL Search</a>、<a href="http://www.altavista.com/" target="_blank">altavista</a>、<a href="http://www.netscape.com/" target="_blank">Netscape Search</a>（米国）からの検索キーワードが解析できなくなっていた問題を修正した。その他、検索サイト業界再編に伴う整理を行った。
+						
+						<li>検索キーワードに含まれる連続した半角スペース及び全角スペースは、一つの半角スペースとして変換し、カウントするよう改良した。
+						
+						
+						
+						<li><a href="http://www.google.co.jp/" target="_blank">Google</a> の<a href="http://www.google.co.jp/advanced_search?hl=ja" target="_blank">検索オプション</a>（Advanced Search）から検索してページにアクセスがあった場合にも、検索キーワードを取得できるよう改良した。<li>検索キーワードの解析の結果に誤りがある場合がある不具合を修正した。
+						<li>キャッシュコントロールを強化することで、ブラウザーキャッシュを見た場合にも確実にロギングできるよう改良した。
+						<li>TLD （country_code.dat） の情報を更新した。
+						<li>言語 （language.dat） の情報を更新した。
+						
+						<li>概要欄に表示される各数字と、クライアント画面色深度レポートの色数に、桁区切りのカンマを挿入するようにした。
+					
+						<li>ブラウザー分析、プラットフォーム分析において、au, TU-KA の最新機種に対応。また、J-PHONE の表記を vodafone に変更。
+					
+						<li>ブラウザー分析において、<a href="http://www.mozilla.org/products/firefox/" target="_blank">Firefox</a>, <a href="http://www.mozilla.org/products/camino/" target="_blank">Camino</a> に対応。
+						<li>アクセス元ドメイン名レポートにおいて、JP 汎用ドメインなど、ドメイン名を適切に抽出できない場合があったが、ホスト名からドメインを適切に抽出できるよう改良した。
+						<li>リクエストレポートにおいて、例えば、&quot;http://www.futomi.com&quot;, &quot;http://www.futomi.com/&quot; を別々にカウントしていたが、同一ページのアクセスとしてみなすよう改良した。
+					
+						<li>パスワード入力画面の見た目を変更した。
+					</ul>
+					<p>【Ver3.6 → Ver3.7】 2003/01/26
+</p>
+					<ul>
+  <li>ブラウザー分析において、Chimera、Sleipnir、Safari に対応。</li> 
+  <li>ブラウザー分析、プラットフォーム分析において、au, 
+    TU-KA の最新機種に対応。</li>  
+</ul>
+<p>【Ver3.5 → Ver3.6】 2002/10/13 
+<ul>
+  <li>ブラウザー解析において、Mozilla の Pheonix に対応。</li> 
+  <li>ブラウザー、プラットフォーム解析において、H”端末に対応。</li>
+  <li>ブラウザー、プラットフォーム解析で、<a href="http://www.nttdocomo.co.jp/p_s/products/mobile/cbb/cbb/cbb.html" target="_blank">Docomo Color Browser Borad</a> に対応。</li>  
+  <li>アクセスページURLに、#, ? が含まれていても、ページタイトルが取得できるよう改善。</li> 
+</ul>
+<p>【Ver3.4 → Ver3.5】 2002/09/20 
+<ul>
+  <li>リクエストレポート、リンク元 URL レポートにおいて、URL  
+    に「~」もしくは「%7e」が含まれた場合、それぞれ別々の  
+    URL と認識していたが、「%7e」を「~」に変換してロギングすることにより、それらを同一  
+    URL と認識できるよう改良。</li> 
+  <li>「概要」のログローテーション欄には、ログローテーション設定に応じた内容を表示するよう改良。旧バージョンまでは、ログローテーションの設定に関係なく、ローテーションサイズと使用率を表示していたが、サイズでローテーションする設定にしていない限り、意味が無い。そのため、設定に応じた表記に変更。</li>
+</ul>
+<p>【Ver3.3 → Ver3.4】 2002/08/11   
+<ul>
+  <li>キーワード解析対象に、http://www.alltheweb.com/ を追加。</li>  
+  <li>Yahoo!、Netscape での検索において、google  
+    エンジンが使われた場合に検索キーワードが取得できないバグを修正。</li>
+  <li>ログファイルの拡張子を「.cgi」に変更。</li>
+  <li>一部のサーバで、ログ切り替え、日付指定解析が正しく動作しない現象を解消。</li>
+  <li>J-PHONE, au, TU-KAで画面解像度、色深度を解析できるようにした。</li>  
+  <li>プラットフォーム・ブラウザー解析で、以下の項目に対応した。</li>
+</ul>
+<blockquote>
+  <ul>
+    <li> BeOS、NetPostive</li>
+    <li>Netscape 7</li> 
+    <li>J-PHONE パケット対応機</li>  
+    <li>DoCoMo FOMA 端末</li> 
+    <li>au 新機種追加</li> 
+  </ul>
+</blockquote>
+<p>【Ver3.2 → Ver3.3】 2002/04/04     
+<ul>
+  <li>Ver 3.2 で発生した、UP.Browser      
+    系の解析ができなくなったバグを改修。あわせて、au, TU-KA      
+    系 Device ID 情報を最新に更新。</li>     
+</ul>
+<p>【Ver3.1 → Ver3.2】 2002/04/03      
+<ul>
+  <li>OS,Browser 解析において、2002/04/03 時点で OpenWave       
+    社で公開されている情報に基づき au 系端末（UP.Browser）を最新機種にも対応。</li>      
+  <li>リクエストレポートでアクセスしたページが不明の場合、「-」と表示されるが、そのリンク先を設定しないよう改善。</li>
+  <li>解析レポートを設定ファイルで選択できるようにした。</li>
+</ul>
+<p>【Ver3.0 → Ver3.1】 2002/03/10        
+<ul>
+  <li>月ごとのログローテーション機能を追加。</li>
+  <li>月別解析で月順に並ばないのを並ぶように改善。</li>
+  <li>日付指定で、ゼロを含めた２桁で指定してもいいように改善。</li>
+  <li>検索キーワード解析で、<a href="http://www.infofreako.com/factory/multifind/" target="_blank">multifind</a>,          
+    <a href="http://bach.cs.kobe-u.ac.jp/metcha/" target="_blank">Metcha Search</a>,          
+    <a href="http://www.lycos.co.jp/" target="_blank">Lycos&nbsp; wisenut</a> に対応。</li>         
+  <li>日ごとローテーションの場合に、過去ログ削除の設定をしても削除されないバグを改修。</li>
+</ul>
+<p>【Ver2.4 → Ver3.0】 2001/12/02                 
+<ul>
+  <li>解析ページが、ブラウザーキャッシュされていた場合でも、再度解析タグを呼び出されカウントされるように機能アップした。&nbsp;</li>
+  <li>リンク元 URL に 「&amp;」 が含まれると、それ以降が無視されてしまうバグを修正した。それに伴い、検索キーワードが一部の検索エンジンで解析できなかった不具合が改善された。&nbsp;</li>                 
+  <li>検索エンジンからのキーワード解析において、altavista （海外） , google.co.jp を追加した。&nbsp;</li>                 
+  <li>OS の解析で、Windows XP を新規に追加した。&nbsp;</li>                 
+  <li>ブラウザー解析で、Mozilla と Netscape6 を区別するよう改善した。&nbsp;</li>                 
+  <li>ブラウザーの解析で、WmniWeb を新規に追加した。&nbsp;</li>                 
+  <li>その他、OS, ブラウザー解析において、解析率を向上させた。&nbsp;</li>                 
+</ul>
+<p>【Ver2.3 → Ver2.4】 2001/11/04                   
+<ul>
+  <li>ログローテーションを日別にしている場合、存在しない「access_log」もリストボックスに表示されているバグを改修。</li>
+  <li>ホスト名が大文字の場合、小文字に変換して処理することとした。</li>
+  <li>ＳＳＬサーバでも動作可とした。</li>
+  <li>一部の海外サーバでの文字化け対策を実施。</li>
+  <li>ブラウザー言語データ「language.dat」を更新。</li>
+</ul>
+<p>【Ver2.2 → Ver2.3】 2001/09/26                         
+<ul>
+  <li>過去ログを選択しても月指定、日指定解析が正しく実行されなかったバグを修正。</li>
+  <li>環境変数 HTTP_HOST                           
+    にIPアドレスを設定するサーバにおいて、ホスト名を取得できなかったバグを修正。</li>
+  <li>Netscape6のバージョンを正しく取得できるように修正。</li>
+</ul>
+<p>【Ver 2.1 → Ver 2.2】 2001/09/16</p>                                                                
+<ul>
+  <li>解析対象から除外するホストの指定で、ホスト名をIPアドレスから逆引きしないサーバでは有効にならなかったため、スクリプトで逆引きするようにして、機能を実現した。</li>
+  <li>自URLは、自動認識だったが、一部のサーバにおいて正しく認識されなかったため、マニュアル設定を設けた。</li>
+</ul>
+<p>【Ver 2.0 → Ver 2.1】 2001/08/06</p>                                                                 
+<ul>
+  <li>ログローテーションされる際に、ファイル名がローテーションした日付になるところが、19700101となってしまうバグを改修。</li>
+</ul>
+<p>【Ver 1.4 → Ver 2.0】 2001/07/22</p>                                                                  
+<ul>
+  <li>ログサイズ節約のため、アクセスログフォーマットを変更（Professional版と統一）。</li>
+  <li>EUCで作成されたHTMLのタイトルを文字化けしないように改善。</li>
+  <li>トクトク、interQで動作するように改善。</li>
+  <li>URLに「~（チルダ）」を含むサイトや、一部サーバ環境において、ページタイトルが取得できなかったが、マニュアル設定を設けることにより、ページタイトルを取得できるように改善。</li>
+</ul>
+<p>【Ver 1.3 → Ver 1.4】 2001/04/22</p>                                                                   
+<ul> 
+  <li>解析結果のルック＆フィールを若干変更</li> 
+  <li>グラフのイメージ表示の仕組みを改良</li> 
+  <li>グラフイメージの100%における長さを指定できるようにした。</li> 
+  <li>ブラウザー・プラットフォームレポートで、バージョンごとにもグラフを表示するようにした。</li> 
+  <li>ログローテーション機能で過去ログ保存モードの場合、過去ログを選択して解析できるようにした。</li> 
+  <li>ログローテーションサイズに対する現在のログのサイズの割合をグラフで表示するようにした。</li> 
+  <li>クライアントビデオメモリーサイズ 
+    レポートの単位がメガバイトではなく、メガビットで計算されていたため、メガバイトで計算するよう修正</li> 
+</ul> 
+<p>【Ver 1.2 → Ver 1.3】 2001/04/01</p>                                                                    
+<ul> 
+  <li>リクエストレポート（どのページにどれだけアクセスがあったかを見る項目）で、該当ページのタイトルを表示するように仕様変更。また、ハイパーリンクも追加。</li> 
+  <li>URLがディレクトリ名で終わっておりHTMLファイル名の指定がない場合でも、正しくHTMLファイルを検索し、解析できるよう、ディレクトリインデックス機能を追加。</li> 
+  <li>日指定で解析すると、各レポートのアクセス数が１ページビュー多く表示されるバグを改修。</li> 
+  <li>J-PHONE用ページにアクセスがあってもアクセスログがロギングできないというバグを改修。</li> 
+</ul> 
+<blockquote> 
+  <p>Ver1.3 をリリースするにあたり、かなめさんに、J-Sky用ページのアクセス解析の試験にご協力いただきました。この場を借りて、御礼申し上げます。</p>                                                                 
+</blockquote> 
+<p>【Ver 1.1 → Ver 1.2】　2001/03/14</p>
+					<ul>
+  <li>海外のサーバにも対応できるよう、時差調整機能を追加。</li>
+  <li>解析結果が文字化けする場合があるため、それを解消。</li>
+  <li>クライアント画面解像度レポート追加。</li>
+  <li>クライアント画面色深度レポート追加。</li>
+  <li>クライアントビデオメモリーサイズレポート追加。</li>
+  <li>検索キーワード解析対象に、<a href="http://search.odn.ne.jp/">ODN テレコムサーチ</a>、<a href="http://search.biglobe.ne.jp/">BIGLOBEサーチ</a>、<a href="http://dir.isize.com/">ISIZE      
+    WEB SEARCH</a> を追加。　 
+ 
+</li>                                                                   
+</ul>
+				</td></tr></table>
+</body> 
+ 
+</html> 

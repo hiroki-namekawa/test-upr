@@ -1,0 +1,56 @@
+@charset "utf-8";
+.mface {
+	background-color: #FFF;
+	text-align: center;
+	margin: 0;
+	font-size: 0.8em;
+	color: #333;
+}
+.mface .mface-container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: left;
+	background-color: #FFF;
+}
+.mface .mface-bar {
+	width: 600px;
+	padding: 10px 0;
+	margin: auto;
+	background-color: #06F;
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mface .mface-text {
+	width: 560px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.mface .mface-form_wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+.mface .mface-left {
+	padding: 10px;
+	vertical-align: middle;
+	width: 35%;
+	background-color: #6BB5FF;
+	color: #FFF;
+	border: 1px solid #FFF;
+	word-break:nowrap;
+}
+.mface .mface-right {
+	padding: 10px;
+	vertical-align: middle;
+	width: 65%;
+	background-color: #DEEEFA;
+	border: 1px solid #FFF;
+}
+.mface .mface-red {
+	color: #F00;
+}
+.mface-right p{
+	margin: 0px;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content="カーシェアリング,カーシェア,西新宿,新橋,浜松町,つくば,港区,宇部,カシェリ,かしぇり" lang="ja" />
+<meta name="description" content="レンタカーより安くて便利、ユーピーアールは、車両を利用したい方やカーシェアリング事業をお考えの方を募集しております。会員になると、携帯電話やパソコンで自動車の空き状況を把握し、30分からの車両利用の予約が出来ます。" />
+<title>カーシェアリング予約システム「カシェリ」ユーピーアール株式会社</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/contents.css" rel="stylesheet" type="text/css" />
+<link href="css/form.css" rel="stylesheet" type="text/css" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<!--[if IE 5]>
+<link rel="stylesheet" type="text/css" href="css/ie5.css">
+<![endif]--><!--[if !IE 7]>
+	<style type="text/css">
+		#wrapper {display:table;height:100%}
+	</style>
+<![endif]--><script type="text/javascript">
+var firefox = (navigator.userAgent.indexOf("Firefox") != -1)? true : false;
+if(firefox) document.write('<link rel="stylesheet" type="text/css" media="print" href="css/print_fx.css" />');
+</script>
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/effects.js" type="text/javascript"></script>
+<script src="js/auto-scroll.js" type="text/javascript"></script>
+<script src="js/jquery-latest.pack.js" type="text/javascript"></script> 
+<script type="text/javascript">
+jQuery.noConflict();
+var j$ = jQuery;
+</script><script type="text/javascript">
+<!--
+j$(document).ready(function() {
+	var linkboxes = j$(".usersInner");
+		for (var i=0; i<linkboxes.length; i++){
+		var readmores = j$("p.readmore");
+		for (var j=0; j<readmores.length; j++){
+			j$(".usersInner").click(function() {
+				var anchorTags = this.getElementsByTagName("a");
+				window.location = anchorTags[0].href;
+			});
+		}
+	}
+	j$("p.readmore").addClass("none");		
+	j$(".usersInner").hover(function(){
+		j$(this).addClass("usersbox_hover");	
+		},
+		function(){
+		j$(this).removeClass("usersbox_hover");	
+		});
+});
+
+j$(document).ready(function() {
+	var linkboxes = j$(".businessInner");
+		for (var i=0; i<linkboxes.length; i++){
+		var readmores = j$("p.readmore");
+		for (var j=0; j<readmores.length; j++){
+			j$(".businessInner").click(function() {
+				var anchorTags = this.getElementsByTagName("a");
+				window.location = anchorTags[0].href;
+			});
+		}
+	}
+	j$("p.readmore").addClass("none");		
+	j$(".businessInner").hover(function(){
+		j$(this).addClass("businessbox_hover");	
+		},
+		function(){
+		j$(this).removeClass("businessbox_hover");	
+		});
+});	
+-->
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31234214-1']);
+  _gaq.push(['_setDomainName', 'upr-net.co.jp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();
+
+</script>
+
+
+<!--  Marketing Analitics & Chat  START -->
+<script  type="text/javascript">
+//<![CDATA[
+function logCorpAScript_full(){
+	HTTP_MSN_MEMBER_NAME="";/*member name*/
+	var prtc=(document.location.protocol=="https:")?"https://":"http://";
+	var hst=prtc+"suite.log-marketing.jp";
+	var rnd="r"+(new  Date().getTime()*Math.random()*9);
+	this.ch=function(){
+		if(document.getElementsByTagName("head")[0]){this.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
+	}
+	this.dls=function(){
+		var  h=document.getElementsByTagName("head")[0];
+		var  s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
+		if(h){s.src=hst+"/HTTP_MSN/UsrConfig/uprlog/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
+	}
+	this.init= function(){
+		document.write('<img src="'+hst+'/sr.gif?d='+rnd+'"  style="width:1px;height:1px;position:absolute;" alt="" onload="logCorpAnalysis_full.ch()" />');
+	}
+}
+if(typeof logCorpAnalysis_full=="undefined"){	var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
+//]]>
+</script>
+<noscript><img src="http://suite.log-marketing.jp/HTTP_MSN/Messenger/Noscript.php?key=uprlog" border="0" style="display:none;width:0;height:0;" /></noscript>
+<!-- Marketing Analitics & Chat END  -->
+
+
+
+
+
+</head>
+<body>
+<!-- header start-->
+<!-- wrapper start-->
+<div id="wrapper">
+	<!-- mainContents start-->
+	<div id="container">
+		<div id="header">
+			<div id="headerInner">
+				<h1 id="logo"><a href="index.html" title="ユーピーアール株式会社 カーシェアリング「カシェリ」">カーシェアリング予約システムはユーピーアール株式会社</a></h1>
+				<div id="headerContact">
+					<ul>
+						<li id="btnForm"><a href="contact/index.html" title="お問合せフォーム">お問合せフォーム</a></li>
+						<li><img src="images/headerTel.gif" alt="お気軽にお電話下さい。TEL:03-5405-7455" width="178" height="50" /></li>
+					</ul>
+				</div>
+				<div class="headerNav">
+					<ul class="headerNasvIn">
+						<li><a href="news/index.html">新着情報</a></li>
+						<li><a href="contact/index.html">お問合せ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- header end-->
+
+		<div id="main" class="clearfix">
+
+			<div id="leftBox">
+				<div class="users" title="カーシェアリングを使ってみたい！！">
+					<div class="usersInner">
+						<h2>カーシェアリングを使ってみたい！！</h2>
+						<p class="justify">カーシェアリングはクルマにかかっている維持費をみんなで分けるという新しいコンセプト。<br />携帯電話、またはスマートフォンで予約から利用までできる。マイカーほどじゃないけどお父さんのクルマを借りるより簡単かも！<br />筑波大学、東京都港区（汐留イタリア街、<br />浜松町貿易センタービル）、山口県<br />宇部市で好評稼働中です。</p>
+						<p class="readmore"><a href="users/index.html">【詳細はこちら】</a></p>
+					</div>
+				</div>
+				<div class="business" title="カーシェアリング事業をお考えの方へ">
+					<div class="businessInner">
+						<h2>カーシェアリング事業をお考えの方へ</h2>
+						<p class="justify">
+							カーシェアリング事業にご興味がお有りなら、<br />是非ユーピーアールにご相談ください。<br />
+							自主事業での経験を生かしたカーシェア専用の車載機と会員管理から決済まで可能なオールインワンシステムをセットで提供しております。<br />
+							小規模からはじめた場合には導入が難しいコールセンター等のオプションサービスも充実。
+						</p>
+						<p class="readmore"><a href="business/index.html">【詳細はこちら】</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="rightBox">
+				<div class="siyouBox clearfix">
+					<p class="siyouBoxTop">&nbsp;</p>
+					<div class="siyouBoxIn">
+						<h3 class="stationNameTop">サービス一覧</h3>
+						<p class="siyou_read">会員の方は下記よりご契約済みの<br />サービスを選択してください。</p>
+
+						<div class="siyouBoxInner clearfix">
+							<div>
+								<p class="tsukubaBtn" title="カーシェア・つくば"><a href="users/station/tsukuba.html">カーシェア・つくば</a></p>
+								<p class="minatokuBtn" title="カシェリ・港区"><a href="users/station/minatoku.html">カシェリ・港区</a></p>
+								<p class="ubeBtn" title="カシェリ・宇部"><a href="users/station/ube.html">カシェリ・宇部</a></p>
+							</div>
+						</div>
+					</div>
+
+
+					<p class="siyouBoxBtm">&nbsp;</p>
+				</div>
+			</div>
+			<div id="c-info" class="clearfix">
+				<h3>ニュース</h3>
+				<dl>
+                
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2015.02.01】<a href="users/station/minatoku.html" target="_blank">カシェリ・港区の浜松町ステーションに新しい車（トヨタマークX）</a>を配置します。</dd>
+
+<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2015.01.15】<a href="users/station/minatoku.html" target="_blank">カシェリ・港区の車両配置</a>を変更します。</dd>
+                            
+
+  
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.12.11】<a href="users/station/tsukuba.html" target="_blank">カーシェア・つくばの大学構内ステーションに新しい車（トヨタプリウス）</a>を配置します。</dd>
+               
+                <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.10.16】カーシェア・つくばにて<a href="pdf/news_20141016.pdf" target="_blank">秋冬キャンペーン</a>実施中。（12月末日まで）。</dd>
+                
+                
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.06.18】カシェリ・港区の浜松町ステーションの
+駐車スペースが移動しました。<br />新しい駐車スペースは<a href="pdf/minato-hamaA9.pdf" target="_blank">『地下1階 A9』</a>です。フロアの変更はありません。</dd>
+                
+                
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.04.07】カーシェア・つくばにて<a href="pdf/carshare_tsukuba_20140407.pdf" target="_blank">新規入会キャンペーン</a>実施中。（6月末日ご入会まで）。</dd>
+                            
+                            <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.04.07】<a href="users/station/tsukuba.html" target="_blank">カーシェア・つくばの車両配置</a>を変更します。</dd>
+                            
+                           <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.04.07】<a href="users/station/tsukuba.html" target="_blank">カーシェア・つくばに新しいステーション（一の矢ステーション）</a>を開設します。</dd>
+                            
+                            <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.04.07】<a href="users/station/minatoku.html" target="_blank">カシェリ・港区の浜松町ステーションに新しい車（ホンダフリード）</a>を配置します。</dd>
+                
+                
+                
+                
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.03.14】消費税率変更に伴い料金を改正いたします。<a href="users/station/tsukuba.html" target="_blank">カーシェア・つくばの新しい料金表</a>をご確認ください。</dd>
+            
+              <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.03.14】消費税率変更に伴い料金を改正いたします。<a href="users/station/minatoku.html" target="_blank">カシェリ・港区の新しい料金表</a>をご確認ください。</dd>
+            
+             <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.03.14】消費税率変更に伴い料金を改正いたします。<a href="users/station/ube.html" target="_blank">カシェリ・宇部の新しい料金表</a>をご確認ください。</dd>
+                
+                <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2014.01.10】カシェリ・港区の浜松町ステーションの駐車スペースが移動しました。<br />新しい駐車スペースは<a href="pdf/minato-hamaA10.pdf" target="_blank">『地下1階A10』</a>です。フロアの変更はありません
+</dd>
+                
+                
+                
+					<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.08.01】カーシェア・つくばで<a href="pdf/tsukuba-friend-cp.pdf" target="_blank">お友達紹介キャンペーン</a>を実施します。（10月末日ご入会まで）
+</dd>
+					<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.07.18】カーシェア・つくばに<a href="users/station/tsukuba.html#jump_tsukuba_plan" target="_blank">長時間パック料金</a>を新設します。
+
+</dd>
+                
+                     <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.06.01】カーシェア・つくばで公式<a href="https://www.facebook.com/carsharetsukuba" target="_blank">Facebook</a>ページ、<a href="https://twitter.com/carsharetsukuba" target="_blank">Twitter</a>を開設しました。</dd>
+                
+                 <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.06.01】カシェリ・港区にて<a href="pdf/cp_minatoku_nyukai20130613.pdf" target="_blank">新規入会キャンペーン</a>実施中。（9月末日ご入会まで）</dd>
+            
+           
+                
+                <dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.06.01】カシェリ・港区の<a href="users/station/minatoku.html" target="_blank">新橋ステーション</a>が移転しました。</dd>
+                
+                	<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.04.01】カーシェア・つくばで<a href="pdf/cp_tsukuba_nyukai20130401.pdf" target="_blank">新規入会キャンペーン</a>を実施します。（6月末日ご入会まで）</dd>
+            
+					<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.03.15】カシェリ・宇部の<a href="pdf/point_ube_20130315.pdf" target="_blank">貸渡約款変更のポイント、および料金プランの一部変更について</a>ご確認ください。</dd>
+            
+            
+        	<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.03.15】カシェリ・港区の<a href="pdf/point_minatoku_20130315.pdf" target="_blank">貸渡約款変更のポイント、および料金プランの一部変更について</a>ご確認ください。</dd>
+            
+        	<dt title="会員様向けNEWS" class="list_users">会員様向NEWS</dt>
+            <dd title="更新情報">【2013.03.15】カーシェア・つくばの<a href="pdf/point_tsukuba_20130315.pdf" target="_blank">貸渡約款変更のポイント、および料金プランの一部変更について</a>ご確認ください。</dd>
+            
+			</dl>
+                
+                
+                
+			</div>
+			<p class="txt10 mar_b20">「Android」および「Android ロゴ」、「Androidマーケット」は、Google Inc.の商標または登録商標です。<br />その他、本サイトに記載されている製品名、会社名は、それぞれ各社の商標または登録商標です。</p>
+		</div>
+		<!-- mainContents end-->
+		<!-- パンくず以下のコンテンツ end-->
+	</div>
+</div>
+<!-- mainContents end-->
+
+<!-- wrapper end-->
+<!-- footer start-->
+<div id="footer">
+	<div id="footerBg">
+		<div id="uprTop"><a href="http://www.upr-net.co.jp/" title="uprトップページへ">uprトップページへ</a></div>
+	</div>
+	<address id="copy">Copyright?&copy;?upr?Corporation.?2010 All?Rights?Reserved.</address>
+</div>
+<!-- footer end-->
+
+<script type='text/javascript' charset='utf-8' src='//clickanalyzer.jp/ClickIndex.js' id='upr-net/20140421003459'></script>
+<noscript><img src='//clickanalyzer.jp/ClickIndex.php?mode=noscript&id=upr-net&pg=20140421003459' width='0' height='0' /></noscript>
+
+</body>
+</html>

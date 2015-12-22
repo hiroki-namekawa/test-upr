@@ -1,0 +1,277 @@
+@charset "utf-8";
+/*初期化*/
+* {
+	margin : 0 ; padding : 0 ;
+	color:#464646;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	/*font-family: "ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3",Osaka, sans-serif;*/
+	font-size: 1em;
+	font-weight: normal;
+	line-height:1.0;
+	}
+
+html, body {height: 100%;}
+
+/*文書全体*/
+body {
+	background:#ffffff url(../images/bodyBg.gif) repeat-x left top;
+	text-align: center;/*IE5.5対策*/
+}
+
+/*リスト*/
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+	margin:0; padding:0;
+}
+
+ul,li,dt,dd{
+	line-height:1.5em;
+}
+
+/*文章*/
+p{
+	margin: 0 10px 30px 10px;
+	font-size: 0.76em;
+	line-height:1.5;
+}
+
+/*文字の均等割付*/
+.justify{
+	text-align: justify; /* for modern browser */
+	text-justify: inter-ideograph; /* IE6～8 */
+}
+
+/*リンクテキスト*/
+a {
+	color:#2F84B8;text-decoration:none;
+}
+a:hover{
+	color:#355DA8;text-decoration:underline;
+}
+
+
+
+/*********************************************ここからコンテンツ枠組み**********************************************/
+/*全体*/
+#wrapper{
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	min-height: 100%;
+}
+
+/*全体のコンテナ*/
+#container{
+	padding: 0;
+	margin: 0;
+	overflow:auto;
+	padding-bottom: 119px;
+}
+
+/*\*/
+* html #container {
+	height: 1em;
+	overflow: visible;
+	}
+/**/
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+/*ヘッダー*/
+#header{
+	width:100%;
+	height:100px;
+	background:url(../images/headerBg.gif) no-repeat center top;
+	margin: 0 auto;
+}
+
+#headerInner{
+	width:902px;
+	height:60px;
+	background:url(../images/headerBgIn.gif) no-repeat right top;
+	text-align:center;
+	position:relative;
+	padding: 0 0 15px 0;
+	margin:0 auto;
+	clear: both;
+}
+
+h1#logo{
+	width:319px;
+	height:36px;
+	background:#ffffff url(../images/logo.gif) repeat-x;
+	text-indent: -9999px;
+	position: absolute;
+	top: 29px;
+	left:0px;
+}
+
+h1#logo a{
+	display: block;
+	width: 100%;
+	height:36px;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+
+/*ヘッダー部・お問い合わせ欄*/
+#headerContact{
+	width: 287px;
+	height:50px;
+	position: absolute;
+	top: 0px;
+	left: 625px;
+}
+
+#headerContact ul{
+	list-style-type: none;margin: 0;padding: 0;
+}
+
+#headerContact li{
+	float:left;width: auto;margin: 0;padding: 0;
+}
+
+#headerContact #btnForm {
+	text-indent: -9999px;
+	background-position: 0 0;
+	margin-top: 7px;
+}
+
+#headerContact #btnForm a{
+	display: block;width:100px;height:37px;
+	background: url(../images/btn_contactform.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+
+#headerContact #btnForm a:hover{
+	background-position: -100px 0;height:37px;
+}
+
+/*フッターメニュー（グローバル）*/
+.headerNav{
+	width: 110px;
+	text-align:right;
+	height: 20px;
+	float: right;
+	position: absolute;
+	top: 55px;
+	left: 788px;
+}
+
+.headerNav ul{
+	width: 150px;
+	list-style-type: none;
+}
+
+.headerNav li{
+	margin:0 10px 0 0;
+	background: url(../images/ico_ichiran.gif) no-repeat left center;
+	font-size: 0.65em;
+	color:#FFFFFF;
+	float: left;
+	text-indent: 12px;
+}
+.headerNav li a{
+color:#666666;}
+
+.headerNav li a:hover{
+color:#666666;
+text-decoration:none;}
+
+/*フッター*/
+#footer{
+	background:#5EBEE5 url(../images/footerBg.gif) repeat-x left top;
+	width:100%;
+	padding: 0;
+	margin:0 auto;
+	position: relative;
+	margin-top: -119px; /* negative value of footer height */
+	height:119px;
+	clear:both;
+}
+
+#footerBg{
+	background: url(../images/footerBg02.gif) no-repeat right bottom;
+	width: 902px;
+	margin: 0 auto;
+	height: 93px;
+}
+
+/*フッター部・ページトップ部分*/
+#uprTop{
+	width: 108px;
+	height:12px;
+	font-size: 0.7em;
+	background: url(../images/ico_ichiran.gif) no-repeat left center;
+	margin-top:10px;
+	clear: both;
+	float: left;
+	text-indent: 12px;
+}
+
+#uprTop a{
+color:#666666;}
+
+#uprTop a:hover{
+color:#666666;
+text-decoration:none;}
+
+
+/*コピーライト*/
+address#copy{
+	width:902px;
+	text-indent:-9999px;
+	background: url(../images/copyright.gif) no-repeat right center;
+	height: 26px;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+/*==========================
+  IE6以下用ハック
+==========================*/
+
+
+/*↓float使用時のclearfix設定*/
+/* clearfix */
+
+.clearfix {
+  zoom: 1; /* for IE5.5 - IE7 */
+  }
+.clearfix:after { /* for modern browser */
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+  /*font-size: 0px;*/
+  }
+/*  */
+#announce {
+	clear: both;
+	height: 140px;
+	width: 900px;
+	font-weight: bolder;
+	color: #F00;
+	text-align: center;
+}
+#announce h1 {
+	font-size: 16px;
+	text-align: left;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 120%;
+}
+#announce h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #F00;
+}

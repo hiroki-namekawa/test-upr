@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /saiyou/senpai2.html
+Allow: /
+

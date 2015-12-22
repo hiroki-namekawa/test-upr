@@ -1,0 +1,1375 @@
+@charset "utf-8";
+/*********************************************下層コンテンツ共通**********************************************/
+
+/*コンテンツ全体*/
+#main{
+	width:908px;
+	margin:0 auto;
+	clear:both;
+	}
+
+.mainBoxInner{
+	width: 882px;
+	float: left;
+	text-align: left;
+	padding: 2px 18px 30px 8px;
+}
+p.mainBoxTop{
+	clear: both;
+	height: 11px;
+	background: url(../common_images/wrapperFl_to.gif) no-repeat center top;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	width: 908px;
+}
+p.mainBoxBtm{
+	clear: both;
+	height: 11px;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	width: 347px;
+}
+
+
+/*コンテンツ左部ブロック*/
+#leftBox{
+	width: 676px;
+	float: left;
+	text-align: left;
+	margin: 0 11px 0 0;
+}
+
+/*コンテンツ右部ブロック*/
+#rightBox{
+	width: 195px;
+	float: right;
+	text-align: left;
+	margin: 0;
+}
+
+
+/*パンくずリスト*/
+#topicpath{
+	text-indent: 0px;
+	border-bottom:3px dotted #d4d4d4;
+	height:28px;
+	margin: 0 0 0 10px;
+	padding:0;
+}
+
+
+/*コンテンツ全体*/
+#content{
+	width:872px;
+	margin:20px auto 20px 10px;
+	text-align: left;
+}
+
+
+/*大見出し*/
+#content h2{
+	width:870px;
+	height:90px;
+	margin: 0 auto 20px auto;
+}
+
+/*中見出し*/
+#content h3{
+	background:#ffffff url(../common_images/h3_bg.gif) no-repeat left top;
+	width:834px;
+	height:34px;
+	margin: 0 auto 15px auto;
+	font-size:0.9em;
+	line-height: 2.4em;
+	text-indent: 30px;
+}
+
+#content h3.bgnone{
+	background:none;
+	margin:0;
+	padding: 0;
+}
+
+
+#content p{
+	margin: 0 40px 30px 30px;
+}
+
+/*小見出し*/
+#content h4{
+	margin: 0 30px 10px 30px;
+	font-weight:bold;
+	font-size:0.8em;
+}
+#content h5{
+	margin: 0 30px 10px 30px;
+	font-size:0.9em;
+	font-weight: bold;
+}
+
+/*テキスト設定*/
+.txt10{
+	font-size: 0.65em;
+	margin:0;
+}
+.txt_center{
+	text-align:center;
+}
+.txt_right{
+	text-align:right;
+}
+
+/*マージン*/
+.mar5{
+	margin:5px;
+}
+.mar10{
+	margin:10px;
+}
+.mar_b20{
+	margin:0 0 20px 0;
+}
+.mar_b30{
+	margin:0 0 30px 0;
+}
+.mar_b40{
+	margin:0 0 40px 0;
+}
+.mar_b50{
+	margin:0 0 50px 0;
+}
+.mar_b5{
+	margin:0 0 5px 0;
+}
+.mar_lr10{
+	margin:0 10px;
+}
+.mar_lr20{
+	margin:0 20px;
+}
+.mar_lrb10{
+	margin:0 10px 10px 10px;
+}
+
+
+/*========================================================================================================
+  トップ　index.html
+========================================================================================================*/
+/*メインビジュアル*/
+h2#visual{
+	width:456px;
+	height:256px;
+	background: url(../images/usersTop.gif) no-repeat;
+	margin: 0 1px 20px auto;
+	text-indent:-9999px;
+	float: right;
+}
+
+
+/*予約システムとモバイルサイト*/
+.siyouBox{
+	background:url(../images/topFl_bo.gif) no-repeat left bottom;
+	margin: 0 15px 0 10px;
+	width: 193px;
+	min-height:256px;
+	height: auto !important;
+	height: 256px;
+	float: right;
+}
+.siyouBoxInner{
+	background:url(../images/topFl_ce.gif) repeat-y left top;
+	padding: 10px 0 0 18px;
+	float: left;
+	width: 160px;
+}
+
+
+p.siyouBoxTop{
+	clear: both;
+	height: 11px;
+	background: url(../images/topFl_to.gif) no-repeat left top;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	width: 193px;
+}
+p.siyouBoxBtm{
+	clear: both;
+	height: 11px;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	width: 193px;
+}
+.siyouBoxInner p{
+	margin:0 auto 5px auto;
+}
+
+.yoyakuBtn{
+	background: url(../images/btn_carcherry.gif) no-repeat left top;
+	width: 160px;
+	height:85px;
+	text-indent: -9999px;
+	pasding:5px;
+	text-align:center;
+	margin: 15px auto;
+}
+
+.yoyakuBtn a{
+	display: block;
+	background: url(../images/btn_carcherry.gif) no-repeat left top;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+	width: 160px;
+	height:85px;
+}
+.yoyakuBtn a:hover{
+	background-position: 0px -85px;
+	width: 160px;
+	height:85px;
+}
+
+
+/*情報ステーション・外枠*/
+.stationBox{
+	background:url(../images/stationFl_bo.gif) no-repeat left bottom;
+	margin:0;
+	width: 195px;
+	min-height:500px;
+	height: auto !important;
+	height: 500px;
+}
+.stationBoxInner{
+	background:url(../images/stationFl_bo.gif) repeat-y left top;
+	width: 163px;
+	padding: 5px 16px;
+	text-align: center;
+}
+
+h3.stationBoxTop{
+	clear: both;
+	height: 37px;
+	background: url(../images/h3_station.gif) no-repeat left top;
+	margin: 0;
+	padding: 0;
+	width: 195px;
+	text-indent: -9999px;
+}
+p.stationBoxBtm{
+	clear: both;
+	height: 11px;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	width: 193px;
+}
+
+/*情報ステーション・内枠*/
+.stationListBox{
+	background:url(../images/stationFl02_bo.gif) no-repeat left bottom;
+	margin: 5px 0;
+	width: 163px;
+	min-height:100px;
+	height: auto !important;
+	height: 100px;
+	float: left;
+}
+.stationListBoxInner{
+	background:url(../images/stationFl02_bo.gif) repeat-y left top;
+	width: 149px;
+	padding: 0 7px;
+	text-align: left;
+}
+p.stationListBoxTop{
+	clear: both;
+	height: 10px;
+	font-size: 10px;
+	line-height: 10px;
+	background: url(../images/stationFl02_to.gif) no-repeat left top;
+	margin: 0;
+	padding: 0;
+	width: 163px;
+}
+p.stationListBoxBtm{
+	clear: both;
+	height: 10px;
+	font-size: 10px;
+	line-height: 10px;
+	margin: 0;
+	padding: 0;
+	width: 163px;
+}
+
+h4.stationList01{
+	background: url(../images/h4_station01.gif) no-repeat left top;
+	height: 32px;
+	text-indent: -9999px;
+}
+h4.stationList02{
+	background: url(../images/h4_station02.gif) no-repeat left top;
+	height: 32px;
+	text-indent: -9999px;
+}
+h4.stationList03{
+	background: url(../images/h4_station03.gif) no-repeat left top;
+	height: 32px;
+	text-indent: -9999px;
+	margin: 0 0 5px 0;
+}
+h4.stationList01 a{
+	height: 32px;
+	display: block;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+h4.stationList02 a{
+	height: 32px;
+	display: block;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+h4.stationList03 a{
+	height: 32px;
+	display: block;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+
+.stationBoxInner p.listTxt{
+	text-align: left;
+	padding:0;
+	margin:5px;
+	width: auto;
+}
+.stationBoxInner ul{
+	list-style-type: circle;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+.stationBoxInner li{
+	font-size: 0.76em;
+}
+
+/*利用者向け情報（TOP）*/
+#u-info{
+	width: 659px;
+	height: auto;
+	margin: 0px auto 20px 10px;
+	background: url(../images/newsBgcenter.gif) repeat-y;
+	clear: both;
+	position:relative;
+}
+#u-info h3{
+	text-indent:-9999px;
+	background: url(../images/title_news.gif) no-repeat;
+	height:34px;
+	margin:0;
+}
+
+#u-info p#info_txt{
+	background: url(../images/ico_ichiran.gif) no-repeat 96% center;
+	font-size: 0.6em;
+	position: absolute;
+	top: 12px;
+	left:0px;
+	float: right;
+	margin: 0;
+	width: 650px;
+	text-align: right;
+	text-indent: 10px;
+	padding: 2px 0;
+}
+
+#u-info p#info_txt a{
+	color:#464646;
+}
+#u-info p#info_txt a:hover{
+	color:#355DA8;
+}
+
+/*事業者向け情報（一覧）*/
+#u-info02{
+	width: 834px;
+	height: auto;
+	margin: 0 auto 30px auto;
+	clear: both;
+	position:relative;
+	min-height:200px;
+	height: auto !important;
+	height: 200px;
+}
+
+#u-info02 h3{
+	height:34px;
+	margin:0 0 5px 0;
+}
+#u-info dl,#u-info02 dl{
+	margin:0;
+	color:#656668;
+	font-size: 0.76em;
+	line-height:2em;
+	text-align:left;
+}
+
+#u-info dl dt,#u-info02 dl dt{
+	float: left;
+	width: auto;
+	text-indent:10px;
+	background: url(../images/news_list.gif) no-repeat left center;
+	padding:5px;
+	margin:0 0 0 15px;
+}
+*html #u-info dl dt,#u-info02 dl dt{/*IE6以下のみ適用*/
+	margin:0 0 0 7px;
+}
+
+
+#u-info dl dd,#u-info02 dl dd{
+	margin:0px 10px;
+	padding:5px;
+	line-height:1.5em;
+	background: url(../images/news_line.gif) repeat-x left bottom;
+}
+
+#u-info dl dd,#u-info02 dl dd a{
+	line-height:1.5em;
+}
+
+
+#u-info dl dd.kiji_end,#u-info02 dl dd.kiji_end{
+	background: none;
+}
+
+/* ニュース一覧アーカイブ*/
+#page01{
+	width:664px;
+	height:25px;
+	clear:both;
+	margin:0 0 20px auto;
+	float: right;
+}
+.prev{
+	width:200px;
+	float:left;
+	text-align: left;
+}
+.next{
+	width:200px;
+	float:right;
+	margin: 0px 0px 0px 10px;
+	text-align: right;
+}
+
+
+/*入会方法、Q＆A,利用方法のボタン*/
+#linkBtnBox01{
+	width:666px;
+	margin: 0 auto 20px 5px;
+	height:70px;
+	clear:both;
+}
+#linkBtnBox01 ul{
+	list-style-type: none;margin: 0;padding: 0;
+}
+#linkBtnBox01 li{
+	float:left;width: auto;margin: 0;padding: 0;
+}
+#linkBtnBox01 #nyukai,#linkBtnBox01 #qanda,#linkBtnBox01 #guide {
+	width: 222px;
+	height: 70px;
+	text-indent: -9999px;
+
+}
+#linkBtnBox01 #nyukai a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_nyukai.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox01 #qanda a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_qanda.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox01 #guide a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_guide.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox01 #nyukai a:hover,#linkBtnBox01 #qanda a:hover,#linkBtnBox01 #guide a:hover{
+	background-position: 0px -75px;
+	height:70px;
+}
+
+/*チャレンジ25、エコアクションのボタン*/
+#linkBtnBox03{
+	width:659px;
+	margin: 0 auto 0 10px;
+	clear:both;
+	height:160px;
+　/* IE 7対策 */
+}
+#linkBtnBox03 ul{
+	list-style-type: none;margin: 0;padding: 0;
+}
+#linkBtnBox03 li{
+	float:left;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+}
+#linkBtnBox03 #challenge{
+	display: block;
+	width:320px;
+	height:160px;
+	background: url(../images/btn_challenge25.gif) no-repeat;
+	overflow: hidden;
+}
+#linkBtnBox03 #eco{
+	width: 320px;
+	height: 160px;
+	text-indent: -9999px;
+	margin:0 0 0 19px;
+}
+#linkBtnBox03 #eco a{
+	display: block;
+	width:320px;
+	background: url(../images/btn_eco.gif) no-repeat;
+	overflow: hidden;
+}
+#linkBtnBox03 #eco a:hover{
+	/*background-position: 0px -160px;*/
+	background: url(../images/btn_eco_o.gif) no-repeat;
+	height:160px;
+}
+
+/*========================================================================================================
+  入会方法　first/index.html
+========================================================================================================*/
+/*必要書類・入会条件*/
+ul.first01{
+	font-size: 0.75em;
+	list-style-type:none;
+	margin:0px 20px 30px 4px;
+}
+ul.first01 li{
+	line-height:1.5em;
+	margin:5px 20px 5px 40px;
+	padding:0;
+}
+
+ul.first02{
+	font-size: 0.75em;
+	list-style-type:disc;
+	margin:0px 20px 30px 20px;
+}
+ul.first02 li{
+	line-height:1.5em;
+	margin:5px 20px 5px 40px;
+	padding:0;
+}
+ul.first03{
+	list-style-type:disc;
+	margin:0px 20px 0px 15px;
+}
+ul.first03 li{
+	line-height:1.5em;
+	margin:5px 20px 5px 0px;
+	padding:0;
+}
+#kiyakuBox{
+	width: 810px;
+	margin: 0 30px 30px 30px;
+	border: 1px solid #05A2FF;
+}
+
+/*入会方法、Q＆A,利用方法のボタン*/
+#linkBnrBox{
+	width:810px;
+	margin: 0 auto 40px auto;
+	height:175px;
+	clear:both;
+}
+#linkBnrBox ul{
+	list-style-type: none;margin: 0;padding: 0;
+}
+#linkBnrBox li{
+	float:left;width: auto;margin: 0;padding: 0;
+}
+#linkBnrBox #online,#linkBnrBox #yusou,#linkBnrBox #taimen {
+	width: 270px;
+	height: 175px;
+	text-indent: -9999px;
+
+}
+#linkBnrBox #online a{
+	display: block;
+	height: 175px;
+	background: url(../first/images/bnr_online.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBnrBox #yusou a{
+	display: block;
+	height: 175px;
+	background: url(../first/images/bnr_yusou.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBnrBox #taimen a{
+	display: block;
+	height: 175px;
+	background: url(../first/images/bnr_taimen.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBnrBox #online a:hover,#linkBnrBox #yusou a:hover,#linkBnrBox #taimen a:hover{
+	background-position: 0px -180px;
+	height:175px;
+}
+
+
+
+/*利用規約*/
+#kiyaku{
+	margin:0;
+	text-align:left;
+	padding: 10px;
+}
+#kiyaku p{
+	margin:0 0 20px 0;
+}
+#kiyaku dl.kiyakuList{
+	margin:0 0 20px 0;
+	padding:0px;
+	font-size: 0.8em;
+}
+#kiyaku dl.kiyakuList dt{
+	list-style-type:none;
+	margin:0 0 5px 0;
+}
+#kiyaku dl.kiyakuList dd{
+	list-style-type:none;
+	margin:0 0 30px 0;
+}
+#kiyaku dl.kiyakuList dd li{
+	margin:0 0 0 33px;
+}
+#kiyaku dl.kiyakuList dd li.list_none{
+	list-style-type:none;
+}
+#kiyaku dl.kiyakuList dd li ul li{
+	list-style-type:none;
+	margin:0 0 0 10px;
+}
+
+/*入会の流れ*/
+#content h4.flow{
+	background:#ffffff url(../common_images/h4_bg.gif) no-repeat left top;
+	width:824px;
+	height:34px;
+	margin: 0 auto 15px auto;
+	font-size:0.9em;
+	line-height: 2.3em;
+	text-indent: 23px;
+	clear: both;
+	font-weight: normal;
+}
+#content h5.flow01{
+	background: url(../first/images/nyukai_nagare01.gif) no-repeat;
+	width:791px;
+	height:17px;
+	color: #FFFFFF;
+	text-indent: 35px;
+	padding: 7px 0;
+	margin: 0 auto;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#content h5.flow02{
+	background: url(../first/images/nyukai_nagare02.gif) no-repeat;
+	width:791px;
+	height:17px;
+	color: #FFFFFF;
+	text-indent: 35px;
+	padding: 7px 0;
+	margin: 0 auto;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#content h5.flow03{
+	background: url(../first/images/nyukai_nagare03.gif) no-repeat;
+	width:791px;
+	height:17px;
+	color: #FFFFFF;
+	text-indent: 35px;
+	padding: 7px 0;
+	margin: 0 auto;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#content h5.flow04{
+	background: url(../first/images/nyukai_nagare04.gif) no-repeat;
+	width:791px;
+	height:17px;
+	color: #FFFFFF;
+	text-indent: 35px;
+	padding: 7px 0;
+	margin: 0 auto 0 auto;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#content .flowArrow{
+	background: url(../first/images/nyukai_arrow.gif) no-repeat;
+	min-height:56px;
+	height: auto !important;
+	height: 56px;
+	padding: 0 0 0 26px;
+	margin: 10px auto 20px auto;
+	width:754px;
+}
+
+#content .flowArrow p{margin:0;padding:0;}
+
+ul.list{
+	font-size: 0.75em;
+	list-style-type:disc;
+	margin:0 0 10px 0;
+}
+ul.list li{
+	line-height:1.5em;
+	margin:5px 20px 5px 17px;
+	padding:0;
+}
+
+#content .flowEnd{
+	min-height:30px;
+	height: auto !important;
+	height: 30px;
+	padding: 0 0 0 26px;
+	margin: 10px auto;
+	width:754px;
+}
+
+#btn_online{
+	background: url(../first/images/btn_online.gif) no-repeat;
+	width: 190px;
+	height: 30px;
+	text-indent: -9999px;
+	margin:0 50px 30px 0;
+	clear: both;
+	float: right;
+	display: block;
+}
+*html #btn_online{/*IE6以下のみ適用*/
+	margin:0 25px 30px 0;
+}
+
+#btn_online a{
+	background: url(../first/images/btn_online.gif) no-repeat;
+	display: block;
+	height: 30px;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#btn_online a:hover{
+	background-position: 0px -35px;
+	height:30px;
+}
+#btn_touroku{
+	background: url(../first/images/btn_touroku.gif) no-repeat;
+	width: 140px;
+	height: 30px;
+	text-indent: -9999px;
+	margin:0 50px 30px 0;
+	clear: both;
+	float: right;
+	display: block;
+}
+*html #btn_touroku{/*IE6以下のみ適用*/
+	margin:0 25px 30px 0;
+}
+#btn_touroku a{
+	background: url(../first/images/btn_touroku.gif) no-repeat;
+	display: block;
+	height: 30px;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#btn_touroku a:hover{
+	background-position: 0px -35px;
+	height:30px;
+}
+
+
+
+/*========================================================================================================
+  利用方法　guide/index.html
+========================================================================================================*/
+/* ご利用手順の動画*/
+#movieBox{
+	margin:0 auto 30px auto;
+	width: 640px;
+}
+#movieBox p{
+	margin:10px 0;
+	width: 640px;
+}
+#win_mpBox{
+	margin:0 auto;
+	width: 320px;
+	clear: both;
+	height: 31px;
+}#win_mpBox p{
+	float:left;
+	width:232px;
+	margin: 0;
+}
+#win_mpBox div{float:right;width:88px;}
+
+
+/* ご利用手順*/
+.prosessBox{
+	width:812px;
+	margin: 0 30px 20px 30px;
+	clear: both;
+}
+.prosess_leftBox{
+	width:392px;
+	float: right;
+	margin: 0 0 0 20px;
+}
+.prosess_rightBox{
+	width:400px;
+	float: left;
+}
+
+#content div.prosess_leftBox h4{
+	margin:0 0 10px;
+	padding:0;
+}
+
+.prosess_leftBox h4.h4_pro01{
+	background:url(../guide/images/h4_process01.gif) no-repeat left bottom;
+	width:392px;
+	height:30px;
+	text-indent:-9999px;
+}
+.prosess_leftBox h4.h4_pro02{
+	background:url(../guide/images/h4_process02.gif) no-repeat left bottom;
+	width:392px;
+	height:30px;
+	text-indent:-9999px;
+}
+.prosess_leftBox h4.h4_pro03{
+	background:url(../guide/images/h4_process03.gif) no-repeat left bottom;
+	width:392px;
+	height:30px;
+	text-indent:-9999px;
+}
+.prosess_leftBox h4.h4_pro04{
+	background:url(../guide/images/h4_process04.gif) no-repeat left bottom;
+	width:392px;
+	height:30px;
+	text-indent:-9999px;
+}
+.prosess_leftBox h4.h4_pro05{
+	background:url(../guide/images/h4_process05.gif) no-repeat left bottom;
+	width:392px;
+	height:30px;
+	text-indent:-9999px;
+}
+#content div.prosess_leftBox p{
+margin:0;padding:0;}
+
+#content div.prosess_leftBox p.prosessArrow{
+	background:#ffffff url(../guide/images/process_bg.gif) no-repeat left top;
+	min-height:60px;
+	height: auto !important;
+	height: 60px;
+	padding:0 0 0 40px;
+
+}
+
+/*困ったときは*/
+#content div.helpBox{
+	background:url(../guide/images/helpFl_bo.gif) no-repeat left bottom;
+	margin:0 32px 20px 32px;
+	width: 807px;
+	min-height:200px;
+	height: auto !important;
+	height: 200px;
+}
+#content h3.helpBoxTop{
+	clear: both;
+	height: 83px;
+	background: url(../guide/images/h3_help.gif) no-repeat left top;
+	margin: 0;
+	padding: 0;
+	width: 807px;
+	text-indent: -9999px;
+}
+#content p.helpBoxBtm{
+	clear: both;
+	height: 25px;
+	font-size: 25px;
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+#content div.helpBoxInner{
+	width: 767px;
+	height: auto;
+	margin: 0 auto;
+	clear: both;
+	position:relative;
+	min-height:200px;
+	height: auto !important;
+	height: 200px;
+}
+
+#content div.helpBoxInner h3{
+	height:34px;
+	margin:0 0 5px 0;
+}
+#content div.helpBox dl{
+	margin:0;
+	font-size: 0.76em;
+	line-height:2em;
+	text-align:left;
+	width:767px;
+	clear: both;
+}
+
+#content div.helpBoxInner dl dt{
+	width: auto;
+	padding:5px;
+	margin:0;
+	font-size:1.2em;
+	float: left;
+	font-weight: bold;
+}
+
+#content div.helpBoxInner dl dd{
+	float: left;
+	margin:0px 10px;
+	padding:5px;
+	line-height:1.5em;
+}
+
+#content div.helpBoxInner dl dd ul{
+	width: auto;
+	padding: 10px 0 10px 20px;
+	margin: 0 0 0 8px;
+	list-style-type:circle;
+}
+
+/*========================================================================================================
+  Q&A　qanda/index.html
+========================================================================================================*/
+/*お問合せフォームボタン*/
+#content #btnForm02 {
+	text-indent: -9999px;width:217px;height:47px;
+	background: url(../qanda/images/btn_contactform02.gif) no-repeat;
+	margin:0 auto 20px auto;
+}
+#content #btnForm02 a{
+	display: block;width:217px;height:47px;
+	background: url(../qanda/images/btn_contactform02.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#content #btnForm02 a:hover{
+	background-position: -220px 0;
+	height:47px;
+}
+
+/*質問・Q*/
+#content h4.question{
+	width:809px;
+	height:54px;
+	text-indent:50px;
+	line-height: 3.2em;
+}
+/*質問・A*/
+#content p.answer{
+	background: url(../qanda/images/answer.gif) no-repeat;
+	text-indent: 20px;
+	margin: 0 40px 30px 70px;
+}
+
+
+/*以下、Q&Aをアコーディオンする設定*/
+		/*
+			Vertical Accordions
+		*/
+		
+		.accordion_toggle {
+			display: block;
+			height: 30px;
+			width: 809px;
+			background: url(../qanda/images/question_bg_a.gif) no-repeat;
+			line-height: 30px;
+			color: #ffffff;
+			font-weight: normal;
+			text-decoration: none;
+			outline: none;
+			font-size: 12px;
+			color: #fa991a;
+			cursor: pointer;
+			margin: 0 0 0 0;
+		}
+		
+		.accordion_toggle_active {
+			background: url(../qanda/images/question_bg_n.gif) no-repeat top right;
+			color: #464646;
+		}
+		
+		.accordion_content {
+			background-color: #ffffff;
+			color: #444444;
+			overflow: hidden;
+		}
+			
+			.accordion_content h4 {
+				margin: 15px 0 5px 10px;
+				color: #0099FF;
+			}
+			
+			.accordion_content p {
+				line-height: 150%;
+				padding: 5px 10px 15px 10px;
+			}
+
+
+/*========================================================================================================
+  ステーション　station/index.html
+========================================================================================================*/
+/*ステーション・所在地*/
+#stationName{
+	width: 550px;
+	height: auto;
+	margin: 0px auto 50px auto;
+	clear: both;
+}
+#stationName dl{
+	margin:0;
+	color:#656668;
+	font-size: 0.76em;
+	line-height:2em;
+	text-align:left;
+}
+#stationName dl dt{
+	float: left;
+	text-indent:40px;
+	line-height:70px;
+	padding:5px 10px 5px 5px;
+	margin:0 0 0 15px;
+	background: url(../station/images/ico_car.gif) no-repeat left center;
+	font-size:1.5em;
+	font-weight:bold;
+	min-height:auto;
+	height: auto !important;
+	height: auto;
+	width: 280px;
+}
+*html #stationName dl dt{/*IE6以下のみ適用*/
+	margin:0 0 0 7px;
+}
+#stationName dl dd{
+	margin:0px 10px;
+	padding:5px;
+	line-height:1.5em;
+}
+
+/*ステーション・アクセスマップ*/
+#station_sBox{
+	width: 834px;
+	margin:0 auto 30px auto;
+	clear: both;
+}
+#station_sBoxLeft{
+	width: 569px;
+	float: left;
+	text-align: left;
+	margin: 0 25px 0 0;
+}
+#station_sBoxRight{
+	width: 240px;
+	float: right;
+}
+
+
+/*ご利用できる車種・外枠*/
+#syasyuBox{
+	background:url(../station/images/syasyuFl_bo.gif) no-repeat left bottom;
+	margin:0;
+	width: 240px;
+	min-height:250px;
+	height: auto !important;
+	height: 250px;
+}
+
+#syasyuBox h3.syasyuBoxTop{
+	clear: both;
+	height: 35px;
+	background: url(../station/images/h3_syasyu.gif) no-repeat left top;
+	margin: 0;
+	padding: 0;
+	width: 240px;
+	text-indent: -9999px;
+}
+#syasyuBox p.syasyuBoxBtm{
+	clear: both;
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+	width: 240px;
+}
+
+.syasyuBoxInner{
+	/*background:url(../station/images/syasyuFl_bo.gif) repeat-y left top;*/
+	width: 220px;
+	padding: 0 10px;
+	text-align: center;
+}
+.syasyuBoxInner dl{
+	font-size:0.76em;
+	padding:16px 0;
+	border-bottom:1px dashed #666666;
+	width: 220px;
+}
+.syasyuBoxInner dl.border_none{
+border-bottom:none;
+padding:16px 0 0 0;}
+.syasyuBoxInner dt{
+padding:0 0 10px 0;}
+.syasyuBoxInner dd{
+	text-align:left;
+	width:200px;
+	margin:0 0 0 20px;
+}
+
+
+/*アクセスマップ*/
+#station_sBoxLeft div.accessBox{
+width:569px;
+clear:both;
+}
+.accessBox div.accessBoxInner{
+	float:left;
+	width:284px;
+}
+#station_sBoxLeft div.accessBox div.accessBoxInner h4.stationBg{
+	background: url(../station/images/ico_station.gif) no-repeat left top;
+	margin:0 0 10px 0;
+	padding:0;
+	text-indent:15px;
+	font-weight:normal;
+}
+#station_sBoxLeft div.accessBox div.accessBoxInner ul{
+list-style-type:none;
+font-size: 0.76em;
+padding:0 30px 0 15px;
+}
+station_sBoxLeft div.accessBox div.accessBoxInner li{
+	line-height:2em;
+	text-align:left;
+list-style-type:circle;}
+
+
+/*料金プラン*/
+#planBg{
+	background: url(../station/images/img_family.gif) no-repeat left center;
+	width:562px;
+	margin: 0 30px;
+	padding-left:250px;
+	clear: both;
+	min-height:217px;
+	height: auto !important;
+	height: 217px;
+}
+
+
+/*料金プランのテーブル*/
+table.planTable {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  width: 562px;
+  border-collapse: collapse;
+  border-bottom: solid 1px #999;
+  border-top: solid 1px #999;
+}
+table.planTable caption {
+  margin-top: 1em;
+  text-align: left;
+  padding:5px;
+  margin:0;
+}
+table.planTable th{
+  border: solid 1px #999;
+  padding: 5px;
+  text-align: left;
+  white-space: nowrap;
+  color: #666;
+}
+table.planTable td {
+  border: solid 1px #999;
+  padding: 5px;
+}
+table.planTable th.plan01 {
+	text-align: center;
+	width: 130px;
+}
+table.planTable th.plan02 {
+	text-align: center;
+	width: 130px;
+}
+table.planTable td.course01 {
+	text-align: left;
+	width: 90px;
+}
+table.planTable td.course02 {
+  text-align: left;
+}
+table.planTable td.yen,
+table.planTable td.fee {
+  text-align: right;
+  white-space: nowrap;
+}
+table.planTable td.yen02{
+	text-align: right;
+	white-space: nowrap;
+	width: 271px;
+}
+
+table.planTable th.bgBlue,table.planTable td.bgBlue{
+	background:#3CC6F9;
+	color: #FFFFFF;
+}
+table.planTable th.bgBlue02,table.planTable td.bgBlue02{
+	background:#e5ffff;
+}
+table.planTable th.txt_center,table.planTable td.txt_center{text-align: center;}
+table.planTable td.borderDouble{  border-top: 3px double #999;}
+
+table.planTable th.borderNone,table.planTable td.borderNone{  border-right: none;}
+
+#planBg p{
+margin:0;
+width:auto;}
+
+
+/*入会方法、Q＆A,利用方法のボタン（中央配置）*/
+#linkBtnBox02{
+	width:666px;
+	margin: 30px auto 0 auto;
+	height:70px;
+	clear:both;
+}
+#linkBtnBox02 ul{
+	list-style-type: none;margin: 0;padding: 0;
+}
+#linkBtnBox02 li{
+	float:left;width: auto;margin: 0;padding: 0;
+}
+#linkBtnBox02 #nyukai,#linkBtnBox02 #qanda,#linkBtnBox02 #guide {
+	width: 222px;
+	height: 70px;
+	text-indent: -9999px;
+
+}
+#linkBtnBox02 #nyukai a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_nyukai.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox02 #qanda a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_qanda.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox02 #guide a{
+	display: block;
+	width:222px;
+	height:70px;
+	background: url(../common_images/btn_guide.gif) no-repeat;
+	overflow: hidden;/*firefoxでリンク時に枠線がはみ出る際の対策*/
+}
+#linkBtnBox02 #nyukai a:hover,#linkBtnBox02 #qanda a:hover,#linkBtnBox02 #guide a:hover{
+	background-position: 0px -75px;
+	height:70px;
+}
+
+
+/*========================================================================================================
+  サイトマップ　sitemap/index.html
+========================================================================================================*/
+.dl_sitemap{
+	width: 400px;
+	margin:35px auto 50px 10px;
+}
+* html .dl_sitemap{
+	margin:-20px auto 50px auto;
+}
+
+.dl_sitemap dt{
+	margin:20px 0 5px 0;
+	padding:0 0 5px 0;
+	font-size:0.8em;
+	border-bottom:1px dotted #fa991a;
+	color: #fa991a;
+}
+.dl_sitemap dd{
+	text-indent:1em;
+	font-size:0.8em;
+	margin:0 0 5px 2px;
+	background: url(../common_images/ico_ichiran.gif) no-repeat left center;
+}
+.dl_sitemap dd a{
+	color:#464646;
+}
+
+/*========================================================================================================
+  個人情報保護方針　privacy/index.html
+========================================================================================================*/
+ul.privacy{
+	list-style-type:decimal;
+	margin:0px 20px 30px 20px;
+}
+ul.privacy02{
+	list-style-type:circle;
+	margin:0px 20px 30px 20px;
+}
+ul.privacy li,ul.privacy02 li{
+	font-size: 0.75em;
+	line-height:1.5em;
+	margin:5px 20px 5px 40px;
+	padding:0;
+}
+#borderFrame{
+	border:1px solid #f2a238;
+	padding: 10px;
+	margin: 0 10px 0 10px;
+}
+
+/*========================================================================================================
+  つくばステーション注意書き　station/tsukuba.html
+========================================================================================================*/
+p.caution_t {
+text-align:center;
+}
+p.caution_t img {
+vertical-align: middle;
+}
+

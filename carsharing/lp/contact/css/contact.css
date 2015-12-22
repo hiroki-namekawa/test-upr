@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content label {
+	cursor: pointer;
+}
+
+div#content table.form {
+	border-top: 1px solid #f0f0f0;
+	margin-bottom: 20px;
+	width: 620px;
+}
+div#content table.form th,
+div#content table.form td {
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 1.5;
+}
+div#content table.form th {
+	background-color: #fafafa;
+	font-weight: bold;
+	padding: 1.2em 40px 0 20px;
+	vertical-align: top;
+	width: 130px;
+}
+div#content table.form th img.icnRequired {
+	display: block;
+	margin-left: 120px;
+	position: absolute;
+}
+div#content table.form td {
+	padding: 0.5em 0 0.5em 15px;
+	width: 415px;
+}
+div#content table.form td p.target {
+	margin: 10px 0;
+}
+div#content table.form td input {
+	border: 1px solid #d0d0d0;
+	font-size: 100%;
+	margin: 5px 0;
+	padding: 4px;
+	width: 405px;
+}
+div#content table.form td input#fld-zip {
+	width: 100px;
+}
+div#content table.form td textarea {
+	border: 1px solid #d0d0d0;
+	font-size: 100%;
+	height: 150px;
+	margin: 5px 0;
+	padding: 4px;
+	width: 405px;
+}
+
+div#content table.table_01 {
+	border-top: 1px solid #f0f0f0;
+	margin-bottom: 20px;
+	width: 620px;
+}
+div#content table.table_01 th,
+div#content table.table_01 td {
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 1.5;
+}
+div#content table.table_01 th {
+	background-color: #fafafa;
+	font-weight: bold;
+	padding: 1.2em 20px;
+	vertical-align: top;
+	width: 130px;
+}
+div#content table.table_01 td {
+	padding: 1.2em 0 1.2em 15px;
+	width: 415px;
+}
+
+div#content .inputError {
+	color: #ff3126;
+}
+
+div#content div#submit {
+	padding: 20px 0;
+	text-align: center;
+}
+div#content div#submit .left {
+	float: left;
+	text-align: right;
+	width: 40%;
+}
+div#content div#submit .right {
+	float: right;
+	text-align: left;
+	width: 40%;
+}
+div#content div#submit input.btnConfirm {
+	height: 41px;
+	margin: 0;
+	padding: 0;
+	width: 171px;
+}
+div#content div#submit input.btnBack {
+	height: 41px;
+	margin: 0;
+	padding: 0;
+	width: 101px;
+}
+div#content div#submit input.btnSend {
+	height: 41px;
+	margin: 0;
+	padding: 0;
+	width: 101px;
+}
+
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div#submit {
+	zoom: 1;
+}
+
+div#content div#submit:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

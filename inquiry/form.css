@@ -1,0 +1,181 @@
+@charset "utf-8";
+div#contents-form form fieldset {
+	border-width: 0px;
+}
+div#contents-form form legend {
+	display: none;
+}
+div#contents-form form input {
+	border: 1px solid #BBB;
+	height: 1.6em;
+	padding-top: 1px;
+	padding-left: 3px;
+	line-height: 1.2em;
+	vertical-align: middle;
+}
+div#contents-form form textarea {
+	border: 1px solid #BBB;
+	padding: 3px;
+	font-family: "ＭＳ ゴシック", "Osaka－等幅", monospace;
+}
+div#contents-form form input, form textarea, form select, form .radio, form .checkbox {
+	margin: 1px 0px;
+}
+div#contents-form form label {
+	cursor: pointer;
+}
+div#contents-form form label input {
+	border: 0px;
+}
+div#contents-form form select {
+	vertical-align: middle;
+}
+div#contents-form form select option {
+	padding-right: 4px;
+}
+div#contents-form form select optgroup option {
+	margin-left: 24px;
+}
+div#contents-form h3 {
+	background-image:none;
+	margin-left:0; padding-left:0;
+}
+span.red {
+	color:red;
+}
+div#contents-form table {
+	width: 100%;
+	border-collapse: collapse;
+}
+div#contents-form table tr th {
+	border: 1px solid #D0D0D0;
+	padding: 7px 7px 6px 7px;
+}
+div#contents-form table tr td {
+	border: 1px solid #D0D0D0;
+	padding: 7px 7px 6px 7px;
+}
+div#contents-form address {
+	text-align: center;
+}
+div#contents-form div#container {
+	width: 728px;
+	margin: 0px auto;
+	text-align: left;
+}
+div#contents-form table,
+div#contents-form div.box {
+	color: inherit;
+	background-color: #FAFAFA;
+}
+div#contents-form table th {
+	width: 26%;
+	text-align: left;
+	font-weight: normal;
+	color: inherit;
+	background-color: #F1F1F1;
+}
+div#contents-form div.box {
+	border: 1px solid #BBB;
+	padding: 0px 8px;
+}
+div#copyright {
+	text-align: center;
+	margin: 16px auto;
+}
+div#copyright adress{
+	text-align: center;
+	margin: 16px auto;
+}
+div.tc p {
+	text-align: center;
+	margin: 16px auto;
+}
+/* フォーム背景をゼブラ柄にする */
+/*
+.zebra0 {
+	color: inherit;
+	background-color: inherit;
+}
+.zebra1 {
+	color: inherit;
+	background-color: #F1F1F1;
+}
+*/
+p.navi em {
+	text-decoration: underline;
+}
+p.navi span {
+	margin: 0px 5px;
+	color: #AAA;
+	background-color: inherit;
+}
+p.scrltop {
+	text-align: right;
+}
+em.required {
+	margin-left: 2px;
+	font-size: 0.9em;
+	color: #F60;
+	background-color: inherit;
+}
+em.example {
+	color: #999;
+	background-color: inherit;
+}
+*.group-name {
+	display: block;
+	border-bottom: dotted 1px #DDD;
+	font-size: 10px;
+	color: #999;
+	background-color: inherit;
+}
+*.group {
+	display: block;
+	margin: 1px 0px;
+	padding: 0px 20px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 2px;
+}
+p.button {
+	text-align: center;
+}
+input.button {
+	height: 2.2em;
+	text-align: center;
+	cursor: pointer;
+}
+input.cancel {
+	width: 6em;
+	color: #FFF;
+	background-color: #750000;
+	letter-spacing: 1px;
+}
+input.submit {
+	width: 11em;
+	color: #FFF;
+	background-color: #236;
+	letter-spacing: 4px;
+}
+/* livevalidation.js */
+em.error, ul.error {
+	display: block;
+	color: #F60;
+	background-color: inherit;
+}
+input.error, textarea.error, select.error, span.error label {
+	color: inherit;
+	background-color: #FFE7D7;
+}
+em.good {
+	display: block;
+	color: #4DB35B;
+	background-color: inherit;
+}
+input.good, textarea.good, select.good, span.good label {
+	color: inherit;
+	background-color: #CBE9CF;
+}/* CSS Document */
+

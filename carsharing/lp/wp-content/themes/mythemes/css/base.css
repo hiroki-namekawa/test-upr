@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: base.css
+Created: 2010-00-00
+Last Modified: 2010-00-00
+Editor(s): xxxxxx
+Last Editor: xxxxxx
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a    { color: #2098f0;  }
+a:hover   { color: #8bcaf8; }
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background: #fafafa url(../images/bg_body.gif) repeat-x 0% 0%;
+	color: #454545;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+	background: url(../images/bg_layout.gif) repeat-y 0% 0%;
+	margin: 0 auto;
+	min-width: 700px;
+	width: 700px;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+	background: url(../images/bg_header.gif) no-repeat 0% 0%;
+	height: 110px;
+	position: relative;
+	width: 700px;
+}
+
+div#header div#logo {
+	left: 0;
+	position: absolute;
+	top: 33px;
+}
+
+div#header div#contact {
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	padding: 20px 40px 50px 40px;
+	width: 620px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p {
+	margin-bottom: 15px;
+}
+
+div#content div.btnContact {
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	padding-bottom: 15px;
+}
+
+div#footer p#copyright {
+	text-align: center;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

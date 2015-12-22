@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PAGE:導入事例トップ
+---------------------------------------------------------*/
+
+.case #mainvisual {
+	position:relative;
+}
+
+.case #mainvisual h1 {
+	position:absolute;
+	top:30px; left:190px;
+}
+
+
+.case #contents div.caselist{
+	clear:both;
+	overflow:hidden;
+	margin:20px 0 10px 0;
+	border-bottom:1px dotted #CCC;
+	padding-bottom:10px;
+}
+.case #contents div.caselist p {
+	float:left;
+	width:150px;
+	margin:0; padding:0;
+}
+.case #contents div.caselist ul {
+	float:right;
+	width:410px;
+	margin:0;
+}
+.case #contents div.caselist ul li {
+	background:url(../img/arrow_green.png) 0 5px no-repeat;
+	padding:0 0 0 15px;
+	list-style:none;
+	margin:0;
+}
+.case #contents div.caselist ul li a {
+	color:#00AB55;
+	text-decoration:none;
+}
+.case #contents div.caselist ul li a:hover {
+	text-decoration:underline;
+}
+
+
+/* PAGE:導入事例詳細
+---------------------------------------------------------*/
+.case #contents h3 {
+	border-bottom:none;
+}
+.case #contents .subject h3 {
+	margin-bottom:0px;
+	padding-bottom:0;
+}
+.case #contents h3.index_2 {
+	margin-bottom:5px;
+	padding-bottom:0;
+}
+
+.case #contents div.background {
+	border:5px solid #F5F5F5;
+	margin:20px 0 20px 0px;
+	width:600px;
+}
+.case #contents div.background p {
+	padding:20px 20px 10px 20px;
+}
+.case #contents div.subject {
+}
+.case #contents div.subject p {
+	padding:10px 0 0px 0px;
+	color:#00AB55;
+	font-weight:bold;
+	font-size:160%;
+	line-height:1.4;
+	margin-bottom:10px;
+}
+
+.case #contents p {
+	padding:0px 0 10px 0px;
+	margin:0 0 1em 0;
+}
+.case #contents .point {
+	background:url(../img/img_bottom_point.png) left bottom no-repeat;
+	padding-bottom:11px;
+	width:610px;
+	margin-bottom:20px;
+}
+.case #contents .point h3 {
+	padding:0 0 0px 0;
+	margin:0;	
+}
+.case #contents .solution {
+	padding:15px 0px 10px 0px;	
+}
+.case #contents h4 {
+	font-size:150%;
+	margin-top:20px;
+}
+.case #contents .point ul {
+	background:url(../img/bg_point.png) 0 0px repeat-y;
+	padding:15px 0 5px 0;
+	margin:0;
+	width:610px;
+	overflow:hidden;
+	
+}
+.case #contents .point ul li {
+	padding:6px 20px 20px 35px;
+	border-bottom:1px dotted #CCC;
+	margin:0px 20px 10px 25px;
+	list-style:none;
+}
+.case #contents .point ul li.no1 {
+	background:url(../img/icon_no1.png) 0px 5px no-repeat;
+}
+.case #contents .point ul li.no2 {
+	background:url(../img/icon_no2.png) 0px 5px no-repeat;
+}
+.case #contents .point ul li.no1-purple {
+	background:url(../img/icon_no1_purple.png) 0px 5px no-repeat;
+}
+.case #contents .point ul li.no2-purple {
+	background:url(../img/icon_no2_purple.png) 0px 5px no-repeat;
+}
+.case #contents .foot-navi{
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+	margin:20px auto;
+}
+.case #contents .foot-navi ul {
+	width:100px;
+	overflow:hidden;
+	text-align:center;
+	margin:20px auto;
+}
+.case #contents .foot-navi ul li {
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}

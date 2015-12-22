@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>uprカーシェアリング システム</title>
+<!-- TemplateEndEditable -->
+<meta name="keywords" content="東京,福井,青森,カーシェアリング,レンタカー,会員制,コスト削減,車,共同利用,使った分だけ,駐車場不足の緩和,地球環境保全,インターネット,携帯電話,PHS" />
+<meta name="description" content="株式会社uprのカーシェアリングのHPです。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="all" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<!-- TemplateBeginEditable name="head" -->
+<link rel="stylesheet" href="../css/top-style.css" type="text/css" media="all" />
+<link href="../css/dropdownmenu.css" rel="stylesheet" type="text/css" />   
+<script type="text/javascript" src="../js/dropdownmenu.js"></script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a>
+<div class="main-body">
+
+<!--ヘッダー　START-->
+	<h1><a href="../index.html"><img src="../images/logo01.gif" alt="uprカーシェアリング システム" width="500" height="82" /></a></h1>
+	<div class="header">
+      <div align="center"><a href="https://210.226.226.169/upr/"><br />
+            <img src="../images/car-yoyaku.gif" alt="車両予約" width="87" height="38" align="bottom" /></a> </div>
+  </div>
+	<!--ヘッダー　END-->
+
+<!--メインメニュー　START-->
+	<ul id="main_menu">   
+		<li class="main_menu01" title="トップ"><a href="../index.html">トップ</a></li>   
+		<li><a href="https://210.226.226.169/upr/" title="車両を予約する" target="_blank" class="main_menu02" id="mmenu1" onmouseover="mopen(1);" onmouseout="mclosetime();">車両を予約する</a></li>     
+   	  <li class="main_menu03" title="お問い合わせ"><a href="../inq.html">お問い合わせ</a></li>
+	</ul>  
+<!--メインメニュー　END-->
+
+<div class="main-contents">
+
+<!--左コンテンツ　START-->
+	<div class="contents_left">
+    	<ul class="left_menu">
+        	<li class="left_menu01" title="uprCSSの特徴"><a href="../tokutyou.html">uprCSSの特徴</a></li>
+        	<li class="left_menu02" title="主な機能紹介"><a href="../kinou.html">主な機能紹介</a></li>
+        	<li class="left_menu03" title="課金システム"><a href="../system.html">課金システム</a></li>
+        </ul>
+    	<ul class="left_bunner">
+        	<li><a href="http://www.upr-net.co.jp/index.htm" target="_blank"><img src="../images/upr_bunner.gif" alt="ユーピーアール株式会社" width="200" height="54" /></a></li>
+			<li></li>
+		  <li><img src="../images/keitai.jpg" alt="携帯サイトQRコード" width="200" height="131" /></li>
+		</ul>
+    </div>
+<!--左コンテンツ　END-->
+
+<!--右コンテンツ　START-->
+	<div class="contents_right">
+
+<!-- TemplateBeginEditable name="contents_right" -->
+<!--フラッシュ　START-->
+    	<div class="flash">
+        	<img src="../images/flash_dummy.gif" alt="" width="486" height="294" />        
+        </div>
+<!--フラッシュ　END-->
+
+<!--右メニュー　START-->
+    	<ul class="right_menu">
+        	<li class="right_menu01" title="ご利用方法"><a href="../riyou.html">ご利用方法</a></li>
+        	<li class="right_menu02" title="料金プラン"><a href="../ryoukin.html">料金プラン</a></li>
+        	<li class="right_menu03" title="駐車ステーション"><a href="../station.html">駐車ステーション</a></li>
+        </ul>
+<!--右メニュー　END-->
+
+<!--カーシェアリングとは　START-->
+		<h2 class="sharing">カーシェアリングとは</h2>
+    	<p class="sharing_p">カーシェアリングとは、複数の人が、車を共同利用する、会員制のレンタカーです。<br />カーシェアリングは、欧米ですでに広く普及している、環境に優しく、コスト削減できる新しいコンセプトです。<br />ユーピーアールは車種を限定しない新しいシステムを開発し、サービスを開始しました。</p>
+    	<a href="../sharing.html"><img src="../images/kotira01.gif" alt="詳しくはこちら" width="105" height="19" class="sharing_img" /></a>
+<!--カーシェアリングとは　END-->
+
+<!--ニュース・トピックス　START-->
+	  <h2 class="news">ニュース・トピックス</h2>
+    	<dl class="news_dl">
+    		<dt>2008年7月16日</dt>
+        	<dd>HPをリニューアルいたしました。</dd>
+    		<dt>2008年7月15日</dt>
+        	<dd>システムメンテナンスのお知らせ</dd>
+    		<dt>2008年6月25日</dt>
+        	<dd>駐車ステーション情報を更新いたしました。</dd>
+    		<dt>2008年5月21日</dt>
+        	<dd>uprCSSの利用規定を更新いたしました。</dd>
+    	</dl>
+    	<a href="../news.html"><img src="../images/kotira01.gif" alt="詳しくはこちら" width="105" height="19" class="news_img" /></a>
+<!--ニュース・トピックス　END-->
+<!-- TemplateEndEditable -->
+
+    </div>
+<!--右コンテンツ　END-->
+</div><!--main-contents-->           
+
+<!--フッターメニュー　START-->
+  <p class="footer_menu"><a href="../index.html">TOP</a>｜<a href="../sharing.html">カーシェアリングとは</a>｜<span class="footer_menu01"><a href="../riyou.html">車を利用したい方</a></span>｜<span class="footer_menu01"><a href="../tokutyou.html">事業を始めたい方</a></span>｜<a href="../news.html">ニュース・トピックス</a>｜<a href="http://uprcs.grouptube.jp/" target="_blank">uprCSログイン</a>｜<a href="../inq.html">お問い合わせ</a></p>
+<!--フッターメニュー　END-->
+
+	<address>Copyright (C) upr Corporation. 2007 All Rights Reserved.</address>
+
+</div><!--main-body-->
+</body>
+</html>

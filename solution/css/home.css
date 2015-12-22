@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*****************************************/
+/*** Home ***/
+/*****************************************/
+
+/* PAGE:home
+---------------------------------------------------------*/
+
+.home #mainvisual {
+	background:url(../img/bg_main.png) 0 0 no-repeat;
+	position:relative;
+	height:506px
+}
+.home #mainvisual h1 {
+	position:absolute;
+	top:60px; left:285px;
+}
+.home div#container_wrapper {
+	width: 1260px;
+	margin: 0 auto;
+	text-align: left;
+	background:url(../img_com/bg_container_wrapper.png) 0 0 repeat-y;
+}
+.home  div#container {
+	padding-top:20px;
+}
+
+/* メニューの位置（上・右・左）と背景
+---------------------------------------------------------*/
+
+.home div#sidebar {
+	float: right;
+	width: 220px;
+	text-align:left;
+	margin-right:20px;
+}
+
+.home div#contents {
+	float: left;
+	width: 590px;
+	text-align:left;
+	margin-left:20px;
+}
+
+.home div#contents .home-case{	
+	background:url(../img/bg_case.png) 0 0 repeat-y;
+	width:621px;
+	overflow:hidden;
+}
+.home div#contents .home-case h3{	
+	border-bottom:none;
+}
+.home div#contents .home-case dl{	
+	float:left;
+	margin-left:20px;
+	width:265px;
+}
+.home div#contents .home-case dl.left{	
+	margin-left:40px;
+}
+.home div#contents .home-case dl dt {	
+	margin-bottom:10px;
+}

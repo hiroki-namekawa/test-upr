@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.editor-area {
+	color: #454545!important;
+	font-size: 75%!important;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3"!important;
+	line-height: 1.5!important;
+}

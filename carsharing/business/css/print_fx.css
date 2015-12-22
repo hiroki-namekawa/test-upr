@@ -1,0 +1,14 @@
+﻿body{background:none;}
+div#main/*親ボックス02*/{
+	display:table;
+}
+	div#leftBox,/*左*/
+	div#rightBox/*右*/{
+	display:table-cell;
+	float:none;
+	}
+
+
+#container{
+	overflow: visible !important;/*Mozilla Gecko系のブラウザで印刷プレビュー時のページ切れ対応*/
+}

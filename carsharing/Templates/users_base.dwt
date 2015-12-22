@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content="カーシェアリング,カーシェア,西新宿,新橋,浜松町,つくば" lang="ja" />
+<meta name="description" content="レンタカーより安くて便利、ユーピーアールは、車両を利用したい方やカーシェアリング事業をお考えの方を募集しております。会員になってしまえば、携帯電話やパソコンで自動車の空き状況を把握し、30分からの車両利用の予約が出来ます。" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ユーピーアール株式会社 カーシェアリング「カシェリ」 利用者様用サイト | トップページ</title>
+<!-- TemplateEndEditable -->
+<link href="../users/css/base.css" rel="stylesheet" type="text/css" />
+<link href="../users/css/contents.css" rel="stylesheet" type="text/css" />
+<link href="../users/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="../users/css/form.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="ie5" -->
+<!--[if IE 5]>
+<link rel="stylesheet" type="text/css" href="../css/ie5.css">
+<![endif]-->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="print_fx" -->
+<script type="text/javascript">
+var firefox = (navigator.userAgent.indexOf("Firefox") != -1)? true : false;
+if(firefox) document.write('<link rel="stylesheet" type="text/css" media="print" href="../users/css/print_fx.css" />');
+</script>
+<!-- TemplateEndEditable -->
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrapper {display:table;height:100%}
+	</style>
+<![endif]-->
+
+<script src="../users/js/prototype.js" type="text/javascript"></script>
+<script src="../users/js/effects.js" type="text/javascript"></script>
+<script src="../users/js/accordion.js" type="text/javascript"></script>
+<script src="../users/js/auto-scroll.js" type="text/javascript"></script>
+<script type="text/javascript" src="../users/js/jquery-latest.pack.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+var j$ = jQuery;
+</script>
+<script type="text/javascript" src="../users/js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript">
+j$(document).ready(function(){
+j$(document).pngFix();
+});
+</script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-25422367-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'te
+xt/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'http
+s://ssl' : 'http://www <http://www/>') + '.google-analytics.com/ga.js
+<http://google-analytics.com/ga.js>';
+   var s = document.getElementsByTagName('script')[0]; s.pa <http://s.pa/>
+rentNode.insertBefore(ga, s);
+ })();
+
+</script>
+</head>
+
+<body>
+<!-- wrapper start-->
+<div id="wrapper">
+ <div id="container">
+   <!-- header start-->
+    <div id="header">
+     <div id="headerInner">
+       <h1 id="logo"><a href="../users/index.html" title="ユーピーアール株式会社 会員様サイト">ユーピーアール株式会社 会員様サイト</a></h1>
+       <div id="headerContact">
+        <ul>
+         <li id="btnForm"><a href="../users/contact/index.html" title="お問い合わせフォーム">お問い合わせフォーム</a></li>
+         <li><img src="../users/common_images/headerTel.gif" alt="お気軽にお電話下さい。TEL:03-5405-7455" width="245" height="60" /></li>
+        </ul>
+       </div>
+     </div>
+       <h2 id="header_title" style="width:900px;height:37px;background: url(../users/common_images/menbers_title.png);">会員様用TOPページ&nbsp;for&nbsp;users</h2>
+
+    </div>
+   <!-- header end-->
+      <!-- globalnavi start-->
+      <div id="globalNav">
+       <ul>
+         <li><a href="../users/index.html">TOP</a></li>
+         <li><a href="../users/first/index.html">入会方法</a></li>
+         <li><a href="../users/guide/index.html">利用方法</a></li>
+         <li class="li_txtM"><a href="../users/station/hamamatsu_tyo.html">浜松町ステーション</a></li>
+         <li class="li_txtM"><a href="../users/station/shinbashi.html">新橋ステーション</a></li>
+         <li class="li_txtM"><a href="../users/station/tsukuba.html">つくばステーション</a></li>
+         <li class="li_txtM"><a href="../users/station/ube.html">宇部ステーション</a></li>
+       </ul>
+      </div>
+     <!-- globalnavi end-->
+    <!-- mainContents start-->
+   <div id="main" class="clearfix">
+   <!-- Contents start-->
+     <p class="mainBoxTop">&nbsp;</p>
+     <!-- TemplateBeginEditable name="Contents" -->
+     <div class="mainBoxInner">ここにコンテンツが入ります</div>
+     <!-- TemplateEndEditable -->
+   <!-- Contents end-->
+
+   </div>
+    <!-- mainContents end-->
+ </div>
+</div>
+<!-- wrapper end-->
+<!-- footer start-->
+<div id="footer">
+  <div id="footerBg">
+    <div id="footerInner">
+      <div id="carcherryTop"><a href="../index.html" title="「カシェリ」トップ">「カシェリ」トップ</a></div>
+      <div id="pageTop"><a href="#header" title="ページ先頭へ">ページ先頭へ</a></div>
+    </div>
+    <div class="footerNav01">
+      <ul class="footerNavIn01">
+        <li><a href="../users/first/index.html">入会方法</a>
+           
+        </li>
+        <li><a href="../users/system/index.html">予約システム</a></li>
+        <li><a href="../users/guide/index.html">利用方法</a></li>
+      </ul>
+      <ul class="footerNavIn02">
+        <li>ステーション
+            <dl><dt><a href="../users/station/hamamatsu_tyo.html">&gt;浜松町ステーション</a></dt>
+                <dt><a href="../users/station/shinbashi.html">&gt;新橋ステーション</a></dt>
+                <dt><a href="../users/station/tsukuba.html">&gt;つくばステーション</a></dt>
+                <dt><a href="../users/station/ube.html">&gt;宇部ステーション</a></dt>
+            </dl>
+        </li>
+      </ul>
+      <ul class="footerNavIn01">
+        <li><a href="../users/qanda/index.html">Q&amp;A</a></li>
+        <li><a href="../users/contact/index.html">お問合せ</a></li>
+        <li><a href="../users/contact/index2.html">退会について</a></li>
+        <li><a href="../users/news/index.html">新着情報</a></li>
+      </ul>
+    </div>
+    <div class="footerNav02">
+      <ul>
+        <li><a href="../users/sitemap/index.html">サイトマップ</a></li>
+        <li><a href="../users/about/index.html">サイトのご利用について</a></li>
+        <li><a href="../users/privacy/index.html">個人情報保護方針</a></li>
+        <li><a href="http://www.upr-net.co.jp/">uprトップ</a></li>
+      </ul>
+    </div>
+    <address id="copy">
+      Copyright &copy; upr Corporation. 2010 All Rights Reserved.
+    </address>
+  </div>
+</div>
+<!-- footer end-->
+</body>
+</html>

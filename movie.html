@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		video {
+			position: fixed;
+			left: 0;
+			top: 0;
+			min-width: 100%;
+			min-height: 100%;
+			width: 1024px;
+			height: 768px;
+			z-index: -100;
+			background-size: cover;
+		}
+		body {
+			background-color:#000000;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function()
+		{
+			$("#uprMovie").on( 'ended', function() {
+				document.location.href="http://millsill.net/upr/pc/index.htm";
+			});
+			playMovie();
+		});
+		function showMovie() {
+			$("#solarArea").hide();
+			$("#uprMovie").show();
+		}
+		function playMovie() {
+			showMovie();
+			$("#uprMovie").get(0).play();
+		}
+	</script>
+</head>
+<body>
+	<video id="uprMovie">
+<!--		<source src="http://test.upr-net.co.jp/movie/upr20150130.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> -->
+		<source src="http://test.upr-net.co.jp/movie/upr20150224.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	</video>
+</body>
+</html>
+

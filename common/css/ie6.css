@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*html div#gnavi {
+	position:absolute;
+	z-index:1;
+	background-position:0 74px;
+}
+
+*html div#wrapper {
+	position:relative;
+	z-index:0;
+	top:88px;
+	margin-bottom:88px;
+}
+/* 
+*html a:hover#goEnglish, *html a:hover#goChinese {
+	position:relative;
+	left:1px;
+}
+
+*html a:hover#goTop {
+	position:absolute;
+	top:88x;
+	left:645px;
+} */

@@ -1,0 +1,480 @@
+@charset "utf-8";
+@charset "utf-8";
+/* ===================================================================
+ style info : コンテンツエリア関係 他
+
+fonts
+ 10px = 77%     11px = 85%     12px = 93%     13px = 100%
+ 14px = 108%    15px = 116%    16px = 123.1%  17px = 131%
+ 18px = 138.5%  19px = 146.5%  20px = 153.9%  21px = 161.6%
+ 22px = 167%    23px = 174%    24px = 182%    25px = 189%
+ 26px = 197%
+=================================================================== */
+
+/*----------------------------------------------------
+	共通
+----------------------------------------------------*/
+/* スクロールバーの有無によるズレ対策 */
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+input, textarea {
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+/* for IE6 */
+* html body {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+* html input, * html textarea {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+/* リンク
+----------------------------------------------------*/
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+/* よく使いそうなCSS3
+----------------------------------------------------*/
+#selectors {
+/* 角丸 */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+/* 角丸個別 */
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+
+/* ボックスに影 */
+	-webkit-box-shadow: 1px 1px 3px #999;
+	-moz-box-shadow: 1px 1px 3px #999;
+	box-shadow: 1px 1px 3px #999;
+
+/* テキストに影 */
+	text-shadow: 1px 1px 0px #999;
+}
+
+/* 汎用
+----------------------------------------------------*/
+/* clerfix */
+#contents:after {
+	content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+
+.imgR {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.imgL {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.tC,
+.btn {
+	text-align: center;
+}
+
+.tR,
+.sign {
+	text-align: right;
+}
+
+
+/*----------------------------------------------------
+	#page（ページ全体）
+----------------------------------------------------*/
+#page {
+	width: 940px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #eee;
+	font-size: 100%;
+}
+
+
+/*----------------------------------------------------
+	#contents（メインとサイド）
+----------------------------------------------------*/
+#contents {
+	/zoom: 1;
+}
+
+
+/*----------------------------------------------------
+	#main（メインコンテンツ）
+----------------------------------------------------*/
+#main {
+	float: left;
+	width: 600px;
+}
+
+#main table,
+#main ol,
+#main ul,
+#main dl,
+#main blockquote,
+#main pre,
+#main p {
+	margin-bottom: 10px;
+}
+
+#main .pageTop {
+	clear: both;
+	margin: 0;
+	text-align: right;
+}
+
+
+/*----------------------------------------------------
+	#side（サイドバー）
+----------------------------------------------------*/
+#side {
+	float: right;
+	width: 330px;
+}
+
+
+/*****************************************/
+/*** HTML基本スタイル***/
+/*****************************************/
+
+#contents p,
+#contents ul,
+#contents ol,
+#contents table,
+#contents dl,
+#contents h3,
+#contents h4
+{
+	margin-bottom: 1em;
+}
+
+#contents h3,
+#contents h4
+{
+	clear: both;
+}
+
+#contents p,
+#contents ul,
+#contents ol
+{
+	line-height: 1.6em;
+	padding: 0 1em;
+}
+
+#contents p {
+	padding: 0 1em;
+}
+
+#contents ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+#contents ol {
+	list-style-type: decimal;
+	margin-left: 2em;
+}
+
+
+/*****************************************/
+/*** 基本デザインのクラススタイル ***/
+/*****************************************/
+
+/* List
+---------------------------------------------------------*/
+
+#contents ul.ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+#contents ul.ul li {
+	padding-left: 15px;
+}
+
+#contents ul.flat li {
+	float: left;
+	padding-right: 1em;
+}
+
+#contents dl.dl dt {
+	clear: both;
+	float: left;
+	width: 11em;
+}
+
+#contents dl.dl dd {
+	margin-left: 12em;
+}
+
+/* Form
+---------------------------------------------------------*/
+
+#contents form.form {
+}
+
+#contents form.form label {
+	float: left;
+	width: 11em;
+}
+
+#contents input.text {
+	border: inset 2px #ccc;
+}
+
+#contents textarea.textarea {
+	border: inset 2px #ccc;
+}
+
+#contents select.select {
+	border: outset 2px #ccc;
+}
+
+#contents .submit {
+	text-align: center;
+}
+
+#contents .submit input.button {
+	margin: 0 5px;
+	padding: 3px 5px;
+	border: outset 2px #ccc;
+}
+
+/* Table
+---------------------------------------------------------*/
+#contents table.table{
+width: 100%;
+border-collapse: collapse;
+}
+#contents table.table th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+font-weight:normal;
+}
+#contents table.table td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+}
+.mface-text {
+	text-align:right;
+}
+.mface-red {
+	color:red;
+}
+table.button {
+	width:300px;
+	text-align:center;
+	margin:20px auto;
+}
+
+
+/*****************************************/
+/*** 独自スタイル ***/
+/*****************************************/
+
+/* Go To Page Top
+---------------------------------------------------------*/
+
+div#container_wrapper p.gotop {
+	clear: both;
+	float: right;
+	margin-top: 20px;
+	margin-right:20px;
+	margin-bottom:0px;
+	line-height:1;
+}
+
+
+/* h1
+---------------------------------------------------------*/
+.contact #mainvisual,
+.info #mainvisual {
+	position:relative;
+}
+.contact #mainvisual h1,
+.info #mainvisual h1 {
+	position:absolute;
+	top:30px; left:190px;
+}
+
+
+
+
+/*****************************************/
+/*** ページ別設計 ***/
+/*****************************************/
+
+/* お問い合わせページ
+---------------------------------------------------------*/
+.contact #contents h2,
+.info #contents  h2 {
+	margin-bottom:20px;
+}
+.contact #contents p {
+	margin-left:0px;
+	padding-left:0;
+}
+
+
+/* プライバシーポリシー
+---------------------------------------------------------*/
+#contents h3 {
+	padding:0 0 0 0px;
+	margin:0 0 0.7em 0;
+	font-weight:bold;
+	border-bottom:1px solid #CCC;
+	font-size:120%;
+	width:100%;
+	padding-bottom:10px;
+}
+
+#contents h3.sitemap {
+	float:left;
+	margin:0 0 20px 0;
+}
+#contents div.sitemapAbout {
+	margin:0 0 20px 10px;
+	clear:both;
+}
+#contents div.sitemapAbout h4.list_border_blue {
+	border-left:solid 3px #00AB56;
+	margin:0 0 7px 0;
+	padding:0 0 0 12px;
+}
+#contents div.sitemapAbout p {
+	line-height:160%;
+	clear:both;
+	margin:0 0 0 0em;
+}
+#contents ul.sitemapNoNumber ul {
+	clear:both;
+	margin-left:-30px;
+	padding-left:0;
+	overflow:hidden;
+}
+#contents ul.sitemapNoNumber li {
+	list-style:disc;
+	line-height:140%;
+	margin: 0 0 0 0em;
+	padding-left:0;
+}
+#contents ol.sitemapNnumberList li {
+	padding:0 0 0.5em 1em;
+	line-height:140%;
+	list-style-type: decimal;
+}
+#contents div#sitemapContactArea {
+	width:625px;
+	margin:0 auto;
+}
+#contents div#sitemapContactAreaTop {
+	width:625px;
+	height:10px;
+	background-image:url(../../images/sitemapContactBg.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#contents div#sitemapContactAreaBottom {
+	width:625px;
+	height:10px;
+	background-image:url(../../images/sitemapContactBg.gif);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+#contents div#sitemapContactArea p {
+	width:580px;
+	padding:15px;
+	line-height:160%;
+	border:1px solid #CCC;
+}
+
+
+
+/*****************************************/
+/*** Wordpress使用時の基本クラス ***/
+/*****************************************/
+
+/* Images
+---------------------------------------------------------*/
+
+#contents .alignright img {
+	margin-left: 10px;
+}
+
+#contents .alignleft img {
+	margin-right: 10px;
+}
+
+#contents .aligncenter img {
+	margin: auto 5px;
+}
+
+#contents div.alignright,
+#contents img.alignright {
+	float: right;
+	margin-left: 10px;
+}
+
+#contents div.alignleft,
+#contents img.alignleft {
+	float: left;
+	margin-right: 10px;
+}
+
+#contents div.aligncenter,
+#contents img.aligncenter {
+	margin: auto;
+}
+
+#contents img.alignnone { }
+
+#contents img.size-thumbnail,
+#contents img.size-small,
+#contents img.size-medium,
+#contents img.size-large,
+#contents img.size-full,
+#contents img.attachment-thumbnail {
+	display: block;
+	padding: 5px;
+	border: solid 1px #ccc; 
+}
+
+/* Captions
+---------------------------------------------------------*/
+
+#contents .wp-caption-text,
+#contents .wp-caption-dd {
+	font-size: 90%;
+	text-align: center;
+}
+

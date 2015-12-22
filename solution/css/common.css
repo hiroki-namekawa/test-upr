@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* ===================================================================
+ style info : リセット及びフォントサイズ
+=================================================================== */
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: top;
+	background: transparent;
+	font-size: 16px;
+	font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000; 
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.1
+*/
+body{font:16px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/*****************************************/
+/*** 初期設定 ***/
+/*****************************************/
+
+/* ページ全体の背景と背景色
+---------------------------------------------------------*/
+
+body {
+	line-height: 1.6;
+	background: #F7F7F7 url(../img_com/bg.png) 0 0 repeat-x;
+	color: #545454;
+	
+}
+div#body {
+	text-align: center;
+}
+
+/* デザインエリアの幅と位置
+---------------------------------------------------------*/
+
+div#wrapper {
+	
+	background:url(../img_com/bg_container_wrapper.png) left bottom repeat-y;
+	width: 1260px;
+	margin: 0 auto;
+	text-align: left;
+	overflow:hidden;
+}
+
+/* ヘッダ領域の幅と位置
+---------------------------------------------------------*/
+
+div#header {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+	height:105px;
+}
+
+/* メイン領域の幅と位置
+---------------------------------------------------------*/
+div#container_wrapper {
+	width: 1260px;
+	margin: 0 auto;
+	text-align: left;
+	background:url(../img_com/bg_main_second.png) 0 0 no-repeat;
+}
+div#container {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top:100px;
+}
+
+/* メニューの位置（上・右・左）と背景
+---------------------------------------------------------*/
+
+div#sidebar {
+	float: left;
+	width: 220px;
+	text-align:left;
+	margin-left:20px;
+}
+
+div#contents {
+	float: right;
+	width: 600px;
+	text-align:left;
+	margin-right:30px;
+}
+
+
+
+/* ベースフォントサイズ
+---------------------------------------------------------*/
+
+body, input, textarea, select, option, table, th, td, p, div, small, big {
+	
+}
+
+/* 行間
+---------------------------------------------------------*/
+
+p, div {
+}
+
+/* ベースフォントファミリーとカラー
+---------------------------------------------------------*/
+
+* {
+	color: #545454;
+	font-family: Verdana,Helvetica,Arial,"Osaka",sans-serif;
+}
+
+/* アンカーテキスト
+---------------------------------------------------------*/
+
+a:link {
+	color: #545454;
+}
+
+a:visited {
+	color: #545454;
+}
+
+a:active {
+	color: #545454;
+}
+
+a:hover {
+	color: #545454;
+	text-decoration: underline;
+}
+
+
+/*****************************************/
+/*** 基本汎用クラス ***/
+/*****************************************/
+
+/* Display
+---------------------------------------------------------*/
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+/* Float
+---------------------------------------------------------*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clear { clear: both; }
+.right { float: right; }
+.left { float: left; }
+.center { margin: auto; }
+
+/* Text
+---------------------------------------------------------*/
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.aligncenter {
+	margin: auto;
+	padding: auto;
+	text-align: center;
+}
+
+.small {
+	font-size: 75%;
+}
+
+.smaller {
+	font-size: 60%;
+}
+
+.large {
+	font-size: 140%;
+}
+
+.larger {
+	font-size: 200%;
+}
+
+.largest {
+	font-size: 240%;
+}
+
+.strong {
+	color: #900;
+	font-weight: bold;
+}
